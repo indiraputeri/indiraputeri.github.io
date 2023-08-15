@@ -1,1 +1,1 @@
-# indiraputeri.github.io
+# Simple Life of a Statistics Enthusiast 
