@@ -1,3 +1,5 @@
-theme: jekyll-theme-minimal
-title: Welcome to my page
-description: Bookmark this to keep an eye on my project updates!
+title: Indira Puteri
+description: sharing knowledge and experience
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-cayman
