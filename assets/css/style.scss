@@ -3,9 +3,9 @@
 
 @import 'jekyll-theme-cayman';
 .header-image-container {
-  width: 100%; /* Adjust this width as needed */
+  width: 75%; /* Adjust this width as needed */
   position: relative;
-  padding-bottom: 75%; /* Adjust this padding to set the aspect ratio */
+  padding-bottom: 50%; /* Adjust this padding to set the aspect ratio */
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   object-fit: cover; /* Preserve aspect ratio and cover container */
 }
