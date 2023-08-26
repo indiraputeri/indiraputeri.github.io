@@ -2,18 +2,11 @@
 ---
 
 @import 'jekyll-theme-cayman';
-.header-image-container {
-  width: 75%; /* Adjust this width as needed */
-  position: relative;
-  padding-bottom: 50%; /* Adjust this padding to set the aspect ratio */
-  overflow: hidden;
+.page-header {
+  background-image: url("headerimg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Add any other styling you want for the header */
 }
 
-.header-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 75%;
-  object-fit: cover; /* Preserve aspect ratio and cover container */
-}
