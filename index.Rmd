@@ -1,7 +1,6 @@
 ---
-#output: github_document
+output: github_document
 always_allow_html: true
-output: github document
 ---
 
 # About Me
