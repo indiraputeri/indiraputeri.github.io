@@ -12,5 +12,12 @@
     "title": "About Me",
     "section": "",
     "text": "I am a student at the Mathematical Sciences program, Universiti Brunei Darussalam. I reside permanently in Mataram, West Nusa Tenggara, Indonesia, and am currently temporarily staying in Brunei. My current research project focuses on spatial modeling for Gaussian data, where I utilize Bayesian hierarchical models and conditional autoregressive (CAR) models to elucidate the spatial structure within neighborhood areas. Additionally, I am actively learning R to support and enhance my research endeavors."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Here are some projects that I’ve been involved with"
   }
 ]
