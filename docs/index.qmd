@@ -17,6 +17,10 @@ about:
       href: mailto:21h8203@ubd.edu.bn
 ---
 
+# Hi there!
+
+Welcome to my humble corner of the web! I'm Indira Puteri, and I'm thrilled to connect with you.
+
 # Education
 
 -   MSc in Mathematics, 2012, \[Bandung Insitute of Technology\](https://www.itb.ac.id/), Bandung, Indonesia
@@ -30,10 +34,6 @@ about:
 -   2019 - present, Lecturer in Mathematics at Universitas Islam Negeri (UIN) Mataram, Mataram, West Nusa Tenggara
 
 -   2012 - 2018, Lecturer in Mathematics at \[Universitas Pendidikan Mandalika\](https://undikma.ac.id/), Mataram, West Nusa Tenggara
-
-
-    
-
 
 -   2009 - 2010, Mathematics Teacher at PGRI 3 Vocational High School, Malang, East Java, Indonesia
 
