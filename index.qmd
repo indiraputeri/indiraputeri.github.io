@@ -1,11 +1,46 @@
 ---
-title: "threeinks"
+title: "Indira Puteri"
+image: indira_headshot.png
+toc: false
+about: 
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/indiraputeri/
+    - text: Twitter
+      href: https://twitter.com/indiraputeri
+    - text: GitHub
+      href: https://github.com/indiraputeri
+    - text: Email
+      href: mailto:21h8203@ubd.edu.bn
 ---
 
-This is a Quarto website.
+# Education
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+-   MSc in Mathematics, 2012, \[Bandung Insitute of Technology\](https://www.itb.ac.id/), Bandung, Indonesia
 
-```{r}
-1 + 1
-```
+-   BSc in Mathematics, 2009, \[Institut Teknologi Sepuluh Nopember (ITS)\](https://www.its.ac.id/), Surabaya Indonesia
+
+# Experience
+
+-   2022 - 2023, Teaching Assistant in Basic Statistics and Advance Statistics Modules, in Mathematical Science Undergraduate program, Faculty of Science, Universiti Brunei Darussalam
+
+-   2019 - present, Lecturer in Mathematics at Universitas Islam Negeri (UIN) Mataram, Mataram, West Nusa Tenggara
+
+-   2012 - 2018, Lecturer in Mathematics at \[Universitas Pendidikan Mandalika\](https://undikma.ac.id/), Mataram, West Nusa Tenggara
+
+
+    
+
+
+-   2009 - 2010, Mathematics Teacher at PGRI 3 Vocational High School, Malang, East Java, Indonesia
+
+# Skills
+
+R Programming, Python, Statistical data analysis
+
+# Interests
+
+Spatial modelling, Bayesian statistics, Conditional Auto-regressive model, Multilevel spatial data model
