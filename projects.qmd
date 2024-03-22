@@ -2,4 +2,6 @@
 title: "Projects"
 ---
 
-Here are some projects that I've been involved with
+Ph.D Project, 2022 - Present. *Spatial Analysis with Conditional Autoregressive Model in Lattice Data: an application to property prices in Lombok, Indonesia.*
+
+[GPFD Project](https://serc.edu.au/government-partnerships-for-development-gpfd/), 2015-2018 --- *Promoting Mathematics Engagement and Learning Opportunities for Disadvantaged Communities in West Nusa Tenggara, Indonesia.* Math module development and online professional development system for math teacher,

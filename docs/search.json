@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Indira Puteri",
     "section": "",
-    "text": "Hi there!\nWelcome to my humble corner of the web! I’m Indira Puteri, and I’m thrilled to connect with you.\n\n\nEducation\n\nMSc in Mathematics, 2012, Institut Teknologi Bandung (ITB), Bandung, Indonesia\nBSc in Mathematics, 2009, Institut Teknologi Sepuluh Nopember (ITS), Surabaya Indonesia\n\n\n\nExperience\n\n2022 - 2023, Teaching Assistant in Basic Statistics and Advance Statistics Modules, in Mathematical Science Undergraduate program, Faculty of Science, Universiti Brunei Darussalam\n2019 - present, Lecturer in Mathematics at Universitas Islam Negeri (UIN) Mataram, Mataram, West Nusa Tenggara\n2012 - 2018, Lecturer in Mathematics at [Universitas Pendidikan Mandalika](https://undikma.ac.id/), Mataram, West Nusa Tenggara\n2009 - 2010, Mathematics Teacher at PGRI 3 Vocational High School, Malang, East Java, Indonesia\n\n\n\nSkills\nR Programming, Python, Statistical data analysis\n\n\nInterests\nSpatial modelling, Bayesian statistics, Conditional Auto-regressive model, Multilevel spatial data model"
+    "text": "Hi there!\nWelcome to my humble corner of the web! I’m Indira Puteri, and I’m thrilled to connect with you.\n\n\nEducation\n\nMSc in Mathematics, 2012, Bandung Institute of Technology, Bandung, Indonesia\nBSc in Mathematics, 2009, Tenth Nopember Institute of Technology, Surabaya Indonesia\n\n\n\nExperiences\n\n2022 - 2023, Teaching Assistant in Basic Statistics and Advance Statistics Modules, in Mathematical Science Undergraduate program, Faculty of Science, Universiti Brunei Darussalam\n2019 - present, Lecturer in Mathematics at Universitas Islam Negeri (UIN) Mataram, Mataram, West Nusa Tenggara, Indonesia\n2012 - 2018, Lecturer in Mathematics at IKIP Mataram, Mataram, West Nusa Tenggara, Indonesia\n2009 - 2010, Mathematics Teacher at PGRI 3 Vocational High School, Malang, East Java, Indonesia\n\n\n\nSkills\nR Programming, Python, Statistical data analysis\n\n\nInterests\nSpatial modelling, Bayesian statistics, Conditional Auto-regressive model, Multilevel spatial data model"
   },
   {
     "objectID": "about.html",
@@ -18,6 +18,13 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here are some projects that I’ve been involved with"
+    "text": "Ph.D Project, 2022 - Present. Spatial Analysis with Conditional Autoregressive Model in Lattice Data: an application to property prices in Lombok, Indonesia.\nGPFD Project, 2015-2018 — Promoting Mathematics Engagement and Learning Opportunities for Disadvantaged Communities in West Nusa Tenggara, Indonesia. Math module development and online professional development system for math teacher,"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Kinasih, I. P., & Hardiani, N. (2020). Role playing and the changing of teacher understanding to middle school mathematics lesson planning within elpsa framework. Jurnal Pendidikan Matematika, 14(2), 183-198.\nPatahuddin, S. M., Puteri, I., Lowrie, T., Logan, T., & Rika, B. (2018). Capturing student mathematical engagement through differently enacted classroom practices: applying a modification of Watson’s analytical tool. International Journal of Mathematical Education in Science and Technology, 49(3), 384-400.\nKinasih, I. P., Wiriasto, G. W., Kanata, B., & Zubaidah, T. 2014. Lesser Sunda Islands Earthquake Inter-Occurrence Times Distribution Modelling. International Journal of Technology 3(3):242-250. DOI: 10.14716/ ijtech.v5i3.610"
   }
 ]

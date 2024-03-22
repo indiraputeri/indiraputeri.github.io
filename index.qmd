@@ -8,7 +8,7 @@ about:
   image-width: 20em
   links:
     - text: LinkedIn
-      href: https://www.linkedin.com/in/indiraputeri/
+      href: https://www.linkedin.com/in/indira-puteri/
     - text: Twitter
       href: https://twitter.com/indiraputeri
     - text: GitHub
@@ -23,17 +23,17 @@ Welcome to my humble corner of the web! I'm Indira Puteri, and I'm thrilled to c
 
 # Education
 
--   MSc in Mathematics, 2012, [Institut Teknologi Bandung (ITB)](https://www.itb.ac.id/), Bandung, Indonesia
+-   MSc in Mathematics, 2012, [Bandung Institute of Technology](https://www.itb.ac.id/), Bandung, Indonesia
 
--   BSc in Mathematics, 2009, [Institut Teknologi Sepuluh Nopember (ITS)](https://www.its.ac.id/), Surabaya Indonesia
+-   BSc in Mathematics, 2009, [Tenth Nopember Institute of Technology](https://www.its.ac.id/), Surabaya Indonesia
 
-# Experience
+# Experiences
 
--   2022 - 2023, Teaching Assistant in Basic Statistics and Advance Statistics Modules, in Mathematical Science Undergraduate program, Faculty of Science, Universiti Brunei Darussalam
+-   2022 - 2023, Teaching Assistant in Basic Statistics and Advance Statistics Modules, in Mathematical Science Undergraduate program, Faculty of Science, [Universiti Brunei Darussalam](https://ubd.edu.bn/)
 
--   2019 - present, Lecturer in Mathematics at Universitas Islam Negeri (UIN) Mataram, Mataram, West Nusa Tenggara
+-   2019 - present, Lecturer in Mathematics at [Universitas Islam Negeri (UIN) Mataram](https://uinmataram.ac.id/), Mataram, West Nusa Tenggara, Indonesia
 
--   2012 - 2018, Lecturer in Mathematics at \[Universitas Pendidikan Mandalika\](https://undikma.ac.id/), Mataram, West Nusa Tenggara
+-   2012 - 2018, Lecturer in Mathematics at [IKIP Mataram](https://undikma.ac.id/), Mataram, West Nusa Tenggara, Indonesia
 
 -   2009 - 2010, Mathematics Teacher at PGRI 3 Vocational High School, Malang, East Java, Indonesia
 
