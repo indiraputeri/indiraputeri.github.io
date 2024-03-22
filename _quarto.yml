@@ -11,6 +11,7 @@ website:
       - about.qmd
       - projects.qmd
       - publications.qmd
+      - talks.qmd
 
 format:
   html:

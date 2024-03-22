@@ -1,0 +1,9 @@
+---
+title: "Talks & Workshops"
+---
+
+[5th International Conference on Statistics, Math, Teaching, and Research (ICSMTR)](http://icsmtr2023.conf.unm.ac.id/), Oct 2023. Investigating Spatial Patterns in Indonesian Property Prices: A Two Level Model with Leroux CAR Prior Structure
+
+[**1st HKUST SIAM Student Chapter Annual Meeting**](https://www.math.hkust.edu.hk/intranet/file/?c=seminar_abstract&f=20230602151348_1st_HKUST_SIAM_annual_meeting.pdf), June 2023. Exploring the Spatial Relationships of House Prices inIndonesia: A Statistical Modelling Approach
+
+R Coding Session for FYP Students, June 2023. Handling spatial data and a brief introduction into webscrapping with `rvest`
