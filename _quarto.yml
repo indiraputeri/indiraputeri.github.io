@@ -15,7 +15,7 @@ website:
 
 format:
   html:
-    theme: lumen
+    theme: cosmo
     css: styles.css
     toc: true
     page-layout: full
