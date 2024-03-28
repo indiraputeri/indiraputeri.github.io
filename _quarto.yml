@@ -12,6 +12,7 @@ website:
       - projects.qmd
       - publications.qmd
       - talks.qmd
+      - posts.qmd
 
 format:
   html:

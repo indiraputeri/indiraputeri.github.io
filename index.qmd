@@ -7,14 +7,16 @@ about:
   image-shape: round
   image-width: 20em
   links:
+    - text: Email
+      href: mailto:21h8203@ubd.edu.bn
+    - text: GitHub
+      href: https://github.com/indiraputeri
+    - text: ORCID
+      href: https://orcid.org/0009-0009-6959-6723?lang=en
     - text: LinkedIn
       href: https://www.linkedin.com/in/indira-puteri/
     - text: Twitter
-      href: https://twitter.com/indiraputeri
-    - text: GitHub
-      href: https://github.com/indiraputeri
-    - text: Email
-      href: mailto:21h8203@ubd.edu.bn
+      href: https://twitter.com/inputks
 ---
 
 # Hi there!
