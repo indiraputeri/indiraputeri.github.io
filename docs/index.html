@@ -95,21 +95,28 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research-and-publications" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research and Publications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research-and-publications">    
+        <li>
+    <a class="dropdown-item" href="./projects.html">
+ <span class="dropdown-text">Projects</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
-<span class="menu-text">Publications</span></a>
+        <li>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">Publications</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./talks.html"> 
-<span class="menu-text">Talks &amp; Workshops</span></a>
+        <li>
+    <a class="dropdown-item" href="./talks.html">
+ <span class="dropdown-text">Talks &amp; Workshops</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./posts.html"> 
-<span class="menu-text">My Blog</span></a>
+<span class="menu-text">Musings and Insights</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -590,6 +597,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Indira Puteri. Developed with <a href="https://quarto.org/">Quarto</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/indiraputeri">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/inputks">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

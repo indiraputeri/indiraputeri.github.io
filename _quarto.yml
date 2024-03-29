@@ -3,16 +3,32 @@ project:
   output-dir: docs
 
 website:
+  page-footer: 
+    left: "Copyright 2024, Indira Puteri. Developed with [Quarto](https://quarto.org/)" 
+    right: 
+      - icon: github
+        href: https://github.com/indiraputeri
+      - icon: twitter 
+        href: https://twitter.com/inputks  
   title: "threeinks"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-      - projects.qmd
-      - publications.qmd
-      - talks.qmd
+      - sidebar:research
       - posts.qmd
+      
+  sidebar:
+      - id: research
+        title: "Research and Publications"
+        style: "docked"
+        background: light
+        collapse-level: 3
+        contents: 
+         - projects.qmd
+         - publications.qmd
+         - talks.qmd
 
 format:
   html:
