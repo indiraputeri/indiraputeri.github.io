@@ -39,7 +39,7 @@
     "href": "posts_files/2024-03-29-post/index.html",
     "title": "Birthday Paradox",
     "section": "",
-    "text": "Paradox: a seemingly absurd or contradictory statement or proposition which when investigated may prove to be well founded or true. (Oxford Languages)\n\n\n\n\nCitationBibTeX citation:@online{puteri2022,\n  author = {Puteri, Indira},\n  title = {Birthday {Paradox}},\n  date = {2022-10-24},\n  url = {https://indiraputeri.github.io/posts/2024-03-29-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPuteri, Indira. 2022. “Birthday Paradox.” October 24, 2022.\nhttps://indiraputeri.github.io/posts/2024-03-29-post/."
+    "text": "Paradox: a seemingly absurd or contradictory statement or proposition which when investigated may prove to be well founded or true. (Oxford Languages)\n\n\nCritical Questions\n\nImagine you are in a room with several people. In your opinion, do you think there will be at least two people that share the same birthday?\nIf so, can we estimate or count the possibility?\nWhat concept do we need to answer those questions?\n\n\n\nExperience: Coincident Moment\nPersonally, this challenge evokes memories from eight years ago when a Centenary Professor from University of Canberra visited our province to provide professional development coaching for math teachers. During that event, my colleagues and I served as facilitators. In one captivating afternoon session, he engaged us in a “game,” organizing us based on our birthdays. With a gathering of no fewer than 50 people, we began to notice that a few among us shared the same birthday! I mean, who wouldn’t get excited when the conversation revolves around birthdays?.\nAs the audience relished the occasion, the professor seamlessly transitioned to stimulating our mathematical thinking, ultimately leading to the introduction of the birthday paradox concept. Fast forward to last week, I found myself in my supervisor’s class, and interestingly, one of the tasks he assigned to the students involved the birthday problem. It struck me as amusing—different place, different time, different person, yet the same intriguing math problem.\nNow, let’s delve into examining this problem from a probability perspective.\n\n\n\n\nCitationBibTeX citation:@online{puteri2026,\n  author = {Puteri, Indira},\n  title = {Birthday {Paradox}},\n  date = {2026-05-03},\n  url = {https://indiraputeri.github.io/posts/2024-03-29-post/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nPuteri, Indira. 2026. “Birthday Paradox.” May 3, 2026. https://indiraputeri.github.io/posts/2024-03-29-post/."
   },
   {
     "objectID": "posts_files/2024-03-29-post/index.html#experience-coincident-moment",
@@ -65,8 +65,8 @@
   {
     "objectID": "posts.html",
     "href": "posts.html",
-    "title": "Blog",
+    "title": "My Blog",
     "section": "",
-    "text": "Birthday Paradox\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\nIndira Puteri\n\n\nOct 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Birthday Paradox\n\n\n\nStatistics\n\n\nProbability\n\n\nR\n\n\n\na fascinating statistical phenomenon that defies intuition\n\n\n\nIndira Puteri\n\n\nMay 3, 2026\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

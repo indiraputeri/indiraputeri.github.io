@@ -1,6 +1,8 @@
 ---
-title: "Blog"
+title: "My Blog"
 listing: 
   contents: posts_files 
   type: grid 
+  sort: "date desc"
+  categories: true 
 ---

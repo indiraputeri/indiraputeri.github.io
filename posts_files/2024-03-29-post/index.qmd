@@ -1,16 +1,36 @@
 ---
 title: "Birthday Paradox"
-description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
+description: "a fascinating statistical phenomenon that defies intuition"
 author:
   - name: Indira Puteri
     url: https://indiraputeri.github.io/
-    orcid: 0000-0002-5300-3075
+    orcid: 0009-0009-6959-6723
     affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam 
-date: 10-24-2022
-categories: [Quarto, Statistics, R] # self-defined categories
+date: 29-03-2024
+categories: [Statistics, Probability, R] 
 citation: 
   url: https://indiraputeri.github.io/posts/2024-03-29-post/ 
-draft: false # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+draft: false 
 ---
 
 > Paradox: a seemingly absurd or contradictory statement or proposition which when investigated may prove to be well founded or true. (Oxford Languages)
+
+#### Critical Questions
+
+-   Imagine you are in a room with several people. In your opinion, do you think there will be at least two people that share the same birthday?
+
+-   If so, can we estimate or count the possibility?
+
+-   What concept do we need to answer those questions?
+
+### Experience: Coincident Moment
+
+Personally, this challenge evokes memories from eight years ago when a [Centenary Professor](https://researchprofiles.canberra.edu.au/en/persons/tom-lowrie) from [University of Canberra](https://www.canberra.edu.au/) visited our province to provide professional development coaching for math teachers. During that event, my colleagues and I served as facilitators. In one captivating afternoon session, he engaged us in a "game," organizing us based on our birthdays. With a gathering of no fewer than 50 people, we began to notice that a few among us shared the same birthday! I mean, *who wouldn't get excited when the conversation revolves around birthdays?.*
+
+As the audience relished the occasion, the professor seamlessly transitioned to stimulating our mathematical thinking, ultimately leading to the introduction of the birthday paradox concept. Fast forward to last week, I found myself in my [supervisor](https://haziqj.ml/)'s class, and interestingly, one of the tasks he assigned to the students involved the birthday problem. It struck me as amusing---different place, different time, different person, yet the same intriguing math problem.
+
+Now, let's delve into examining this problem from a probability perspective.
+
+### A Counterintuitive Aspect
+
+Many people initially think the probability would be low, assuming there are 365 days in a year, and the chance of any two people sharing a specific day is relatively small. However, the counterintuitive result stems from the fact that the question is not asking about a specific pair of individuals sharing a birthday but rather any pair within the group.
