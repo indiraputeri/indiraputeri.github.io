@@ -1,6 +1,6 @@
 ---
 title: "Blog"
 listing: 
-  contents: posts 
+  contents: posts_files 
   type: grid 
 ---
