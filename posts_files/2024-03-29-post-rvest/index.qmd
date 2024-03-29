@@ -1,0 +1,28 @@
+---
+title: "Web data scraping with `rvest`"
+description: "Learn how to extract valuable data from the web with ease and efficiency"
+author:
+  - name: Indira Puteri
+    url: https://indiraputeri.github.io/
+    orcid: 0009-0009-6959-6723
+    affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam and Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
+date: 29-03-2024
+categories: [data, R, rvest, web-scraping] 
+citation: 
+  url: https://indiraputeri.github.io/posts/2024-03-29-post/ 
+draft: false 
+---
+
+In today's data-centric era, accessing and analyzing online information has become crucial for businesses, researchers, and enthusiasts. However, manually retrieving data from websites is often tedious and ineffective. Enter web scraping -- a method that automates data extraction from web pages.
+
+Among the top choices for web scraping in R is the `rvest` package. Created by Hadley Wickham, `rvest` offers an intuitive interface for navigating web pages, selecting HTML elements, and extracting desired data seamlessly.
+
+With `rvest`, users can scrape various types of web data, including text, tables, images, and more. Whether gathering product prices from online stores, collating news headlines from media sites, or extracting weather forecasts, `rvest` streamlines the process with its user-friendly functions.
+
+To begin using `rvest`, simply install the package from CRAN and load it into your R environment. From there, utilize functions like **`read_html`**, **`html_nodes`**, and **`html_text`** to retrieve HTML content, pinpoint specific elements via CSS selectors or XPath expressions, and extract the desired data.
+
+For instance, suppose you aim to scrape article titles from a news platform. With `rvest`, a few lines of code can fetch the page's HTML content, identify the CSS selector for article titles, and extract the text data promptly. In moments, you'll possess a structured dataset containing headlines ready for analysis.
+
+Moreover, `rvest` seamlessly integrates with other R packages such as `dplyr` and `ggplot2`, facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, `rvest` complements your data science workflow effectively.
+
+In summary, `rvest` empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, `rvest` enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you're a novice or a seasoned data scientist, `rvest` serves as a valuable asset for extracting knowledge from the web.

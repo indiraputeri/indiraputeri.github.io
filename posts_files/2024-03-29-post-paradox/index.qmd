@@ -47,7 +47,6 @@ This question can be answered using the probability theory ([read also here](htt
 
 Suppose the event in this case is defined as the presence of at least 2 people who share the same birthday. Rather than to compute the probability of that event, Calculating the probability of it complement, which is the probability of nobody sharing a birthday, is a much simpler task.
 
-
 We know that, if `n` is the number of people, each of them has 365 options for their birthday, then total number of possible combinations for their birthdays is $365^n$. The event that nobody sharing a birthday means that each birthday must be unique, so there will be $P_n^{365}=\frac{365!}{(365-n)!}$ ways of choosing them. We know that if we want to know the probability then we should divide the number of event with the number of total event and that will give us the formula below:
 
 $$\begin{align}Pr(No\ common\ BD ) \ &= \  \frac{365!}{(365-n)!365^n}\\
