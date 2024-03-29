@@ -33,5 +33,33 @@
     "title": "Talks & Workshops",
     "section": "",
     "text": "5th International Conference on Statistics, Math, Teaching, and Research (ICSMTR), Oct 2023. Investigating Spatial Patterns in Indonesian Property Prices: A Two Level Model with Leroux CAR Prior Structure\n1st HKUST SIAM Student Chapter Annual Meeting, June 2023. Exploring the Spatial Relationships of House Prices in Indonesia: A Statistical Modelling Approach\nR Coding Session for FYP Students, June 2023. Handling spatial data and a brief introduction into webscrapping with rvest"
+  },
+  {
+    "objectID": "posts_files/2024-03-29-post/index.html",
+    "href": "posts_files/2024-03-29-post/index.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "Paradox: a seemingly absurd or contradictory statement or proposition which when investigated may prove to be well founded or true. (Oxford Languages)\nCritical Question(s)\n*Imagine you are in a room with several people. In your opinion, do you think there will be at least two people that share the same birthday?*\n*If so, can we estimate or count the possibility?*\n*What concept do we need to answer those questions?*\n***"
+  },
+  {
+    "objectID": "posts_files/2024-03-29-post/index.html#experience-coincident-moment",
+    "href": "posts_files/2024-03-29-post/index.html#experience-coincident-moment",
+    "title": "Untitled",
+    "section": "Experience: Coincident Moment",
+    "text": "Experience: Coincident Moment\nPersonally, this challenge evokes memories from eight years ago when a [Centenary Professor](https://researchprofiles.canberra.edu.au/en/persons/tom-lowrie) from the University of Canberra visited our province to provide professional development coaching for math teachers. During that event, my colleagues and I served as facilitators. In one captivating afternoon session, he engaged us in a “game,” organizing us based on our birthdays. With a gathering of no fewer than 50 people, we began to notice that a few among us shared the same birthday! I mean, *who wouldn’t get excited when the conversation revolves around birthdays?*\nAs the audience relished the occasion, the professor seamlessly transitioned to stimulating our mathematical thinking, ultimately leading to the introduction of the birthday paradox concept. Fast forward to last week, I found myself in my [supervisor](https://haziqj.ml/)’s class, and interestingly, one of the tasks he assigned to the students involved the birthday problem. It struck me as amusing—different place, different time, different person, yet the same intriguing math problem.\nNow, let’s delve into examining this problem from a probability perspective."
+  },
+  {
+    "objectID": "posts_files/2024-03-29-post/index.html#a-counterintuitive-aspect",
+    "href": "posts_files/2024-03-29-post/index.html#a-counterintuitive-aspect",
+    "title": "Untitled",
+    "section": "A Counterintuitive Aspect",
+    "text": "A Counterintuitive Aspect\nMany people initially think the probability would be low, assuming there are `365 days` in a year, and the chance of any two people sharing a specific day is relatively small. However, the counterintuitive result stems from the fact that the question is not asking about a specific pair of individuals sharing a birthday but rather any pair within the group."
+  },
+  {
+    "objectID": "posts_files/2024-03-29-post/index.html#probability-concept-permutations",
+    "href": "posts_files/2024-03-29-post/index.html#probability-concept-permutations",
+    "title": "Untitled",
+    "section": "Probability concept: permutations",
+    "text": "Probability concept: permutations\nThis question can be answered using the probability theory [(read also here)](https://en.wikipedia.org/wiki/Birthday_problem). Beforehand, we can assume the following:\n* There are `365` days in a year;\n* each day has an equal probability of being a birthday;\n* and each birthday is independent of the others.\nSuppose the `event` in this case is defined as the presence of at least `2` people who share the same birthday. Rather than to compute the probability of that `event`, Calculating the probability of it complement, which is the probability of nobody sharing a birthday, is a much simpler task.\nWe know that, if `n` is the number of people, each of them has $365$ options for their birthday, then total number of possible combinations for their birthdays is $365^n$. The `event` that nobody sharing a birthday means that each birthday must be unique, so there will be $P_n^{365}=\\frac{365!}{(365-n)!}$ ways of choosing them. We know that if we want to know the probability then we should divide the number of `event` with the number of `total event` and that will give us the formula below:\n$$ \\begin{align} Pr(No\\ common\\ BD ) \\ &= \\ \\frac{365!}{(365-n)!365^n}\\\\ Pr(at\\ least\\ two\\ shares\\ common\\ BD ) \\ &= \\ 1- \\frac{365!}{(365-n)!365^n} \\end{align} $$"
   }
 ]
