@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -132,6 +161,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#experience-coincident-moment" id="toc-experience-coincident-moment" class="nav-link active" data-scroll-target="#experience-coincident-moment">Experience: Coincident Moment</a></li>
+  <li><a href="#a-counterintuitive-aspect" id="toc-a-counterintuitive-aspect" class="nav-link" data-scroll-target="#a-counterintuitive-aspect">A Counterintuitive Aspect</a></li>
+  <li><a href="#probability-concept-permutations" id="toc-probability-concept-permutations" class="nav-link" data-scroll-target="#probability-concept-permutations">Probability concept: permutations</a></li>
+  <li><a href="#plot" id="toc-plot" class="nav-link" data-scroll-target="#plot">Plot</a></li>
+  <li><a href="#what-can-we-conclude" id="toc-what-can-we-conclude" class="nav-link" data-scroll-target="#what-can-we-conclude">What can we conclude?</a></li>
   </ul>
 </nav>
     </div>
@@ -202,6 +235,56 @@ ul.task-list li input[type="checkbox"] {
 <p>Personally, this challenge evokes memories from eight years ago when a <a href="https://researchprofiles.canberra.edu.au/en/persons/tom-lowrie">Centenary Professor</a> from <a href="https://www.canberra.edu.au/">University of Canberra</a> visited our province to provide professional development coaching for math teachers. During that event, my colleagues and I served as facilitators. In one captivating afternoon session, he engaged us in a “game,” organizing us based on our birthdays. With a gathering of no fewer than 50 people, we began to notice that a few among us shared the same birthday! I mean, <em>who wouldn’t get excited when the conversation revolves around birthdays?.</em></p>
 <p>As the audience relished the occasion, the professor seamlessly transitioned to stimulating our mathematical thinking, ultimately leading to the introduction of the birthday paradox concept. Fast forward to last week, I found myself in my <a href="https://haziqj.ml/">supervisor</a>’s class, and interestingly, one of the tasks he assigned to the students involved the birthday problem. It struck me as amusing—different place, different time, different person, yet the same intriguing math problem.</p>
 <p>Now, let’s delve into examining this problem from a probability perspective.</p>
+</section>
+<section id="a-counterintuitive-aspect" class="level3">
+<h3 class="anchored" data-anchor-id="a-counterintuitive-aspect">A Counterintuitive Aspect</h3>
+<p>Many people initially think the probability would be low, assuming there are 365 days in a year, and the chance of any two people sharing a specific day is relatively small. However, the counterintuitive result stems from the fact that the question is not asking about a specific pair of individuals sharing a birthday but rather any pair within the group.</p>
+</section>
+<section id="probability-concept-permutations" class="level3">
+<h3 class="anchored" data-anchor-id="probability-concept-permutations">Probability concept: permutations</h3>
+<p>This question can be answered using the probability theory (<a href="https://en.wikipedia.org/wiki/Birthday_problem">read also here</a>). Beforehand, we can assume the following:</p>
+<ol type="1">
+<li><p>There are `365` days in a year;</p></li>
+<li><p>each day has an equal probability of being a birthday;</p></li>
+<li><p>each birthday is independent of the others.</p></li>
+</ol>
+<p>Suppose the event in this case is defined as the presence of at least 2 people who share the same birthday. Rather than to compute the probability of that event, Calculating the probability of it complement, which is the probability of nobody sharing a birthday, is a much simpler task.</p>
+<p>We know that, if <code>n</code> is the number of people, each of them has 365 options for their birthday, then total number of possible combinations for their birthdays is <span class="math inline">\(365^n\)</span>. The event that nobody sharing a birthday means that each birthday must be unique, so there will be <span class="math inline">\(P_n^{365}=\frac{365!}{(365-n)!}\)</span> ways of choosing them. We know that if we want to know the probability then we should divide the number of event with the number of total event and that will give us the formula below:</p>
+<p><span class="math display">\[\begin{align}Pr(No\ common\ BD ) \ &amp;= \  \frac{365!}{(365-n)!365^n}\\
+Pr(at\ least\ two\ shares\ common\ BD ) \ &amp;= \  1- \frac{365!}{(365-n)!365^n}
+\end{align}\]</span></p>
+</section>
+<section id="plot" class="level3">
+<h3 class="anchored" data-anchor-id="plot">Plot</h3>
+<p>The following plot illustrates the relationship between the number of people in a room and the probability of at least 2 people sharing the same birthday.</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `qplot()` was deprecated in ggplot2 3.4.0.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This plot helps visualize the counterintuitive nature of the birthday paradox. As the number of people in the room increases, the probability of at least two people sharing the same birthday rises more quickly than one might expect. It’s a fascinating phenomenon that often surprises those encountering it for the first time. Anyway, from this plot, can you estimate:</p>
+<blockquote class="blockquote">
+<p>the minimum number of people required to ensure that at least two individuals share the same birthday?</p>
+<p>the minimum number of individuals needed to achieve a 50% probability of sharing the same birthday?</p>
+</blockquote>
+</section>
+<section id="what-can-we-conclude" class="level3">
+<h3 class="anchored" data-anchor-id="what-can-we-conclude">What can we conclude?</h3>
+<p>Well, we know that the birthday paradox is a captivating illustration of probability in action. Despite our intuition, the **likelihood of at least two people sharing a birthday becomes surprisingly high with a relatively small number of individuals in a room**. This concept continues to captivate mathematicians and students alike, making it a great topic for exploration and discussion.</p>
 
 
 </section>

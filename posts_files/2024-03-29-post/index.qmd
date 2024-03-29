@@ -34,3 +34,53 @@ Now, let's delve into examining this problem from a probability perspective.
 ### A Counterintuitive Aspect
 
 Many people initially think the probability would be low, assuming there are 365 days in a year, and the chance of any two people sharing a specific day is relatively small. However, the counterintuitive result stems from the fact that the question is not asking about a specific pair of individuals sharing a birthday but rather any pair within the group.
+
+### Probability concept: permutations
+
+This question can be answered using the probability theory ([read also here](https://en.wikipedia.org/wiki/Birthday_problem)). Beforehand, we can assume the following:
+
+1.  There are \`365\` days in a year;
+
+2.  each day has an equal probability of being a birthday;
+
+3.  each birthday is independent of the others.
+
+Suppose the event in this case is defined as the presence of at least 2 people who share the same birthday. Rather than to compute the probability of that event, Calculating the probability of it complement, which is the probability of nobody sharing a birthday, is a much simpler task.
+
+
+We know that, if `n` is the number of people, each of them has 365 options for their birthday, then total number of possible combinations for their birthdays is $365^n$. The event that nobody sharing a birthday means that each birthday must be unique, so there will be $P_n^{365}=\frac{365!}{(365-n)!}$ ways of choosing them. We know that if we want to know the probability then we should divide the number of event with the number of total event and that will give us the formula below:
+
+$$\begin{align}Pr(No\ common\ BD ) \ &= \  \frac{365!}{(365-n)!365^n}\\
+Pr(at\ least\ two\ shares\ common\ BD ) \ &= \  1- \frac{365!}{(365-n)!365^n}
+\end{align}$$
+
+### Plot
+
+The following plot illustrates the relationship between the number of people in a room and the probability of at least 2 people sharing the same birthday.
+
+```{r echo=FALSE}
+library(ggplot2)
+bd_par <- function(n) {
+  nosb <- exp(lfactorial(365) - lfactorial(365 - n)- n * log(365))
+                return(1 - nosb)
+}
+
+n    <- 2 : 100
+prob_yes <- bd_par(n)
+
+qplot(n, prob_yes, geom = "line")
+
+prob_no <- exp(lfactorial(365) - lfactorial(365 - n)- n * log(365))
+
+qplot(n, prob_no, geom = "line")
+```
+
+This plot helps visualize the counterintuitive nature of the birthday paradox. As the number of people in the room increases, the probability of at least two people sharing the same birthday rises more quickly than one might expect. It's a fascinating phenomenon that often surprises those encountering it for the first time. Anyway, from this plot, can you estimate:
+
+> the minimum number of people required to ensure that at least two individuals share the same birthday?
+>
+> the minimum number of individuals needed to achieve a 50% probability of sharing the same birthday?
+
+### What can we conclude?
+
+Well, we know that the birthday paradox is a captivating illustration of probability in action. Despite our intuition, the **likelihood of at least two people sharing a birthday becomes surprisingly high with a relatively small number of individuals in a room**. This concept continues to captivate mathematicians and students alike, making it a great topic for exploration and discussion.
