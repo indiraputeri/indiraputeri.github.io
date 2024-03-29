@@ -21,6 +21,17 @@ With `rvest`, users can scrape various types of web data, including text, tables
 
 To begin using `rvest`, simply install the package from CRAN and load it into your R environment. From there, utilize functions like **`read_html`**, **`html_nodes`**, and **`html_text`** to retrieve HTML content, pinpoint specific elements via CSS selectors or XPath expressions, and extract the desired data.
 
+```{r}
+#install.packages("rvest")
+library(rvest)
+
+lamudi_pg <- read_html("https://www.lamudi.co.id/west-nusa-tenggara/house/buy/")
+
+lamudi_pg %>% html_nodes("div.ListingCell-KeyInfo-address") %>% 
+  html_text() %>%
+  trimws()
+```
+
 For instance, suppose you aim to scrape article titles from a news platform. With `rvest`, a few lines of code can fetch the page's HTML content, identify the CSS selector for article titles, and extract the text data promptly. In moments, you'll possess a structured dataset containing headlines ready for analysis.
 
 Moreover, `rvest` seamlessly integrates with other R packages such as `dplyr` and `ggplot2`, facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, `rvest` complements your data science workflow effectively.

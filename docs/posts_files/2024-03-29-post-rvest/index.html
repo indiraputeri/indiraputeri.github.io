@@ -23,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -192,6 +226,33 @@ ul.task-list li input[type="checkbox"] {
 <p>Among the top choices for web scraping in R is the <code>rvest</code> package. Created by Hadley Wickham, <code>rvest</code> offers an intuitive interface for navigating web pages, selecting HTML elements, and extracting desired data seamlessly.</p>
 <p>With <code>rvest</code>, users can scrape various types of web data, including text, tables, images, and more. Whether gathering product prices from online stores, collating news headlines from media sites, or extracting weather forecasts, <code>rvest</code> streamlines the process with its user-friendly functions.</p>
 <p>To begin using <code>rvest</code>, simply install the package from CRAN and load it into your R environment. From there, utilize functions like <strong><code>read_html</code></strong>, <strong><code>html_nodes</code></strong>, and <strong><code>html_text</code></strong> to retrieve HTML content, pinpoint specific elements via CSS selectors or XPath expressions, and extract the desired data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("rvest")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>lamudi_pg <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">"https://www.lamudi.co.id/west-nusa-tenggara/house/buy/"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>lamudi_pg <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">"div.ListingCell-KeyInfo-address"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "Senggigi, Lombok Barat"      "North Lombok"               
+ [3] "North Lombok"                "Sekotong, Lombok Barat"     
+ [5] "Batu Layar, Lombok Barat"    "Pujut, Lombok Tengah"       
+ [7] "Lombok Barat"                "Mataram"                    
+ [9] "Batu Layar, Lombok Barat"    "Mataram"                    
+[11] "Batu Layar, Lombok Barat"    "Batu Layar, Lombok Barat"   
+[13] "Jerowaru, Lombok Timur"      "Lingsar, Lombok Barat"      
+[15] "Batu Layar, Lombok Barat"    "Lombok Barat"               
+[17] "Lingsar, Lombok Barat"       "Sekarbela, Mataram"         
+[19] "Lingsar, Lombok Barat"       "Mataram"                    
+[21] "Lombok Tengah"               "Mataram"                    
+[23] "Senggigi, Lombok Barat"      "Senggigi, Lombok Barat"     
+[25] "Senggigi, Lombok Barat"      "Batu Layar, Lombok Barat"   
+[27] "Tanjung Karang, Mataram"     "Pemenang, Lombok Utara Kab."
+[29] "Pujut, Lombok Tengah"        "Pujut, Lombok Tengah"       </code></pre>
+</div>
+</div>
 <p>For instance, suppose you aim to scrape article titles from a news platform. With <code>rvest</code>, a few lines of code can fetch the page’s HTML content, identify the CSS selector for article titles, and extract the text data promptly. In moments, you’ll possess a structured dataset containing headlines ready for analysis.</p>
 <p>Moreover, <code>rvest</code> seamlessly integrates with other R packages such as <code>dplyr</code> and <code>ggplot2</code>, facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, <code>rvest</code> complements your data science workflow effectively.</p>
 <p>In summary, <code>rvest</code> empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, <code>rvest</code> enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you’re a novice or a seasoned data scientist, <code>rvest</code> serves as a valuable asset for extracting knowledge from the web.</p>
