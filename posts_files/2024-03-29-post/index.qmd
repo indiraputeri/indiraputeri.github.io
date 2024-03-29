@@ -5,7 +5,7 @@ author:
   - name: Indira Puteri
     url: https://indiraputeri.github.io/
     orcid: 0009-0009-6959-6723
-    affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam 
+    affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam and Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
 date: 29-03-2024
 categories: [Statistics, Probability, R] 
 citation: 
@@ -23,7 +23,7 @@ draft: false
 
 -   What concept do we need to answer those questions?
 
-### Experience: Coincident Moment
+### Experience: A Coincident Moment
 
 Personally, this challenge evokes memories from eight years ago when a [Centenary Professor](https://researchprofiles.canberra.edu.au/en/persons/tom-lowrie) from [University of Canberra](https://www.canberra.edu.au/) visited our province to provide professional development coaching for math teachers. During that event, my colleagues and I served as facilitators. In one captivating afternoon session, he engaged us in a "game," organizing us based on our birthdays. With a gathering of no fewer than 50 people, we began to notice that a few among us shared the same birthday! I mean, *who wouldn't get excited when the conversation revolves around birthdays?.*
 
