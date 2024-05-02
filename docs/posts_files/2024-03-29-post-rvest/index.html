@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Indira Puteri">
-<meta name="dcterms.date" content="2026-05-03">
+<meta name="dcterms.date" content="2024-02-05">
 <meta name="description" content="Learn how to extract valuable data from the web with ease and efficiency">
 
 <title>threeinks - Web data scraping with rvest</title>
@@ -210,7 +210,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 3, 2026</p>
+      <p class="date">February 5, 2024</p>
     </div>
   </div>
   
@@ -226,49 +226,75 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Among the top choices for web scraping in R is the <code>rvest</code> package. Created by Hadley Wickham, <code>rvest</code> offers an intuitive interface for navigating web pages, selecting HTML elements, and extracting desired data seamlessly.</p>
 <p>With <code>rvest</code>, users can scrape various types of web data, including text, tables, images, and more. Whether gathering product prices from online stores, collating news headlines from media sites, or extracting weather forecasts, <code>rvest</code> streamlines the process with its user-friendly functions.</p>
 <p>To begin using <code>rvest</code>, simply install the package from CRAN and load it into your R environment. From there, utilize functions like <strong><code>read_html</code></strong>, <strong><code>html_nodes</code></strong>, and <strong><code>html_text</code></strong> to retrieve HTML content, pinpoint specific elements via CSS selectors or XPath expressions, and extract the desired data.</p>
+<p>For example, consider the task of scraping article titles from a news platform such as <a href="https://www.detik.com/">detik.com</a>. Using the <strong><code>rvest</code></strong> package, one can efficiently retrieve the HTML content of the page, pinpoint the CSS selector corresponding to the article titles, and extract the textual data. Within a short span, this approach yields a structured dataset composed of headlines, primed for further analysis. The code snippet below illustrates how to leverage <strong><code>rvest</code></strong>, in conjunction with the <strong><code>tidyverse</code></strong> package in R, to collect news titles from a website:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("rvest")</span></span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("rvest") </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>lamudi_pg <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">"https://www.lamudi.co.id/west-nusa-tenggara/house/buy/"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>detik.com <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">"https://news.detik.com/"</span>) <span class="co">#Define/read the url</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>lamudi_pg <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">"div.ListingCell-KeyInfo-address"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>detik.com <span class="sc">%&gt;%</span> <span class="fu">html_nodes</span>(<span class="st">"h2.media__title"</span>) <span class="sc">%&gt;%</span>  <span class="co">#point out the spesific node</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span>                                <span class="co">#that represent the news title</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "Senggigi, Lombok Barat"      "North Lombok"               
- [3] "North Lombok"                "Sekotong, Lombok Barat"     
- [5] "Batu Layar, Lombok Barat"    "Pujut, Lombok Tengah"       
- [7] "Lombok Barat"                "Mataram"                    
- [9] "Batu Layar, Lombok Barat"    "Mataram"                    
-[11] "Batu Layar, Lombok Barat"    "Batu Layar, Lombok Barat"   
-[13] "Jerowaru, Lombok Timur"      "Lingsar, Lombok Barat"      
-[15] "Batu Layar, Lombok Barat"    "Lombok Barat"               
-[17] "Lingsar, Lombok Barat"       "Sekarbela, Mataram"         
-[19] "Lingsar, Lombok Barat"       "Mataram"                    
-[21] "Lombok Tengah"               "Mataram"                    
-[23] "Senggigi, Lombok Barat"      "Senggigi, Lombok Barat"     
-[25] "Senggigi, Lombok Barat"      "Batu Layar, Lombok Barat"   
-[27] "Tanjung Karang, Mataram"     "Pemenang, Lombok Utara Kab."
-[29] "Pujut, Lombok Tengah"        "Pujut, Lombok Tengah"       </code></pre>
+<pre><code>[1] "Massa Aksi May Day di Patung Kuda Bakar Poster Raksasa"               
+[2] "Jokowi Nge-vlog Makan Mie Gacoan Bareng Basuki di NTB: Pedes Sekali"  
+[3] "Ini Tampang Pembunuh Wanita dalam Koper di Bekasi"                    
+[4] "Andi Gani Ditunjuk Jadi Staf Ahli Kapolri Bidang Ketenagakerjaan"     
+[5] "Said Iqbal Sebut Partai Buruh Akan Dukung Program Prabowo-Gibran"     
+[6] "Permintaan Maaf Pemkot Depok Gegara Banjir di Cipayung Berbulan-bulan"</code></pre>
 </div>
 </div>
-<p>For instance, suppose you aim to scrape article titles from a news platform. With <code>rvest</code>, a few lines of code can fetch the page’s HTML content, identify the CSS selector for article titles, and extract the text data promptly. In moments, you’ll possess a structured dataset containing headlines ready for analysis.</p>
-<p>Moreover, <code>rvest</code> seamlessly integrates with other R packages such as <code>dplyr</code> and <code>ggplot2</code>, facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, <code>rvest</code> complements your data science workflow effectively.</p>
+<p>Moreover, <code>rvest</code> seamlessly integrates with other R packages such as <code>dplyr</code> and <code>ggplot2</code>, and even <code>purrr</code> facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, <code>rvest</code> complements your data science workflow effectively.</p>
+<p>In the provided R script below, we utilize the <strong><code>rvest</code></strong> library to scrape web content from “news.detik.com”, specifically targeting the <strong><code>&lt;a&gt;</code></strong> tags with the class attribute <strong><code>media__link</code></strong>. This is accomplished by selecting the appropriate nodes using <strong><code>html_nodes()</code></strong>. Following node selection, the <strong><code>map_df()</code></strong> function from the <strong><code>purrr</code></strong> package is employed to iterate over each node. Within this function, a small data frame is created for each node, where <strong><code>html_text()</code></strong> extracts the visible text of the link (i.e., the news title), and <strong><code>html_attr("href")</code></strong> retrieves the corresponding URL. The <strong><code>trimws()</code></strong> function is applied to clean up the extracted titles by removing any excess whitespace. The result is a tidy data frame, named <strong><code>news_data</code></strong>, containing columns for both the cleaned titles and their associated URLs, ready for further analysis or use in subsequent operations. This approach ensures a structured and efficient method for collecting web data, which can be crucial for tasks such as content aggregation, monitoring, or data analysis in digital journalism and other fields.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define and read the URL</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>detik.com <span class="ot">&lt;-</span> <span class="fu">read_html</span>(<span class="st">"https://news.detik.com/"</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract news titles and their corresponding links</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>news_data <span class="ot">&lt;-</span> detik.com <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_nodes</span>(<span class="st">"a.media__link"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">map_df</span>(<span class="sc">~</span> <span class="fu">tibble</span>(</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="fu">html_text</span>(.x) <span class="sc">%&gt;%</span> <span class="fu">trimws</span>(), <span class="co"># Extract and trim the text</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">link =</span> <span class="fu">html_attr</span>(.x, <span class="st">"href"</span>)        <span class="co"># Extract the href attribute</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># View the results</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(news_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 123 × 2
+   title                                                                 link   
+   &lt;chr&gt;                                                                 &lt;chr&gt;  
+ 1 ""                                                                    https:…
+ 2 "Massa Aksi May Day di Patung Kuda Bakar Poster Raksasa"              https:…
+ 3 ""                                                                    https:…
+ 4 "Jokowi Nge-vlog Makan Mie Gacoan Bareng Basuki di NTB: Pedes Sekali" https:…
+ 5 ""                                                                    https:…
+ 6 "Ini Tampang Pembunuh Wanita dalam Koper di Bekasi"                   https:…
+ 7 ""                                                                    https:…
+ 8 "Andi Gani Ditunjuk Jadi Staf Ahli Kapolri Bidang Ketenagakerjaan"    https:…
+ 9 ""                                                                    https:…
+10 "Said Iqbal Sebut Partai Buruh Akan Dukung Program Prabowo-Gibran"    https:…
+# ℹ 113 more rows</code></pre>
+</div>
+</div>
 <p>In summary, <code>rvest</code> empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, <code>rvest</code> enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you’re a novice or a seasoned data scientist, <code>rvest</code> serves as a valuable asset for extracting knowledge from the web.</p>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{puteri2026,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{puteri2024,
   author = {Puteri, Indira},
   title = {Web Data Scraping with `Rvest`},
-  date = {2026-05-03},
+  date = {2024-02-05},
   url = {https://indiraputeri.github.io/posts/2024-03-29-post/},
   langid = {en}
 }
-</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-puteri2026" class="csl-entry quarto-appendix-citeas" role="listitem">
-Puteri, Indira. 2026. <span>“Web Data Scraping with `Rvest`.”</span> May
-3, 2026. <a href="https://indiraputeri.github.io/posts/2024-03-29-post/">https://indiraputeri.github.io/posts/2024-03-29-post/</a>.
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-puteri2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Puteri, Indira. 2024. <span>“Web Data Scraping with `Rvest`.”</span>
+February 5, 2024. <a href="https://indiraputeri.github.io/posts/2024-03-29-post/">https://indiraputeri.github.io/posts/2024-03-29-post/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -683,7 +709,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Copyright 2024, Indira Puteri. Developed with <a href="https://quarto.org/">Quarto</a></p>
+<p>Copyright 2024@Indira Puteri. Developed with <a href="https://quarto.org/">Quarto</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

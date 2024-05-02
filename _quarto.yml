@@ -4,7 +4,7 @@ project:
 
 website:
   page-footer: 
-    left: "Copyright 2024, Indira Puteri. Developed with [Quarto](https://quarto.org/)" 
+    left: "Copyright 2024@Indira Puteri. Developed with [Quarto](https://quarto.org/)" 
     right: 
       - icon: github
         href: https://github.com/indiraputeri
