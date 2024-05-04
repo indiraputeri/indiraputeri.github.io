@@ -21,6 +21,8 @@ With `rvest`, users can scrape various types of web data, including text, tables
 
 To begin using `rvest`, simply install the package from CRAN and load it into your R environment. From there, utilize functions like **`read_html`**, **`html_nodes`**, and **`html_text`** to retrieve HTML content, pinpoint specific elements via CSS selectors or XPath expressions, and extract the desired data.
 
+## Example 1
+
 For example, consider the task of scraping article titles from a news platform such as [detik.com](https://www.detik.com/). Using the **`rvest`** package, one can efficiently retrieve the HTML content of the page, pinpoint the CSS selector corresponding to the article titles, and extract the textual data. Within a short span, this approach yields a structured dataset composed of headlines, primed for further analysis. The code snippet below illustrates how to leverage **`rvest`**, in conjunction with the **`tidyverse`** package in R, to collect news titles from a website:
 
 ```{r}
@@ -36,7 +38,9 @@ detik.com %>% html_nodes("h2.media__title") %>%  #point out the spesific node
 
 Moreover, `rvest` seamlessly integrates with other R packages such as `dplyr` and `ggplot2`, and even `purrr` facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, `rvest` complements your data science workflow effectively.
 
-In the provided R script below, we utilize the **`rvest`** library to scrape web content from "news.detik.com", specifically targeting the **`<a>`** tags with the class attribute **`media__link`**. This is accomplished by selecting the appropriate nodes using **`html_nodes()`**. Following node selection, the **`map_df()`** function from the **`purrr`** package is employed to iterate over each node. Within this function, a small data frame is created for each node, where **`html_text()`** extracts the visible text of the link (i.e., the news title), and **`html_attr("href")`** retrieves the corresponding URL. The **`trimws()`** function is applied to clean up the extracted titles by removing any excess whitespace. The result is a tidy data frame, named **`news_data`**, containing columns for both the cleaned titles and their associated URLs, ready for further analysis or use in subsequent operations. This approach ensures a structured and efficient method for collecting web data, which can be crucial for tasks such as content aggregation, monitoring, or data analysis in digital journalism and other fields.
+## Example 2
+
+In the following R script example, we employ the **`rvest`** library to scrape web content from "news.detik.com". Our focus is specifically on extracting data from **`<a>`** tags that possess the class attribute **`media__link`**. This targeted approach allows us to efficiently gather link-related information directly associated with media content on the website.This is accomplished by selecting the appropriate nodes using **`html_nodes()`**. Following node selection, the **`map_df()`** function from the **`purrr`** package is employed to iterate over each node. Within this function, a small data frame is created for each node, where **`html_text()`** extracts the visible text of the link (i.e., the news title), and **`html_attr("href")`** retrieves the corresponding URL. The **`trimws()`** function is applied to clean up the extracted titles by removing any excess whitespace. The result is a tidy data frame, named **`news_data`**, containing columns for both the cleaned titles and their associated URLs, ready for further analysis or use in subsequent operations. This approach ensures a structured and efficient method for collecting web data, which can be crucial for tasks such as content aggregation, monitoring, or data analysis in digital journalism and other fields.
 
 ```{r}
 library(purrr)
@@ -54,7 +58,7 @@ news_data <- detik.com %>%
   ))
 
 # View the results
-print(news_data)
+news_data$link
 ```
 
 In summary, `rvest` empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, `rvest` enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you're a novice or a seasoned data scientist, `rvest` serves as a valuable asset for extracting knowledge from the web.

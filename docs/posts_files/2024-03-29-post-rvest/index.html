@@ -167,11 +167,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link active" data-scroll-target="#example-1">Example 1</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2">Example 2</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -190,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 
-<div class="quarto-title-meta-author column-page">
+<div class="quarto-title-meta-author column-page-left">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
@@ -204,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </div>
   </div>
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
       
     <div>
@@ -226,6 +233,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Among the top choices for web scraping in R is the <code>rvest</code> package. Created by Hadley Wickham, <code>rvest</code> offers an intuitive interface for navigating web pages, selecting HTML elements, and extracting desired data seamlessly.</p>
 <p>With <code>rvest</code>, users can scrape various types of web data, including text, tables, images, and more. Whether gathering product prices from online stores, collating news headlines from media sites, or extracting weather forecasts, <code>rvest</code> streamlines the process with its user-friendly functions.</p>
 <p>To begin using <code>rvest</code>, simply install the package from CRAN and load it into your R environment. From there, utilize functions like <strong><code>read_html</code></strong>, <strong><code>html_nodes</code></strong>, and <strong><code>html_text</code></strong> to retrieve HTML content, pinpoint specific elements via CSS selectors or XPath expressions, and extract the desired data.</p>
+<section id="example-1" class="level2">
+<h2 class="anchored" data-anchor-id="example-1">Example 1</h2>
 <p>For example, consider the task of scraping article titles from a news platform such as <a href="https://www.detik.com/">detik.com</a>. Using the <strong><code>rvest</code></strong> package, one can efficiently retrieve the HTML content of the page, pinpoint the CSS selector corresponding to the article titles, and extract the textual data. Within a short span, this approach yields a structured dataset composed of headlines, primed for further analysis. The code snippet below illustrates how to leverage <strong><code>rvest</code></strong>, in conjunction with the <strong><code>tidyverse</code></strong> package in R, to collect news titles from a website:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("rvest") </span></span>
@@ -237,16 +246,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span>                                <span class="co">#that represent the news title</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Massa Aksi May Day di Patung Kuda Bakar Poster Raksasa"               
-[2] "Jokowi Nge-vlog Makan Mie Gacoan Bareng Basuki di NTB: Pedes Sekali"  
-[3] "Ini Tampang Pembunuh Wanita dalam Koper di Bekasi"                    
-[4] "Andi Gani Ditunjuk Jadi Staf Ahli Kapolri Bidang Ketenagakerjaan"     
-[5] "Said Iqbal Sebut Partai Buruh Akan Dukung Program Prabowo-Gibran"     
-[6] "Permintaan Maaf Pemkot Depok Gegara Banjir di Cipayung Berbulan-bulan"</code></pre>
+<pre><code>[1] "Motif Dendam di Balik Petugas SPBU Bogor Diserang Pemuda Bercelurit"           
+[2] "Anies Bantah Ada Tawaran Bikin Partai Perubahan: Itu Kreativitas di Medsos"    
+[3] "Adik Arif Si Pembunuh Jadi Tersangka Kedua di Kasus 'Wanita dalam Koper'"      
+[4] "Arif Si Pembunuh Sempat Salah Beli Koper untuk Jasad, Kekecilan Lalu Beli Lagi"
+[5] "Kelakar Arief Hidayat Gagal Bersin di Sidang MK: Kertasnya Ada Virus Ini"      
+[6] "Tak Ada Rehabilitasi untuk Rio Reifan yang Terjerat Narkoba 5 Kali"            </code></pre>
 </div>
 </div>
 <p>Moreover, <code>rvest</code> seamlessly integrates with other R packages such as <code>dplyr</code> and <code>ggplot2</code>, and even <code>purrr</code> facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, <code>rvest</code> complements your data science workflow effectively.</p>
-<p>In the provided R script below, we utilize the <strong><code>rvest</code></strong> library to scrape web content from “news.detik.com”, specifically targeting the <strong><code>&lt;a&gt;</code></strong> tags with the class attribute <strong><code>media__link</code></strong>. This is accomplished by selecting the appropriate nodes using <strong><code>html_nodes()</code></strong>. Following node selection, the <strong><code>map_df()</code></strong> function from the <strong><code>purrr</code></strong> package is employed to iterate over each node. Within this function, a small data frame is created for each node, where <strong><code>html_text()</code></strong> extracts the visible text of the link (i.e., the news title), and <strong><code>html_attr("href")</code></strong> retrieves the corresponding URL. The <strong><code>trimws()</code></strong> function is applied to clean up the extracted titles by removing any excess whitespace. The result is a tidy data frame, named <strong><code>news_data</code></strong>, containing columns for both the cleaned titles and their associated URLs, ready for further analysis or use in subsequent operations. This approach ensures a structured and efficient method for collecting web data, which can be crucial for tasks such as content aggregation, monitoring, or data analysis in digital journalism and other fields.</p>
+</section>
+<section id="example-2" class="level2">
+<h2 class="anchored" data-anchor-id="example-2">Example 2</h2>
+<p>In the following R script example, we employ the <strong><code>rvest</code></strong> library to scrape web content from “news.detik.com”. Our focus is specifically on extracting data from <strong><code>&lt;a&gt;</code></strong> tags that possess the class attribute <strong><code>media__link</code></strong>. This targeted approach allows us to efficiently gather link-related information directly associated with media content on the website.This is accomplished by selecting the appropriate nodes using <strong><code>html_nodes()</code></strong>. Following node selection, the <strong><code>map_df()</code></strong> function from the <strong><code>purrr</code></strong> package is employed to iterate over each node. Within this function, a small data frame is created for each node, where <strong><code>html_text()</code></strong> extracts the visible text of the link (i.e., the news title), and <strong><code>html_attr("href")</code></strong> retrieves the corresponding URL. The <strong><code>trimws()</code></strong> function is applied to clean up the extracted titles by removing any excess whitespace. The result is a tidy data frame, named <strong><code>news_data</code></strong>, containing columns for both the cleaned titles and their associated URLs, ready for further analysis or use in subsequent operations. This approach ensures a structured and efficient method for collecting web data, which can be crucial for tasks such as content aggregation, monitoring, or data analysis in digital journalism and other fields.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
@@ -263,27 +275,136 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  ))</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># View the results</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(news_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>news_data<span class="sc">$</span>link</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 123 × 2
-   title                                                                 link   
-   &lt;chr&gt;                                                                 &lt;chr&gt;  
- 1 ""                                                                    https:…
- 2 "Massa Aksi May Day di Patung Kuda Bakar Poster Raksasa"              https:…
- 3 ""                                                                    https:…
- 4 "Jokowi Nge-vlog Makan Mie Gacoan Bareng Basuki di NTB: Pedes Sekali" https:…
- 5 ""                                                                    https:…
- 6 "Ini Tampang Pembunuh Wanita dalam Koper di Bekasi"                   https:…
- 7 ""                                                                    https:…
- 8 "Andi Gani Ditunjuk Jadi Staf Ahli Kapolri Bidang Ketenagakerjaan"    https:…
- 9 ""                                                                    https:…
-10 "Said Iqbal Sebut Partai Buruh Akan Dukung Program Prabowo-Gibran"    https:…
-# ℹ 113 more rows</code></pre>
+<pre><code>  [1] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"                 
+  [2] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"                 
+  [3] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"           
+  [4] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"           
+  [5] "https://news.detik.com/berita/d-7322450/adik-arif-si-pembunuh-jadi-tersangka-kedua-di-kasus-wanita-dalam-koper"              
+  [6] "https://news.detik.com/berita/d-7322450/adik-arif-si-pembunuh-jadi-tersangka-kedua-di-kasus-wanita-dalam-koper"              
+  [7] "https://news.detik.com/berita/d-7322508/arif-si-pembunuh-sempat-salah-beli-koper-untuk-jasad-kekecilan-lalu-beli-lagi"       
+  [8] "https://news.detik.com/berita/d-7322508/arif-si-pembunuh-sempat-salah-beli-koper-untuk-jasad-kekecilan-lalu-beli-lagi"       
+  [9] "https://news.detik.com/pemilu/d-7322541/kelakar-arief-hidayat-gagal-bersin-di-sidang-mk-kertasnya-ada-virus-ini"             
+ [10] "https://news.detik.com/pemilu/d-7322541/kelakar-arief-hidayat-gagal-bersin-di-sidang-mk-kertasnya-ada-virus-ini"             
+ [11] "https://news.detik.com/berita/d-7324006/tak-ada-rehabilitasi-untuk-rio-reifan-yang-terjerat-narkoba-5-kali"                  
+ [12] "https://news.detik.com/berita/d-7324006/tak-ada-rehabilitasi-untuk-rio-reifan-yang-terjerat-narkoba-5-kali"                  
+ [13] "https://news.detik.com/pemilu/d-7324001/pkb-puji-ide-presidential-club-prabowo-pengalaman-tiap-presiden-berharga"            
+ [14] "https://news.detik.com/pemilu/d-7324001/pkb-puji-ide-presidential-club-prabowo-pengalaman-tiap-presiden-berharga"            
+ [15] "https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper"                
+ [16] "https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper"                
+ [17] "https://news.detik.com/foto-news/d-7323620/bingkai-sepekan-gelombang-aksi-bela-palestina-di-kampus-elite-as-eropa"           
+ [18] "https://news.detik.com/foto-news/d-7323620/bingkai-sepekan-gelombang-aksi-bela-palestina-di-kampus-elite-as-eropa"           
+ [19] "https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban"           
+ [20] "https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban"           
+ [21] "https://news.detik.com/pemilu/d-7323986/ide-prabowo-bentuk-presidential-club-dijawab-demokrat-dan-pdip"                      
+ [22] "https://news.detik.com/pemilu/d-7323986/ide-prabowo-bentuk-presidential-club-dijawab-demokrat-dan-pdip"                      
+ [23] "https://news.detik.com/berita/d-7323973/pukat-ugm-kritik-ghufron-mangkir-sidang-etik-dewas-kpk-contoh-buruk"                 
+ [24] "https://news.detik.com/berita/d-7323973/pukat-ugm-kritik-ghufron-mangkir-sidang-etik-dewas-kpk-contoh-buruk"                 
+ [25] "https://news.detik.com/berita/d-7320801/tentang-hari-pemadam-kebakaran-internasional-tanggal-4-mei"                          
+ [26] "https://news.detik.com/berita/d-7320801/tentang-hari-pemadam-kebakaran-internasional-tanggal-4-mei"                          
+ [27] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"                 
+ [28] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"                 
+ [29] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"           
+ [30] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"           
+ [31] "https://news.detik.com/internasional/d-7323956/geng-kriminal-serang-desa-di-nigeria-25-orang-tewas-dibunuh"                  
+ [32] "https://news.detik.com/internasional/d-7323956/geng-kriminal-serang-desa-di-nigeria-25-orang-tewas-dibunuh"                  
+ [33] "https://news.detik.com/internasional/d-7323954/banjir-akibat-hujan-badai-di-irak-4-orang-tewas"                              
+ [34] "https://news.detik.com/internasional/d-7323954/banjir-akibat-hujan-badai-di-irak-4-orang-tewas"                              
+ [35] "https://news.detik.com/pemilu/d-7323953/anies-ngaku-tak-akan-bikin-partai-sudah-nyaman-dengan-pkb-nasdem-pks"                
+ [36] "https://news.detik.com/pemilu/d-7323953/anies-ngaku-tak-akan-bikin-partai-sudah-nyaman-dengan-pkb-nasdem-pks"                
+ [37] "https://news.detik.com/internasional/d-7323939/15-pejuang-pro-pemerintah-suriah-tewas-dalam-serangan-isis"                   
+ [38] "https://news.detik.com/internasional/d-7323939/15-pejuang-pro-pemerintah-suriah-tewas-dalam-serangan-isis"                   
+ [39] "https://news.detik.com/pemilu/d-7323934/anies-cak-imin-dialog-di-mk-aceh-ditanya-soal-arah-perubahan-usai-pemilu"            
+ [40] "https://news.detik.com/pemilu/d-7323934/anies-cak-imin-dialog-di-mk-aceh-ditanya-soal-arah-perubahan-usai-pemilu"            
+ [41] "https://news.detik.com/berita/d-7323933/kecelakaan-beruntun-6-mobil-di-tol-jakarta-tangerang-km-19-arah-tomang"              
+ [42] "https://news.detik.com/berita/d-7323933/kecelakaan-beruntun-6-mobil-di-tol-jakarta-tangerang-km-19-arah-tomang"              
+ [43] "https://news.detik.com/berita/d-7323931/maruf-hadiri-haul-syekh-nawawi-al-bantani-beliau-transmitter-para-ulama"             
+ [44] "https://news.detik.com/berita/d-7323931/maruf-hadiri-haul-syekh-nawawi-al-bantani-beliau-transmitter-para-ulama"             
+ [45] "https://news.detik.com/internasional/d-7323918/9-orang-tewas-akibat-ledakan-di-kamp-pengungsi-di-kongo"                      
+ [46] "https://news.detik.com/internasional/d-7323918/9-orang-tewas-akibat-ledakan-di-kamp-pengungsi-di-kongo"                      
+ [47] "https://news.detik.com/berita/d-7323903/gempa-m-4-terjadi-di-nias-barat-sumut"                                               
+ [48] "https://news.detik.com/berita/d-7323903/gempa-m-4-terjadi-di-nias-barat-sumut"                                               
+ [49] "https://news.detik.com/berita/d-7323901/gempa-m-3-5-terjadi-di-malaka-ntt"                                                   
+ [50] "https://news.detik.com/berita/d-7323901/gempa-m-3-5-terjadi-di-malaka-ntt"                                                   
+ [51] "https://news.detik.com/berita/d-7323892/viral-pria-di-sumut-tinju-tendang-tukang-becak-lansia-polisi-buru-pelaku"            
+ [52] "https://news.detik.com/berita/d-7323892/viral-pria-di-sumut-tinju-tendang-tukang-becak-lansia-polisi-buru-pelaku"            
+ [53] "https://news.detik.com/berita/d-7323889/pria-di-kalsel-bunuh-teman-karena-korban-kedip-kedipkan-mata-ke-istrinya"            
+ [54] "https://news.detik.com/berita/d-7323889/pria-di-kalsel-bunuh-teman-karena-korban-kedip-kedipkan-mata-ke-istrinya"            
+ [55] "https://news.detik.com/berita/d-7323871/bareskrim-polri-gerebek-pabrik-narkoba-di-vila-bali"                                 
+ [56] "https://news.detik.com/berita/d-7323871/bareskrim-polri-gerebek-pabrik-narkoba-di-vila-bali"                                 
+ [57] "https://news.detik.com/berita/d-7323860/tni-polri-rebut-homeyo-intan-jaya-usai-opm-bunuh-warga-bakar-sekolah"                
+ [58] "https://news.detik.com/berita/d-7323860/tni-polri-rebut-homeyo-intan-jaya-usai-opm-bunuh-warga-bakar-sekolah"                
+ [59] "https://news.detik.com/foto-news/d-7323547/mahasiswa-sydney-gelar-tenda-di-depan-kampus-ada-apa"                             
+ [60] "https://news.detik.com/foto-news/d-7323547/mahasiswa-sydney-gelar-tenda-di-depan-kampus-ada-apa"                             
+ [61] "https://news.detik.com/berita/d-7323851/badan-geologi-bantah-hoax-pulau-tagulandang-akan-tenggelam-akibat-erupsi-ruang"      
+ [62] "https://news.detik.com/berita/d-7323851/badan-geologi-bantah-hoax-pulau-tagulandang-akan-tenggelam-akibat-erupsi-ruang"      
+ [63] "https://news.detik.com/berita/d-7323848/komnas-perempuan-soroti-pemenuhan-hak-korban-tpks-belum-optimal"                     
+ [64] "https://news.detik.com/berita/d-7323848/komnas-perempuan-soroti-pemenuhan-hak-korban-tpks-belum-optimal"                     
+ [65] "https://news.detik.com/berita/d-7323841/kejanggalan-arif-di-mata-istri-sebelum-pembunuhan-wanita-dalam-koper-terkuak"        
+ [66] "https://news.detik.com/berita/d-7323841/kejanggalan-arif-di-mata-istri-sebelum-pembunuhan-wanita-dalam-koper-terkuak"        
+ [67] "https://news.detik.com/berita/d-7323839/polisi-periksa-senior-diduga-penganiaya-mahasiswa-stip-hingga-tewas"                 
+ [68] "https://news.detik.com/berita/d-7323839/polisi-periksa-senior-diduga-penganiaya-mahasiswa-stip-hingga-tewas"                 
+ [69] "https://news.detik.com/berita/d-7323833/ultimatum-polisi-ke-pelaku-pembacokan-maut-di-kandang-roda-cibinong"                 
+ [70] "https://news.detik.com/berita/d-7323833/ultimatum-polisi-ke-pelaku-pembacokan-maut-di-kandang-roda-cibinong"                 
+ [71] "https://news.detik.com/berita/d-7323832/syarief-hasan-beri-catatan-soal-wacana-kewarganegaraan-ganda-bagi-diaspora"          
+ [72] "https://news.detik.com/berita/d-7323832/syarief-hasan-beri-catatan-soal-wacana-kewarganegaraan-ganda-bagi-diaspora"          
+ [73] "https://news.detik.com/foto-news/d-7322898/gelombang-panas-bikin-india-krisis-air"                                           
+ [74] "https://news.detik.com/foto-news/d-7322898/gelombang-panas-bikin-india-krisis-air"                                           
+ [75] "https://news.detik.com/berita/d-7323816/bejat-ayah-di-ntt-perkosa-anak-hingga-korban-2-kali-melahirkan"                      
+ [76] "https://news.detik.com/berita/d-7323816/bejat-ayah-di-ntt-perkosa-anak-hingga-korban-2-kali-melahirkan"                      
+ [77] "https://news.detik.com/berita/d-7323800/kemenhub-turunkan-tim-investigasi-kasus-taruna-stip-tewas-diduga-dianiaya"           
+ [78] "https://news.detik.com/berita/d-7323800/kemenhub-turunkan-tim-investigasi-kasus-taruna-stip-tewas-diduga-dianiaya"           
+ [79] "https://20.detik.com/detikupdate/20240503-240503095/arahan-jokowi-ke-jajaran-menteri-terkait-erupsi-gunung-ruang"            
+ [80] "https://20.detik.com/detikupdate/20240503-240503095/arahan-jokowi-ke-jajaran-menteri-terkait-erupsi-gunung-ruang"            
+ [81] "https://news.detik.com/berita/d-7323790/komnas-perempuan-catat-4-179-kasus-kekerasan-seksual-pada-2022-2023"                 
+ [82] "https://news.detik.com/berita/d-7323790/komnas-perempuan-catat-4-179-kasus-kekerasan-seksual-pada-2022-2023"                 
+ [83] "https://20.detik.com/detikupdate/20240503-240503129/jokowi-soal-kabinet-prabowo-hak-presiden-terpilih-kalau-usul-boleh"      
+ [84] "https://20.detik.com/detikupdate/20240503-240503129/jokowi-soal-kabinet-prabowo-hak-presiden-terpilih-kalau-usul-boleh"      
+ [85] "https://20.detik.com/detikupdate/20240503-240503125/canda-jokowi-ingin-ide-presidential-club-prabowo-bertemu-dua-hari-sekali"
+ [86] "https://20.detik.com/detikupdate/20240503-240503125/canda-jokowi-ingin-ide-presidential-club-prabowo-bertemu-dua-hari-sekali"
+ [87] "https://20.detik.com/detikupdate/20240503-240503140/momen-dramatis-penangkapan-suami-pemutilasi-istri-di-ciamis"             
+ [88] "https://20.detik.com/detikupdate/20240503-240503140/momen-dramatis-penangkapan-suami-pemutilasi-istri-di-ciamis"             
+ [89] "https://news.detik.com/berita/d-7323760/puncak-kemarau-di-jakarta-diprediksi-juni-dlh-bahas-penanganan-polusi"               
+ [90] "https://news.detik.com/berita/d-7323760/puncak-kemarau-di-jakarta-diprediksi-juni-dlh-bahas-penanganan-polusi"               
+ [91] "https://news.detik.com/berita/d-7323752/3-orang-luka-akibat-hr-v-tabrak-bus-kuning-dirawat-di-rsui"                          
+ [92] "https://news.detik.com/berita/d-7323752/3-orang-luka-akibat-hr-v-tabrak-bus-kuning-dirawat-di-rsui"                          
+ [93] "https://news.detik.com/berita/d-7323750/siasat-arif-sempat-ngantor-lagi-usai-bunuh-dan-buang-wanita-dalam-koper"             
+ [94] "https://news.detik.com/berita/d-7323750/siasat-arif-sempat-ngantor-lagi-usai-bunuh-dan-buang-wanita-dalam-koper"             
+ [95] "https://news.detik.com/berita/d-7323743/7-orang-meninggal-akibat-banjir-dan-longsor-di-luwu-1-200-mengungsi"                 
+ [96] "https://news.detik.com/berita/d-7323743/7-orang-meninggal-akibat-banjir-dan-longsor-di-luwu-1-200-mengungsi"                 
+ [97] "https://news.detik.com/berita/d-7323729/polisi-mahasiswa-stip-dianiaya-di-toilet-bukan-saat-acara-kampus"                    
+ [98] "https://news.detik.com/berita/d-7323729/polisi-mahasiswa-stip-dianiaya-di-toilet-bukan-saat-acara-kampus"                    
+ [99] "https://news.detik.com/berita/d-7323727/3-arahan-jokowi-relokasi-warga-imbas-erupsi-gunung-ruang"                            
+[100] "https://news.detik.com/berita/d-7323727/3-arahan-jokowi-relokasi-warga-imbas-erupsi-gunung-ruang"                            
+[101] "https://news.detik.com/foto-news/d-7322846/foto-udara-banjir-rendam-permukiman-warga-di-brasil"                              
+[102] "https://news.detik.com/foto-news/d-7322846/foto-udara-banjir-rendam-permukiman-warga-di-brasil"                              
+[103] "https://news.detik.com/berita/d-7323721/bayi-perempuan-ditemukan-tergeletak-di-bogor-sempat-dikira-kucing"                   
+[104] "https://news.detik.com/berita/d-7323721/bayi-perempuan-ditemukan-tergeletak-di-bogor-sempat-dikira-kucing"                   
+[105] "https://news.detik.com/berita/d-7323720/ada-luka-di-ulu-hati-mahasiswa-stip-yang-tewas-diduga-dianiaya-senior"               
+[106] "https://news.detik.com/berita/d-7323720/ada-luka-di-ulu-hati-mahasiswa-stip-yang-tewas-diduga-dianiaya-senior"               
+[107] "https://20.detik.com/detikupdate/20240503-240503131/rumah-di-klaten-terbakar-diduga-akibat-korsleting-saat-ngecas-hp"        
+[108] "https://20.detik.com/detikupdate/20240503-240503131/rumah-di-klaten-terbakar-diduga-akibat-korsleting-saat-ngecas-hp"        
+[109] "https://news.detik.com/pemilu/d-7323709/gerindra-kabupaten-bogor-bertemu-golkar-bahas-pemilihan-bupati"                      
+[110] "https://news.detik.com/pemilu/d-7323709/gerindra-kabupaten-bogor-bertemu-golkar-bahas-pemilihan-bupati"                      
+[111] "https://news.detik.com/berita/d-7323707/mahasiswa-stip-tewas-diduga-dianiaya-polisi-amankan-senior-korban"                   
+[112] "https://news.detik.com/berita/d-7323707/mahasiswa-stip-tewas-diduga-dianiaya-polisi-amankan-senior-korban"                   
+[113] "https://www.detik.com/tag/pilpres-2024"                                                                                      
+[114] "https://www.detik.com/tag/hoegeng-awards"                                                                                    
+[115] "https://news.detik.com/pemilu/d-7323986/ide-prabowo-bentuk-presidential-club-dijawab-demokrat-dan-pdip"                      
+[116] "https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper"                
+[117] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"                 
+[118] "https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban"           
+[119] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"           
+[120] "https://news.detik.com/berita/d-7315486/polisi-buru-pemotor-nmax-diduga-pemicu-kecelakaan-harley-maut-di-probolinggo"        
+[121] "https://news.detik.com/pemilu/d-7314173/cerita-hasto-tentang-sikap-ranting-pdip-soal-rencana-jokowi-mega-bertemu"            
+[122] "https://news.detik.com/pemilu/d-7323132/pesan-luhut-ke-prabowo-jangan-bawa-orang-toxic-ke-pemerintahanmu"                    </code></pre>
 </div>
 </div>
 <p>In summary, <code>rvest</code> empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, <code>rvest</code> enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you’re a novice or a seasoned data scientist, <code>rvest</code> serves as a valuable asset for extracting knowledge from the web.</p>
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{puteri2024,
   author = {Puteri, Indira},
