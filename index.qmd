@@ -23,11 +23,13 @@ about:
 
 Welcome to my humble corner of the web! I'm Indira Puteri, and I'm thrilled to connect with you.
 
-# Education
+# Interests
 
--   MSc in Mathematics, 2012, [Bandung Institute of Technology](https://www.itb.ac.id/), Bandung, Indonesia
+Spatial modelling, Bayesian statistics, Conditional Auto-regressive model, Multilevel spatial data model
 
--   BSc in Mathematics, 2009, [Tenth Nopember Institute of Technology](https://www.its.ac.id/), Surabaya Indonesia
+# Skills
+
+R Programming, Python, Statistical data analysis
 
 # Experiences
 
@@ -39,10 +41,8 @@ Welcome to my humble corner of the web! I'm Indira Puteri, and I'm thrilled to c
 
 -   2009 - 2010, Mathematics Teacher at PGRI 3 Vocational High School, Malang, East Java, Indonesia
 
-# Skills
+# Education
 
-R Programming, Python, Statistical data analysis
+-   MSc in Mathematics, 2012, [Bandung Institute of Technology](https://www.itb.ac.id/), Bandung, Indonesia
 
-# Interests
-
-Spatial modelling, Bayesian statistics, Conditional Auto-regressive model, Multilevel spatial data model
+-   BSc in Mathematics, 2009, [Tenth Nopember Institute of Technology](https://www.its.ac.id/), Surabaya Indonesia

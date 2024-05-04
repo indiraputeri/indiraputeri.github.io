@@ -58,7 +58,7 @@ news_data <- detik.com %>%
   ))
 
 # View the results
-news_data$link
+head(news_data$link,20)
 ```
 
 In summary, `rvest` empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, `rvest` enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you're a novice or a seasoned data scientist, `rvest` serves as a valuable asset for extracting knowledge from the web.
