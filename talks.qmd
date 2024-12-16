@@ -8,4 +8,4 @@ title: "Talks & Workshops"
 
 R Coding Session for FYP Students, June 2023. Handling spatial data and a brief introduction into webscrapping with `rvest`
 
-[Sharing session: Preparing your Ph.D application and academic interviews](https://indiraputeri.github.io/schintv_webinar.html#/title-slide)
+[**Sharing session**](https://indiraputeri.github.io/schintv_webinar.html#/title-slide), 21 Dec 2024. Preparing your Ph.D application and academic interviews, Uptimatic Events ft. UBD Ph.D students from Indonesia.
