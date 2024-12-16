@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -246,12 +246,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span>                                <span class="co">#that represent the news title</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Motif Dendam di Balik Petugas SPBU Bogor Diserang Pemuda Bercelurit"           
-[2] "Anies Bantah Ada Tawaran Bikin Partai Perubahan: Itu Kreativitas di Medsos"    
-[3] "Adik Arif Si Pembunuh Jadi Tersangka Kedua di Kasus 'Wanita dalam Koper'"      
-[4] "Arif Si Pembunuh Sempat Salah Beli Koper untuk Jasad, Kekecilan Lalu Beli Lagi"
-[5] "Kelakar Arief Hidayat Gagal Bersin di Sidang MK: Kertasnya Ada Virus Ini"      
-[6] "Tak Ada Rehabilitasi untuk Rio Reifan yang Terjerat Narkoba 5 Kali"            </code></pre>
+<pre><code>[1] "Pertimbangan dan Alasan PDIP Pecat Jokowi, Ada soal MK hingga Langgar Etik"
+[2] "Ada Sosok Pria Telanjang Dada Saat Anak Bos Toko Roti Ditangkap, Siapa?"   
+[3] "Isi Surat Pemecatan Jokowi, Gibran Rakabuming dan Bobby dari PDIP"         
+[4] "Surat Pemecatan Jokowi-Gibran-Bobby dari PDIP Diteken Langsung Megawati"   
+[5] "PDIP Umumkan Pecat Jokowi, Gibran, dan Bobby Nasution!"                    
+[6] "Anggota DPR Ingatkan Potensi Cuaca Ekstrem saat Libur Natal dan Tahun Baru"</code></pre>
 </div>
 </div>
 <p>Moreover, <code>rvest</code> seamlessly integrates with other R packages such as <code>dplyr</code> and <code>ggplot2</code>, and even <code>purrr</code> facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, <code>rvest</code> complements your data science workflow effectively.</p>
@@ -277,26 +277,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># View the results</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(news_data<span class="sc">$</span>link,<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"          
- [2] "https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit"          
- [3] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"    
- [4] "https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos"    
- [5] "https://news.detik.com/berita/d-7322450/adik-arif-si-pembunuh-jadi-tersangka-kedua-di-kasus-wanita-dalam-koper"       
- [6] "https://news.detik.com/berita/d-7322450/adik-arif-si-pembunuh-jadi-tersangka-kedua-di-kasus-wanita-dalam-koper"       
- [7] "https://news.detik.com/berita/d-7322508/arif-si-pembunuh-sempat-salah-beli-koper-untuk-jasad-kekecilan-lalu-beli-lagi"
- [8] "https://news.detik.com/berita/d-7322508/arif-si-pembunuh-sempat-salah-beli-koper-untuk-jasad-kekecilan-lalu-beli-lagi"
- [9] "https://news.detik.com/pemilu/d-7322541/kelakar-arief-hidayat-gagal-bersin-di-sidang-mk-kertasnya-ada-virus-ini"      
-[10] "https://news.detik.com/pemilu/d-7322541/kelakar-arief-hidayat-gagal-bersin-di-sidang-mk-kertasnya-ada-virus-ini"      
-[11] "https://news.detik.com/berita/d-7324006/tak-ada-rehabilitasi-untuk-rio-reifan-yang-terjerat-narkoba-5-kali"           
-[12] "https://news.detik.com/berita/d-7324006/tak-ada-rehabilitasi-untuk-rio-reifan-yang-terjerat-narkoba-5-kali"           
-[13] "https://news.detik.com/pemilu/d-7324001/pkb-puji-ide-presidential-club-prabowo-pengalaman-tiap-presiden-berharga"     
-[14] "https://news.detik.com/pemilu/d-7324001/pkb-puji-ide-presidential-club-prabowo-pengalaman-tiap-presiden-berharga"     
-[15] "https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper"         
-[16] "https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper"         
-[17] "https://news.detik.com/foto-news/d-7323620/bingkai-sepekan-gelombang-aksi-bela-palestina-di-kampus-elite-as-eropa"    
-[18] "https://news.detik.com/foto-news/d-7323620/bingkai-sepekan-gelombang-aksi-bela-palestina-di-kampus-elite-as-eropa"    
-[19] "https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban"    
-[20] "https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban"    </code></pre>
+<pre><code> [1] "https://www.detik.com/sulsel/pilkada/d-7689404/pj-bupati-jeneponto-dalami-kasus-asn-dinsos-ubah-kis-warga-gegara-pilkada"    
+ [2] "https://www.detik.com/sulsel/pilkada/d-7689404/pj-bupati-jeneponto-dalami-kasus-asn-dinsos-ubah-kis-warga-gegara-pilkada"    
+ [3] "https://www.detik.com/sulsel/pilkada/d-7689404/pj-bupati-jeneponto-dalami-kasus-asn-dinsos-ubah-kis-warga-gegara-pilkada"    
+ [4] "https://www.detik.com/sulsel/pilkada/d-7689396/dana-kampanye-paslon-pilwalkot-makassar-mulia-tertinggi-inimi-paling-sedikit" 
+ [5] "https://www.detik.com/sulsel/pilkada/d-7689371/oknum-asn-dinsos-jeneponto-ubah-kis-warga-ancam-pecat-korban-dari-honorer"    
+ [6] "https://news.detik.com/pilkada/d-7689315/hari-terakhir-rekapitulasi-suara-pilkada-di-2-provinsi-masih-belum-tuntas"          
+ [7] "https://www.detik.com/sulsel/pilkada/d-7689128/dana-kampanye-appi-aliyah-rp-13-6-m-paling-tinggi-di-pilwalkot-makassar"      
+ [8] "https://news.detik.com/pilkada/d-7688255/terungkap-komunikasi-pks-dengan-kubu-pramono-selepas-pilkada-jakarta"               
+ [9] "https://news.detik.com/pilkada/d-7688217/gerindra-dki-belum-komunikasi-dengan-pramono-kami-kawal-program-warga"              
+[10] "https://news.detik.com/pilkada/d-7688169/pdip-sambut-baik-komunikasi-pramono-dan-pks-hal-positif"                            
+[11] "https://news.detik.com/pilkada/d-7688104/psi-dorong-pramono-kerja-sama-dengan-prabowo-atasi-masalah-di-jakarta"              
+[12] "https://news.detik.com/pilkada/d-7688016/cak-lontong-jamin-pramono-bakal-rangkul-semua-pihak-termasuk-pks"                   
+[13] "https://www.detik.com/sulsel/pilkada/d-7687096/pesan-trisal-ome-agar-gugatan-fkj-nur-bukan-soal-ijazah-palsu"                
+[14] "https://www.detik.com/sulsel/pilkada/d-7687093/perkara-pilkada-bikin-asn-dinsos-jeneponto-ubah-kis-warga-jadi-meninggal"     
+[15] "https://news.detik.com/pilkada/d-7686763/rano-akan-bagi-tugas-urus-jakarta-mas-pram-di-meja-saya-eksekutornya"               
+[16] "https://www.detik.com/sulsel/pilkada/d-7686691/dinsos-jeneponto-akan-aktifkan-lagi-kis-warga-diubah-meninggal-gegara-pilkada"
+[17] "https://www.detik.com/sulsel/pilkada/d-7686297/trisal-ome-ingatkan-fkj-nur-bedakan-sengketa-proses-dan-hasil-pilkada-palopo" 
+[18] "https://www.detik.com/sulsel/pilkada/d-7686261/fkj-nur-gugat-hasil-pilkada-palopo-ke-mk-trisal-ome-sudah-siapkan-pembelaan"  
+[19] "https://www.detik.com/sulsel/pilkada/d-7686388/viral-oknum-asn-dinsos-jeneponto-ubah-kis-warga-jadi-meninggal-gegara-pilkada"
+[20] "https://www.detik.com/jogja/pilkada/d-7686378/polisi-limpahkan-berkas-kasus-politik-uang-di-minggir-sleman-ke-kejaksaan"     </code></pre>
 </div>
 </div>
 <p>In summary, <code>rvest</code> empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, <code>rvest</code> enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you’re a novice or a seasoned data scientist, <code>rvest</code> serves as a valuable asset for extracting knowledge from the web.</p>
