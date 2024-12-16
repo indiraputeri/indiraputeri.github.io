@@ -14,7 +14,7 @@ format:
     toc-depth: 1
     footer: "[https://indiraputeri.github.io/](https://indiraputeri.github.io/)"
 ---
-# Recipee & Ingredients{background-image=figs/fos2.jpg background-opacity="0.2"}
+# Recipe & Ingredients{background-image=figs/fos2.jpg background-opacity="0.2"}
 
 ## Preparing Your Application: *a must read recipe*
 
