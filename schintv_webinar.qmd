@@ -78,18 +78,23 @@ Have time to explore your *'home'* wannabe
 
 - [Prospective supervisors website (if available)](https://haziqj.ml/)
 
-# The interview: *nervous is normal, preparation is a must!*{.small-font .transition-slide}
+# The interview {.small-font .transition-slide}
+*"nervous is normal, preparation is a must!"*
 
 ## Academic Interview Preparation
-- What to expect:
+- **What to expect**:
   - Discuss your research proposal
   - Explain why UBD is your choice
   - Address your long-term goals
   - Assess your communication skills, including english skills
-  - will not more than 1 hour
-  
-- Practical tips:
-  - Practice common questions (e.g., *"Why this research?"*, *"Why UBD?"*);
+  - will not more than 30 minutes
+
+![](figs/fig1.png){.center width=60%}  
+
+## Academic Interview Preparation(contd')
+- **Practical tips**:
+  - Practice common questions (e.g., *"Why this research?"*, *"how much you've explored this topic?"*);
+  - Be open to discuss about the possibility of how your research data will be gained (in general);
   - Be clear and concise;
   - Prepare to discuss your CV and academic background in depth
   - Understand the question(s);
