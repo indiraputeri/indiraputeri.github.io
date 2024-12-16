@@ -102,5 +102,159 @@
     "title": "Web data scraping with rvest",
     "section": "Example 2",
     "text": "Example 2\nIn the following R script example, we employ the rvest library to scrape web content from “news.detik.com”. Our focus is specifically on extracting data from &lt;a&gt; tags that possess the class attribute media__link. This targeted approach allows us to efficiently gather link-related information directly associated with media content on the website.This is accomplished by selecting the appropriate nodes using html_nodes(). Following node selection, the map_df() function from the purrr package is employed to iterate over each node. Within this function, a small data frame is created for each node, where html_text() extracts the visible text of the link (i.e., the news title), and html_attr(\"href\") retrieves the corresponding URL. The trimws() function is applied to clean up the extracted titles by removing any excess whitespace. The result is a tidy data frame, named news_data, containing columns for both the cleaned titles and their associated URLs, ready for further analysis or use in subsequent operations. This approach ensures a structured and efficient method for collecting web data, which can be crucial for tasks such as content aggregation, monitoring, or data analysis in digital journalism and other fields.\n\nlibrary(purrr)\nlibrary(tibble)\n\n# Define and read the URL\ndetik.com &lt;- read_html(\"https://news.detik.com/\")\n\n# Extract news titles and their corresponding links\nnews_data &lt;- detik.com %&gt;%\n  html_nodes(\"a.media__link\") %&gt;%\n  map_df(~ tibble(\n    title = html_text(.x) %&gt;% trimws(), # Extract and trim the text\n    link = html_attr(.x, \"href\")        # Extract the href attribute\n  ))\n\n# View the results\nhead(news_data$link,20)\n\n [1] \"https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit\"          \n [2] \"https://news.detik.com/berita/d-7323966/motif-dendam-di-balik-petugas-spbu-bogor-diserang-pemuda-bercelurit\"          \n [3] \"https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos\"    \n [4] \"https://news.detik.com/pemilu/d-7323959/anies-bantah-ada-tawaran-bikin-partai-perubahan-itu-kreativitas-di-medsos\"    \n [5] \"https://news.detik.com/berita/d-7322450/adik-arif-si-pembunuh-jadi-tersangka-kedua-di-kasus-wanita-dalam-koper\"       \n [6] \"https://news.detik.com/berita/d-7322450/adik-arif-si-pembunuh-jadi-tersangka-kedua-di-kasus-wanita-dalam-koper\"       \n [7] \"https://news.detik.com/berita/d-7322508/arif-si-pembunuh-sempat-salah-beli-koper-untuk-jasad-kekecilan-lalu-beli-lagi\"\n [8] \"https://news.detik.com/berita/d-7322508/arif-si-pembunuh-sempat-salah-beli-koper-untuk-jasad-kekecilan-lalu-beli-lagi\"\n [9] \"https://news.detik.com/pemilu/d-7322541/kelakar-arief-hidayat-gagal-bersin-di-sidang-mk-kertasnya-ada-virus-ini\"      \n[10] \"https://news.detik.com/pemilu/d-7322541/kelakar-arief-hidayat-gagal-bersin-di-sidang-mk-kertasnya-ada-virus-ini\"      \n[11] \"https://news.detik.com/berita/d-7324006/tak-ada-rehabilitasi-untuk-rio-reifan-yang-terjerat-narkoba-5-kali\"           \n[12] \"https://news.detik.com/berita/d-7324006/tak-ada-rehabilitasi-untuk-rio-reifan-yang-terjerat-narkoba-5-kali\"           \n[13] \"https://news.detik.com/pemilu/d-7324001/pkb-puji-ide-presidential-club-prabowo-pengalaman-tiap-presiden-berharga\"     \n[14] \"https://news.detik.com/pemilu/d-7324001/pkb-puji-ide-presidential-club-prabowo-pengalaman-tiap-presiden-berharga\"     \n[15] \"https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper\"         \n[16] \"https://news.detik.com/berita/d-7323996/nasib-adik-pembunuh-terseret-jadi-tersangka-kasus-wanita-dalam-koper\"         \n[17] \"https://news.detik.com/foto-news/d-7323620/bingkai-sepekan-gelombang-aksi-bela-palestina-di-kampus-elite-as-eropa\"    \n[18] \"https://news.detik.com/foto-news/d-7323620/bingkai-sepekan-gelombang-aksi-bela-palestina-di-kampus-elite-as-eropa\"    \n[19] \"https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban\"    \n[20] \"https://news.detik.com/pemilu/d-7323994/pan-dukung-prabowo-tak-bawa-orang-toxic-ke-pemerintah-agar-tak-jadi-beban\"    \n\n\nIn summary, rvest empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, rvest enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you’re a novice or a seasoned data scientist, rvest serves as a valuable asset for extracting knowledge from the web."
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-1-welcome-introduction",
+    "href": "schintv_webinar.html#slide-1-welcome-introduction",
+    "title": "Scholarship Webinar: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 1: Welcome & Introduction",
+    "text": "Slide 1: Welcome & Introduction\n\nTitle: Preparing for PhD Scholarships and Academic Interviews\nQuick introduction of yourself:\n\nAcademic background\nYour experience with the UBD scholarship\n\nPurpose of the talk:\n\nShare practical tips\nFocus on UBD scholarship process\nGuide on academic interviews"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-2-overview",
+    "href": "schintv_webinar.html#slide-2-overview",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 2: Overview",
+    "text": "Slide 2: Overview\n\nScholarship Process Overview:\n\nFinding suitable scholarships\nApplication preparation\nAcademic interview success\n\nFocus on UBD-specific tips:\n\nUnique aspects of UBD scholarship"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-3-finding-the-right-scholarship",
+    "href": "schintv_webinar.html#slide-3-finding-the-right-scholarship",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 3: Finding the Right Scholarship",
+    "text": "Slide 3: Finding the Right Scholarship\n\nResearch funding options:\n\nUniversity scholarships (e.g., UBD)\nGovernment scholarships\nExternal funding agencies\n\nKey factors to consider:\n\nEligibility criteria\nResearch alignment with supervisors\nFunding coverage (tuition, stipend, travel)"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-4-preparing-your-application",
+    "href": "schintv_webinar.html#slide-4-preparing-your-application",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 4: Preparing Your Application",
+    "text": "Slide 4: Preparing Your Application\n\nAcademic CV:\n\nHighlight academic achievements\nInclude research experience and publications\n\nPersonal statement:\n\nTailor to UBD requirements\nExplain your motivation and alignment with UBD’s research strengths\n\nResearch proposal:\n\nClear objectives and methodology\nConnect with potential supervisors\n\nLetters of recommendation:\n\nRequest early\nChoose recommenders who know your work well"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-5-ubd-scholarship-tips",
+    "href": "schintv_webinar.html#slide-5-ubd-scholarship-tips",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 5: UBD Scholarship Tips",
+    "text": "Slide 5: UBD Scholarship Tips\n\nUnique features of the UBD scholarship:\n\nEmphasis on impactful research\nOpportunities for interdisciplinary collaboration\n\nKey preparation points:\n\nReview UBD research strengths\nEngage with potential supervisors early\nHighlight alignment with UBD’s strategic goals (e.g., sustainability, regional focus)"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-6-academic-interview-preparation",
+    "href": "schintv_webinar.html#slide-6-academic-interview-preparation",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 6: Academic Interview Preparation",
+    "text": "Slide 6: Academic Interview Preparation\n\nWhat to expect:\n\nDiscuss your research proposal\nExplain why UBD is your choice\nAddress your long-term goals\n\nPractical tips:\n\nPractice common questions (e.g., “Why this research?”, “Why UBD?”)\nBe clear and concise\nPrepare to discuss your CV and academic background in depth"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-7-common-questions-in-interviews",
+    "href": "schintv_webinar.html#slide-7-common-questions-in-interviews",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 7: Common Questions in Interviews",
+    "text": "Slide 7: Common Questions in Interviews\n\nExamples of common questions:\n\nWhy do you want to pursue a PhD?\nHow does your research align with UBD?\nWhat challenges do you anticipate, and how will you handle them?\nWhat are your career goals after the PhD?"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-8-final-tips",
+    "href": "schintv_webinar.html#slide-8-final-tips",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 8: Final Tips",
+    "text": "Slide 8: Final Tips\n\nTime management:\n\nStart applications early\nPractice interviews with peers or mentors\n\nCommunication:\n\nBe clear and specific in your application and interviews\nShow confidence and enthusiasm\n\nStay organized:\n\nTrack deadlines and requirements\nPrepare documents systematically"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-9-qa",
+    "href": "schintv_webinar.html#slide-9-qa",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 9: Q&A",
+    "text": "Slide 9: Q&A\n\nInvite questions from the audience\nShare quick contact information or resources:\n\nEmail address or LinkedIn\nScholarship application guidelines link"
+  },
+  {
+    "objectID": "schintv_webinar.html#slide-10-thank-you",
+    "href": "schintv_webinar.html#slide-10-thank-you",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Slide 10: Thank You",
+    "text": "Slide 10: Thank You\n\nThank the audience for their attention\nEncourage them to start early and stay motivated"
+  },
+  {
+    "objectID": "schintv_webinar.html#overview",
+    "href": "schintv_webinar.html#overview",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Overview",
+    "text": "Overview\n\nScholarship Process Overview:\n\nFinding suitable scholarships\nApplication preparation\nAcademic interview success\n\nFocus on UBD-specific tips:\n\nUnique aspects of UBD scholarship"
+  },
+  {
+    "objectID": "schintv_webinar.html#preparing-your-application",
+    "href": "schintv_webinar.html#preparing-your-application",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Preparing Your Application",
+    "text": "Preparing Your Application\nRead carefully\nKey Links\n\nScholarship Details: UBD Graduate Research Scholarship and UBD Bursary Award\nEntry Requirements: Graduate Entry Requirements\nAdmission"
+  },
+  {
+    "objectID": "schintv_webinar.html#ubd-scholarship-tips",
+    "href": "schintv_webinar.html#ubd-scholarship-tips",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "UBD Scholarship Tips",
+    "text": "UBD Scholarship Tips\n\nUnique features of the UBD scholarship:\n\nEmphasis on impactful research\nOpportunities for interdisciplinary collaboration\n\nKey preparation points:\n\n\nReview UBD Research Strengths:\n\nExplore research areas and active projects at UBD.\nExamples of strengths:\n\nBiodiversity research in the Borneo region.\nClimate change mitigation and renewable energy.\nASEAN regional studies and cultural preservation.\n\nAlign your proposal with these research priorities.\n\nEngage with Potential Supervisors Early:\n\nWhy?: Strong recommendations from supervisors can increase your chances.\nIdentify faculty whose expertise aligns with your research interests.\nApproach them with a concise introduction and your research idea.\n\nHighlight Alignment with UBD’s Strategic Goals:\n\nAddress how your research supports Brunei Vision 2035:\n\nSustainability (e.g., environmental conservation, clean energy).\nEconomic diversification (e.g., technology, entrepreneurship).\nRegional collaboration in ASEAN and beyond.\n\n\n\nKey Links\n\nScholarship Details: UBD Graduate Research Scholarship\nEntry Requirements: Graduate Entry Requirements"
+  },
+  {
+    "objectID": "schintv_webinar.html#academic-interview-preparation",
+    "href": "schintv_webinar.html#academic-interview-preparation",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Academic Interview Preparation",
+    "text": "Academic Interview Preparation\n\nWhat to expect:\n\nDiscuss your research proposal\nExplain why UBD is your choice\nAddress your long-term goals\n\nPractical tips:\n\nPractice common questions (e.g., “Why this research?”, “Why UBD?”)\nBe clear and concise\nPrepare to discuss your CV and academic background in depth"
+  },
+  {
+    "objectID": "schintv_webinar.html#common-questions-in-interviews",
+    "href": "schintv_webinar.html#common-questions-in-interviews",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Common Questions in Interviews",
+    "text": "Common Questions in Interviews\n\nExamples of common questions:\n\nWhy do you want to pursue a PhD?\nHow does your research align with UBD?\nWhat challenges do you anticipate, and how will you handle them?\nWhat are your career goals after the PhD?"
+  },
+  {
+    "objectID": "schintv_webinar.html#final-tips",
+    "href": "schintv_webinar.html#final-tips",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Final Tips",
+    "text": "Final Tips\n\nTime management:\n\nStart applications early\nPractice interviews with peers or mentors\n\nCommunication:\n\nBe clear and specific in your application and interviews\nShow confidence and enthusiasm\n\nStay organised:\n\nTrack deadlines and requirements\nPrepare documents systematically"
+  },
+  {
+    "objectID": "schintv_webinar.html#thank-you",
+    "href": "schintv_webinar.html#thank-you",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Thank You",
+    "text": "Thank You\n\nThank the audience for their attention\nEncourage them to start early and stay motivated\n\n\n\n\nhttps://indiraputeri.github.io/"
+  },
+  {
+    "objectID": "schintv_webinar.html#key-preparation-points",
+    "href": "schintv_webinar.html#key-preparation-points",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Key preparation points",
+    "text": "Key preparation points\n\nReview UBD Research Strengths:\n\nExplore research areas and active projects at UBD.\nExamples of strengths:\n\nBiodiversity research in the Borneo region.\nClimate change mitigation and renewable energy.\nASEAN regional studies and cultural preservation.\n\nAlign your proposal with these research priorities.\n\nEngage with Potential Supervisors Early:\n\nWhy?: Strong recommendations from supervisors can increase your chances.\nIdentify faculty whose expertise aligns with your research interests.\nApproach them with a concise introduction and your research idea."
+  },
+  {
+    "objectID": "schintv_webinar.html#key-preparation-points-contd",
+    "href": "schintv_webinar.html#key-preparation-points-contd",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Key preparation points (contd’)",
+    "text": "Key preparation points (contd’)\n\nHighlight Alignment with UBD’s Strategic Goals:\n\nAddress how your research supports Brunei Vision 2035:\n\nSustainability (e.g., environmental conservation, clean energy).\nEconomic diversification (e.g., technology, entrepreneurship).\nRegional collaboration in ASEAN and beyond."
+  },
+  {
+    "objectID": "schintv_webinar.html#preparing-your-application-contd",
+    "href": "schintv_webinar.html#preparing-your-application-contd",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Preparing Your Application (contd’)",
+    "text": "Preparing Your Application (contd’)\n\nAcademic CV:\n\nHighlight academic achievements\nInclude research experience and publications\n\nResearch proposal:\n\nClear objectives and methodology\nConnect with potential supervisors (optional)\n\nPersonal statement:\n\nTailor to UBD requirements\nExplain your motivation and alignment with UBD’s research strengths\n\nLetters of recommendation:\n\nRequest early!\nChoose recommenders who know your work well"
+  },
+  {
+    "objectID": "schintv_webinar.html#preparing-your-application-a-must-read-recipe",
+    "href": "schintv_webinar.html#preparing-your-application-a-must-read-recipe",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Preparing Your Application: a must read recipe",
+    "text": "Preparing Your Application: a must read recipe\nKey Links\n\nScholarship Details: UBD Graduate Research Scholarship and UBD Bursary Award\nEntry Requirements: Graduate Entry Requirements\nOnline admission link"
+  },
+  {
+    "objectID": "schintv_webinar.html#preparing-your-application-the-ingredients",
+    "href": "schintv_webinar.html#preparing-your-application-the-ingredients",
+    "title": "Sharing session: Preparing for PhD Scholarships and Academic Interviews",
+    "section": "Preparing Your Application: the ingredients",
+    "text": "Preparing Your Application: the ingredients\n\nAcademic CV:\n\nHighlight academic achievements\nInclude research experience and publications\n\nResearch proposal:\n\nClear objectives and methodology\nConnect with potential supervisors (optional)\n\nPersonal statement:\n\nTailor to UBD requirements\nExplain your motivation and alignment with UBD’s research strengths\n\nLetters of recommendation:\n\nRequest early!\nChoose recommenders who know your work well"
   }
 ]

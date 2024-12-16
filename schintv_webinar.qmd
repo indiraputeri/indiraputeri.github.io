@@ -1,0 +1,100 @@
+---
+title: "Sharing session: Preparing for PhD Scholarships and Academic Interviews"
+author:
+  name: "Indira Puteri Kinasih"
+  orcid: "0009-0009-6959-6723"
+  email: "indiraputeri@uinmataram.ac.id"
+  affiliations: "Ph.D student - Math Science (FOS-UBD)"
+date: "21 December 2024"
+format:
+  ubd-revealjs:
+    self-contained: false
+    chalkboard: true
+    toc: false
+    toc-depth: 1
+    footer: "[https://indiraputeri.github.io/](https://indiraputeri.github.io/)"
+---
+# Recipee & Ingredients{background-image=figs/fos2.jpg background-opacity="0.2"}
+
+## Preparing Your Application: *a must read recipe*
+
+### Key Links
+- **Scholarship Details:** [UBD Graduate Research Scholarship](https://ubd.edu.bn/admission/graduate/graduate-fees-funding/ugrs/) and [UBD Bursary Award](https://ubd.edu.bn/admission/graduate/graduate-fees-funding/ubd-bursary-award/)
+
+- **Entry Requirements:** [Graduate Entry Requirements](https://ubd.edu.bn/admission/graduate/graduate-entry-requirements/)
+- [**Online admission link**](https://apply.ubd.edu.bn/orbeon/uis-welcome/)
+
+## Preparing Your Application: *the ingredients*
+- **Academic CV**:
+  - Highlight **academic achievements**
+  - Include research experience and **publications**
+- **Research proposal**:
+  - Clear objectives and methodology
+  - Connect with potential supervisors (optional)
+- **Personal statement**:
+  - Tailor to UBD requirements
+  - Explain your motivation and alignment with UBD’s research strengths
+- **Letters of recommendation**:
+  - Request early!
+  - Choose recommenders who know your work well
+
+---
+
+
+## Key preparation points
+1. **Review UBD Research Strengths:**
+   - Explore research areas and active projects at UBD.
+   - Examples of strengths:
+     - Biodiversity research in the Borneo region.
+     - Climate change mitigation and renewable energy.
+     - ASEAN regional studies and cultural preservation.
+   - Align your proposal with these research priorities.
+
+2. **Engage with Potential Supervisors Early:**
+   - **Why?**: Strong recommendations from supervisors can increase your chances.
+   - Identify faculty whose expertise aligns with your research interests.
+   - Approach them with a concise introduction and your research idea.
+--- 
+
+## Key preparation points (contd')
+
+3. **Highlight Alignment with UBD’s Strategic Goals:**
+   - Address how your research supports Brunei Vision 2035:
+     - Sustainability (e.g., environmental conservation, clean energy).
+     - Economic diversification (e.g., technology, entrepreneurship).
+     - Regional collaboration in ASEAN and beyond.
+---
+
+## Academic Interview Preparation
+- What to expect:
+  - Discuss your research proposal
+  - Explain why UBD is your choice
+  - Address your long-term goals
+- Practical tips:
+  - Practice common questions (e.g., "Why this research?", "Why UBD?")
+  - Be clear and concise
+  - Prepare to discuss your CV and academic background in depth
+
+---
+
+## Common Questions in Interviews
+- Examples of common questions:
+  - Why do you want to pursue a PhD?
+  - How does your research align with UBD?
+  - What challenges do you anticipate, and how will you handle them?
+  - What are your career goals after the PhD?
+
+---
+
+## Final Tips
+- Time management:
+  - Start applications early
+  - Practice interviews with peers or mentors
+- Communication:
+  - Be clear and specific in your application and interviews
+  - Show confidence and enthusiasm
+- Stay organised:
+  - Track deadlines and requirements
+  - Prepare documents systematically
+
+# Good luck and thank you :){.transition-slide-ubdyellow}
