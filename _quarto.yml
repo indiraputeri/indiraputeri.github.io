@@ -24,7 +24,7 @@ website:
         title: "Research and Publications"
         style: "docked"
         background: light
-        collapse-level: 3
+        collapse-level: 4
         contents: 
          - projects.qmd
          - publications.qmd
