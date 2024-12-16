@@ -14,6 +14,10 @@ format:
     toc-depth: 1
     footer: "[https://indiraputeri.github.io/](https://indiraputeri.github.io/)"
 ---
+
+# The journey
+put nice and simple diagram about my application journey
+
 # Recipe & Ingredients{background-image=figs/fos2.jpg background-opacity="0.2"}
 
 ## Preparing Your Application: *a must read recipe*
@@ -65,24 +69,40 @@ format:
      - Regional collaboration in ASEAN and beyond.
 ---
 
+## Example
+Have time to explore your *'home'* wannabe
+
+- [Faculty website: Mathematical Science](https://fos.ubd.edu.bn/disciplines/maths/30-phd/#areas-of-research)
+
+- [Faculty academic member](https://fos.ubd.edu.bn/academics/)
+
+- [Prospective supervisors website (if available)](https://haziqj.ml/)
+
+# The interview: *nervous is normal, preparation is a must!*{.small-font .transition-slide}
+
 ## Academic Interview Preparation
 - What to expect:
   - Discuss your research proposal
   - Explain why UBD is your choice
   - Address your long-term goals
+  - Assess your communication skills, including english skills
+  - will not more than 1 hour
+  
 - Practical tips:
-  - Practice common questions (e.g., "Why this research?", "Why UBD?")
-  - Be clear and concise
+  - Practice common questions (e.g., *"Why this research?"*, *"Why UBD?"*);
+  - Be clear and concise;
   - Prepare to discuss your CV and academic background in depth
+  - Understand the question(s);
+  - be truthful, academically!
 
 ---
 
 ## Common Questions in Interviews
 - Examples of common questions:
-  - Why do you want to pursue a PhD?
-  - How does your research align with UBD?
-  - What challenges do you anticipate, and how will you handle them?
-  - What are your career goals after the PhD?
+  - *Why do you want to pursue a PhD?*
+  - *How does your research align with UBD?*
+  - *What challenges do you anticipate, and how will you handle them?*
+  - *What are your career goals after the PhD?*
 
 ---
 
@@ -91,10 +111,10 @@ format:
   - Start applications early
   - Practice interviews with peers or mentors
 - Communication:
-  - Be clear and specific in your application and interviews
+  - Be **clear** and **specific** in your application and interviews
   - Show confidence and enthusiasm
 - Stay organised:
   - Track deadlines and requirements
   - Prepare documents systematically
 
-# Good luck and thank you :){.transition-slide-ubdyellow}
+# Good luck and thank you :){background-image=figs/coffee.jpg background-opacity="0.4"}
