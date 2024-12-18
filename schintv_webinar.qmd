@@ -15,8 +15,7 @@ format:
     footer: "[https://indiraputeri.github.io/](https://indiraputeri.github.io/)"
 ---
 
-# The journey
-put nice and simple diagram about my application journey
+# {background-image=figs/journey.png background-opacity="0.6" background-size="90%"}
 
 # Recipe & Ingredients{background-image=figs/fos2.jpg background-opacity="0.2"}
 
@@ -89,7 +88,7 @@ Have time to explore your *'home'* wannabe
   - Assess your communication skills, including english skills
   - will not more than 30 minutes
 
-![](figs/fig1.png){.center width=60%}  
+![](figs/fig1.png){.center width=70%}  
 
 ## Academic Interview Preparation(contd')
 - **Practical tips**:
