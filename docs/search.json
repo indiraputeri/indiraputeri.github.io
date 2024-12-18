@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "I am a student at the Mathematical Sciences program, Universiti Brunei Darussalam. I reside permanently in Mataram, West Nusa Tenggara, Indonesia, and am currently temporarily staying in Brunei. My current research project focuses on spatial modeling for Gaussian data, where I utilize Bayesian hierarchical models and conditional autoregressive (CAR) models to elucidate the spatial structure within neighborhood areas. Additionally, I am actively learning R to support and enhance my research endeavors."
+    "text": "I am currently a student in the Mathematical Sciences program at Universiti Brunei Darussalam, temporarily residing in Brunei while my permanent home is in Mataram, West Nusa Tenggara, Indonesia. My research focuses on spatial modeling for Gaussian data, where I explore the spatial structure of neighborhood areas using Bayesian hierarchical models, particularly Conditional Autoregressive (CAR) models.\nTo enhance my research capabilities, I am actively developing my skills in R programming and Stan, leveraging these tools to implement and analyze complex statistical models. Additionally, I have expanded my expertise to include web data scraping using the rvest package in R, which allows me to efficiently collect and process data for my research."
   },
   {
     "objectID": "projects.html",
@@ -28,7 +28,7 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Kinasih, I. P., & Hardiani, N. (2020). Role playing and the changing of teacher understanding to middle school mathematics lesson planning within elpsa framework. Jurnal Pendidikan Matematika, 14(2), 183-198.\nPatahuddin, S. M., Puteri, I., Lowrie, T., Logan, T., & Rika, B. (2018). Capturing student mathematical engagement through differently enacted classroom practices: applying a modification of Watson’s analytical tool. International Journal of Mathematical Education in Science and Technology, 49(3), 384-400.\nKinasih, I. P., Wiriasto, G. W., Kanata, B., & Zubaidah, T. 2014. Lesser Sunda Islands Earthquake Inter-Occurrence Times Distribution Modelling. International Journal of Technology 3(3):242-250. DOI: 10.14716/ ijtech.v5i3.610",
+    "text": "Mustagfirin, M. L., Wiriasto, G. W., Suksmadana, I. M. B., & Kinasih, I. P. (2022). Android-Based Short Message Service Filtering using Long Short-Term Memory Classification Model. Khazanah Informatika: Jurnal Ilmu Komputer dan Informatika, 8(2).\nKinasih, I. P., & Hardiani, N. (2020). Role playing and the changing of teacher understanding to middle school mathematics lesson planning within elpsa framework. Jurnal Pendidikan Matematika, 14(2), 183-198.\nPatahuddin, S. M., Puteri, I., Lowrie, T., Logan, T., & Rika, B. (2018). Capturing student mathematical engagement through differently enacted classroom practices: applying a modification of Watson’s analytical tool. International Journal of Mathematical Education in Science and Technology, 49(3), 384-400.\nKinasih, I. P., Wiriasto, G. W., Kanata, B., & Zubaidah, T. 2014. Lesser Sunda Islands Earthquake Inter-Occurrence Times Distribution Modelling. International Journal of Technology 3(3):242-250. DOI: 10.14716/ ijtech.v5i3.610",
     "crumbs": [
       "Publications"
     ]

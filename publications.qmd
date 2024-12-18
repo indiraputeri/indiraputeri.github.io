@@ -2,6 +2,8 @@
 title: "Publications"
 ---
 
+Mustagfirin, M. L., Wiriasto, G. W., Suksmadana, I. M. B., & **Kinasih, I. P.** (2022). [Android-Based Short Message Service Filtering using Long Short-Term Memory Classification Model.](https://journals.ums.ac.id/index.php/khif/article/view/17995) *Khazanah Informatika: Jurnal Ilmu Komputer dan Informatika*, *8*(2).
+
 **Kinasih, I. P.**, & Hardiani, N. (2020). [Role playing and the changing of teacher understanding to middle school mathematics lesson planning within elpsa framework](https://ejournal.unsri.ac.id/index.php/jpm/article/view/6647). *Jurnal Pendidikan Matematika*, *14*(2), 183-198.
 
 Patahuddin, S. M., **Puteri, I.**, Lowrie, T., Logan, T., & Rika, B. (2018). [Capturing student mathematical engagement through differently enacted classroom practices: applying a modification of Watson's analytical tool](https://www.tandfonline.com/doi/abs/10.1080/0020739x.2017.1377300). International Journal of Mathematical Education in Science and Technology, 49(3), 384-400.
