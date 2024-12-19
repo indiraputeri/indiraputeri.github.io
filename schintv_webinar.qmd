@@ -15,113 +15,113 @@ format:
     footer: "[https://indiraputeri.github.io/](https://indiraputeri.github.io/)"
 ---
 
-# {background-image=figs/journey.png background-opacity="0.6" background-size="90%"}
+#  {background-image="figs/journey.png" background-opacity="0.6" background-size="95%"}
 
-# Recipe & Ingredients{background-image=figs/fos2.jpg background-opacity="0.2"}
+# Recipe & Ingredients {background-image="figs/fos2.jpg" background-opacity="0.2"}
 
-## Preparing Your Application: *a must read recipe*
+## Preparing Your Application: *a must read recipe* {.smaller .scrollable transition="slide"}
 
 ### Key Links
-- **Scholarship Details:** [UBD Graduate Research Scholarship](https://ubd.edu.bn/admission/graduate/graduate-fees-funding/ugrs/) and [UBD Bursary Award](https://ubd.edu.bn/admission/graduate/graduate-fees-funding/ubd-bursary-award/)
 
-- **Entry Requirements:** [Graduate Entry Requirements](https://ubd.edu.bn/admission/graduate/graduate-entry-requirements/)
-- [**Online admission link**](https://apply.ubd.edu.bn/orbeon/uis-welcome/)
+-   **Scholarship Details:** [UBD Graduate Research Scholarship](https://ubd.edu.bn/admission/graduate/graduate-fees-funding/ugrs/) and [UBD Bursary Award](https://ubd.edu.bn/admission/graduate/graduate-fees-funding/ubd-bursary-award/) ![](figs/eligibility.png){.center width="85%"}
 
-## Preparing Your Application: *the ingredients*
-- **Academic CV**:
-  - Highlight **academic achievements**
-  - Include research experience and **publications**
-- **Research proposal**:
-  - Clear objectives and methodology
-  - Connect with potential supervisors (optional)
-- **Personal statement**:
-  - Tailor to UBD requirements
-  - Explain your motivation and alignment with UBD’s research strengths
-- **Letters of recommendation**:
-  - Request early!
-  - Choose recommenders who know your work well
+-   **Entry Requirements:** [Graduate Entry Requirements](https://ubd.edu.bn/admission/graduate/graduate-entry-requirements/) ![](figs/entryreq.png){.center width="85%"}
 
----
+-   [**Online admission link**](https://apply.ubd.edu.bn/orbeon/uis-welcome/) ![](figs/ubdsystemapp.png){.center width="85%"} ![](figs/ubdsubmpage.png){.center width="85%"}
 
+## Preparing Your Application: *the ingredients* {.smaller .scrollable transition="slide"}
 
-## Key preparation points
-1. **Review UBD Research Strengths:**
-   - Explore research areas and active projects at UBD.
-   - Examples of strengths:
-     - Biodiversity research in the Borneo region.
-     - Climate change mitigation and renewable energy.
-     - ASEAN regional studies and cultural preservation.
-   - Align your proposal with these research priorities.
+-   [**Academic CV**](https://drive.google.com/drive/folders/1Ynlg0P-ITDnnNslWZPym-9DElV3ndJgk?usp=sharing):
+    -   Highlight **academic achievements**
+    -   Include research experience and **publications**
+-   **Research proposal**:
+    -   Clear objectives and methodology
+    -   Connect with potential supervisors (optional)
+-   [**Personal statement**](https://drive.google.com/drive/folders/1Ynlg0P-ITDnnNslWZPym-9DElV3ndJgk?usp=sharing):
+    -   Tailor to UBD requirements
+    -   Explain your motivation and alignment with UBD’s research strengths
+-   **Letters of recommendation**:
+    -   Request early!
+    -   Choose recommenders who know your work well ![](figs/referees.png){.center width="85%"}
 
-2. **Engage with Potential Supervisors Early:**
-   - **Why?**: Strong recommendations from supervisors can increase your chances.
-   - Identify faculty whose expertise aligns with your research interests.
-   - Approach them with a concise introduction and your research idea.
---- 
+------------------------------------------------------------------------
 
-## Key preparation points (contd')
+## Key preparation points {.smaller .scrollable transition="slide"}
 
-3. **Highlight Alignment with UBD’s Strategic Goals:**
-   - Address how your research supports Brunei Vision 2035:
-     - Sustainability (e.g., environmental conservation, clean energy).
-     - Economic diversification (e.g., technology, entrepreneurship).
-     - Regional collaboration in ASEAN and beyond.
----
+1.  **Review UBD Research Strengths:**
+    -   Explore research areas and active projects at UBD.
 
-## Example
+        #### **The UGRS will prioritise funding for high impact research within the current research thrusts of UBD and Brunei including (but not limited to):** Energy, Material Science, Biodiversity, Data Analytics, Asian and Islamic Studies, Bioinspiration, Climate Change, Herbal Medicine, Sensor Technology and Catalysis.
+
+    -   Align your proposal with these research priorities.
+    
+2.  **Engage with Potential Supervisors Early:**
+    -   **Why?**: Strong recommendations from supervisors can increase your chances.
+    -   Identify faculty whose expertise aligns with your research interests.
+    -   Approach them with a concise introduction and your research idea.
+
+## Example {.smaller .scrollable transition="slide"}
+
 Have time to explore your *'home'* wannabe
 
-- [Faculty website: Mathematical Science](https://fos.ubd.edu.bn/disciplines/maths/30-phd/#areas-of-research)
+-   [Faculty website: Mathematical Science](https://fos.ubd.edu.bn/disciplines/maths/30-phd/#areas-of-research)
 
-- [Faculty academic member](https://fos.ubd.edu.bn/academics/)
+-   [Faculty academic member](https://fos.ubd.edu.bn/academics/)
 
-- [Prospective supervisors website (if available)](https://haziqj.ml/)
+-   [Prospective supervisors website (if available)](https://haziqj.ml/)
 
 # The interview {.small-font .transition-slide}
+
 *"nervous is normal, preparation is a must!"*
 
 ## Academic Interview Preparation
-- **What to expect**:
-  - Discuss your research proposal
-  - Explain why UBD is your choice
-  - Address your long-term goals
-  - Assess your communication skills, including english skills
-  - will not more than 30 minutes
 
-![](figs/fig1.png){.center width=70%}  
+-   **What to expect**:
+    -   Discuss your research proposal
+    -   Explain why UBD is your choice
+    -   Address your long-term goals
+    -   Assess your communication skills, including english skills
+    -   will not last more than 30 minutes
+
+![](figs/fig1.png){.center width="70%"}
 
 ## Academic Interview Preparation(contd')
-- **Practical tips**:
-  - Practice common questions (e.g., *"Why this research?"*, *"how much you've explored this topic?"*);
-  - Be open to discuss about the possibility of how your research data will be gained (in general);
-  - Be clear and concise;
-  - Prepare to discuss your CV and academic background in depth
-  - Understand the question(s);
-  - be truthful, academically!
 
----
+-   **Practical tips**:
+    -   Practice common questions (e.g., *"Why this research?"*, *"how much you've explored this topic?"*);
+    -   Be open to discuss about the possibility of how your research data will be gained (in general);
+    -   Be clear and concise;
+    -   Prepare to discuss your CV and academic background in depth
+    -   Understand the question(s);
+    -   Be truthful!
+
+------------------------------------------------------------------------
 
 ## Common Questions in Interviews
-- Examples of common questions:
-  - *Why do you want to pursue a PhD?*
-  - *How does your research align with UBD?*
-  - *What challenges do you anticipate, and how will you handle them?*
-  - *What are your career goals after the PhD?*
 
----
+-   Examples of common questions:
+    -   *Why do you want to pursue a PhD?*
+    -   *How does your research align with UBD?*
+    -   *What challenges do you anticipate, and how will you handle them?*
+    -   *What are your career goals after the PhD?*
+- *Note*: refer to the newest case (not always), there will be two different interview, first with the faculty member, second with the graduate admission commitee 
+
+------------------------------------------------------------------------
 
 ## Final Tips
-- Time management:
-  - Start applications early
-  - Practice interviews with peers or mentors
-- Communication:
-  - Be **clear** and **specific** in your application and interviews
-  - Show confidence and enthusiasm
-- Stay organised:
-  - Track deadlines and requirements
-  - Prepare documents systematically
 
-# Remember{background-image=figs/fig3.jpg background-opacity="0.4"}
+-   Time management:
+    -   Start applications early
+    -   Practice interviews with peers or mentors
+-   Communication:
+    -   Be **clear** and **specific** in your application and interviews
+    -   Show confidence and enthusiasm
+-   Stay organised:
+    -   Track deadlines and requirements
+    -   Prepare documents systematically
+
+# Remember {background-image="figs/fig3.jpg" background-opacity="0.4"}
+
 *"each journey is unique. Enjoy yours and prepare for the worst :)"*
 
-# Good luck and thank you :){background-image=figs/fig2.jpg background-opacity="0.4"}
+# Good luck and thank you :) {background-image="figs/fig2.jpg" background-opacity="0.4"}
