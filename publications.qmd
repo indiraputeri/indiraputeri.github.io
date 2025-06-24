@@ -2,6 +2,8 @@
 title: "Publications"
 ---
 
+**Kinasih, I.P.**, Jamil, H. & Leong, E. [Conditionally Autoregressive Models for House Price Data: Insights from a Comparative Simulation Study.](https://rdcu.be/es5un) *J Stat Theory Appl* (2025). https://doi.org/10.1007/s44199-025-00122-1
+
 Mustagfirin, M. L., Wiriasto, G. W., Suksmadana, I. M. B., & **Kinasih, I. P.** (2022). [Android-Based Short Message Service Filtering using Long Short-Term Memory Classification Model.](https://journals.ums.ac.id/index.php/khif/article/view/17995) *Khazanah Informatika: Jurnal Ilmu Komputer dan Informatika*, *8*(2).
 
 **Kinasih, I. P.**, & Hardiani, N. (2020). [Role playing and the changing of teacher understanding to middle school mathematics lesson planning within elpsa framework](https://ejournal.unsri.ac.id/index.php/jpm/article/view/6647). *Jurnal Pendidikan Matematika*, *14*(2), 183-198.

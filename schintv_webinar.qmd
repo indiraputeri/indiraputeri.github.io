@@ -15,7 +15,7 @@ format:
     footer: "[https://indiraputeri.github.io/](https://indiraputeri.github.io/)"
 ---
 
-#  {background-image="figs/journey.png" background-opacity="0.6" background-size="95%"}
+# The Journey{background-image="figs/journey.png" background-opacity="0.6" background-size="95%"}
 
 # Recipe & Ingredients {background-image="figs/fos2.jpg" background-opacity="0.2"}
 
@@ -76,14 +76,17 @@ Have time to explore your *'home'* wannabe
 
 ## Academic Interview Preparation
 
--   **What to expect**:
+![](figs/fig1.png){.center width="70%"}
+
+**What to expect**:
+
     -   Discuss your research proposal
     -   Explain why UBD is your choice
     -   Address your long-term goals
     -   Assess your communication skills, including english skills
     -   will not last more than 30 minutes
 
-![](figs/fig1.png){.center width="70%"}
+
 
 ## Academic Interview Preparation(contd')
 
@@ -104,7 +107,7 @@ Have time to explore your *'home'* wannabe
     -   *How does your research align with UBD?*
     -   *What challenges do you anticipate, and how will you handle them?*
     -   *What are your career goals after the PhD?*
-- *Note*: refer to the newest case (not always), there will be two different interview, first with the faculty member, second with the graduate admission commitee 
+- *Note*:For the latest process (though it may vary), there are typically two separate interviews: the first with a faculty member and the second with the graduate admissions committee.
 
 ------------------------------------------------------------------------
 
@@ -122,6 +125,6 @@ Have time to explore your *'home'* wannabe
 
 # Remember {background-image="figs/fig3.jpg" background-opacity="0.4"}
 
-*"each journey is unique. Enjoy yours and prepare for the worst :)"*
+*"each journey is unique. Enjoy yours and always prepare for the worst :)"*
 
 # Good luck and thank you :) {background-image="figs/fig2.jpg" background-opacity="0.4"}
