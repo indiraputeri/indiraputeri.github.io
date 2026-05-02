@@ -246,12 +246,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">html_text</span>() <span class="sc">%&gt;%</span>                                <span class="co">#that represent the news title</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">trimws</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "Pertimbangan dan Alasan PDIP Pecat Jokowi, Ada soal MK hingga Langgar Etik"
-[2] "Ada Sosok Pria Telanjang Dada Saat Anak Bos Toko Roti Ditangkap, Siapa?"   
-[3] "Isi Surat Pemecatan Jokowi, Gibran Rakabuming dan Bobby dari PDIP"         
-[4] "Surat Pemecatan Jokowi-Gibran-Bobby dari PDIP Diteken Langsung Megawati"   
-[5] "PDIP Umumkan Pecat Jokowi, Gibran, dan Bobby Nasution!"                    
-[6] "Anggota DPR Ingatkan Potensi Cuaca Ekstrem saat Libur Natal dan Tahun Baru"</code></pre>
+<pre><code>[1] "Pembunuhan 34 Tahun Lalu Terbongkar, Dua Saudari Terkejut Siapa Pelakunya"     
+[2] "Prabowo Sapa Pramono di May Day: Bowonya Sama, Partainya Lain Nggak Apa-apa"   
+[3] "Kado Prabowo di May Day: Ratifikasi Konvensi ILO 188 dan Perpres Driver Online"
+[4] "Serangan Drone Ukraina Tewaskan 2 Remaja Lagi Naik Motor di Rusia"             
+[5] "Putin dan Trump Teleponan Sampai 90 Menit, Bahas Perang di Ukraina dan Iran"   
+[6] "Viral Ulah Taksi Green SM Lawan Arah di Jakarta"                               </code></pre>
 </div>
 </div>
 <p>Moreover, <code>rvest</code> seamlessly integrates with other R packages such as <code>dplyr</code> and <code>ggplot2</code>, and even <code>purrr</code> facilitating data manipulation, visualization, and analysis tasks. Whether constructing predictive models, conducting sentiment analysis, or crafting interactive dashboards, <code>rvest</code> complements your data science workflow effectively.</p>
@@ -277,26 +277,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co"># View the results</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(news_data<span class="sc">$</span>link,<span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "https://www.detik.com/sulsel/pilkada/d-7689404/pj-bupati-jeneponto-dalami-kasus-asn-dinsos-ubah-kis-warga-gegara-pilkada"    
- [2] "https://www.detik.com/sulsel/pilkada/d-7689404/pj-bupati-jeneponto-dalami-kasus-asn-dinsos-ubah-kis-warga-gegara-pilkada"    
- [3] "https://www.detik.com/sulsel/pilkada/d-7689404/pj-bupati-jeneponto-dalami-kasus-asn-dinsos-ubah-kis-warga-gegara-pilkada"    
- [4] "https://www.detik.com/sulsel/pilkada/d-7689396/dana-kampanye-paslon-pilwalkot-makassar-mulia-tertinggi-inimi-paling-sedikit" 
- [5] "https://www.detik.com/sulsel/pilkada/d-7689371/oknum-asn-dinsos-jeneponto-ubah-kis-warga-ancam-pecat-korban-dari-honorer"    
- [6] "https://news.detik.com/pilkada/d-7689315/hari-terakhir-rekapitulasi-suara-pilkada-di-2-provinsi-masih-belum-tuntas"          
- [7] "https://www.detik.com/sulsel/pilkada/d-7689128/dana-kampanye-appi-aliyah-rp-13-6-m-paling-tinggi-di-pilwalkot-makassar"      
- [8] "https://news.detik.com/pilkada/d-7688255/terungkap-komunikasi-pks-dengan-kubu-pramono-selepas-pilkada-jakarta"               
- [9] "https://news.detik.com/pilkada/d-7688217/gerindra-dki-belum-komunikasi-dengan-pramono-kami-kawal-program-warga"              
-[10] "https://news.detik.com/pilkada/d-7688169/pdip-sambut-baik-komunikasi-pramono-dan-pks-hal-positif"                            
-[11] "https://news.detik.com/pilkada/d-7688104/psi-dorong-pramono-kerja-sama-dengan-prabowo-atasi-masalah-di-jakarta"              
-[12] "https://news.detik.com/pilkada/d-7688016/cak-lontong-jamin-pramono-bakal-rangkul-semua-pihak-termasuk-pks"                   
-[13] "https://www.detik.com/sulsel/pilkada/d-7687096/pesan-trisal-ome-agar-gugatan-fkj-nur-bukan-soal-ijazah-palsu"                
-[14] "https://www.detik.com/sulsel/pilkada/d-7687093/perkara-pilkada-bikin-asn-dinsos-jeneponto-ubah-kis-warga-jadi-meninggal"     
-[15] "https://news.detik.com/pilkada/d-7686763/rano-akan-bagi-tugas-urus-jakarta-mas-pram-di-meja-saya-eksekutornya"               
-[16] "https://www.detik.com/sulsel/pilkada/d-7686691/dinsos-jeneponto-akan-aktifkan-lagi-kis-warga-diubah-meninggal-gegara-pilkada"
-[17] "https://www.detik.com/sulsel/pilkada/d-7686297/trisal-ome-ingatkan-fkj-nur-bedakan-sengketa-proses-dan-hasil-pilkada-palopo" 
-[18] "https://www.detik.com/sulsel/pilkada/d-7686261/fkj-nur-gugat-hasil-pilkada-palopo-ke-mk-trisal-ome-sudah-siapkan-pembelaan"  
-[19] "https://www.detik.com/sulsel/pilkada/d-7686388/viral-oknum-asn-dinsos-jeneponto-ubah-kis-warga-jadi-meninggal-gegara-pilkada"
-[20] "https://www.detik.com/jogja/pilkada/d-7686378/polisi-limpahkan-berkas-kasus-politik-uang-di-minggir-sleman-ke-kejaksaan"     </code></pre>
+<pre><code> [1] "https://news.detik.com/internasional/d-8470097/pembunuhan-34-tahun-lalu-terbongkar-dua-saudari-terkejut-siapa-pelakunya"  
+ [2] "https://news.detik.com/internasional/d-8470097/pembunuhan-34-tahun-lalu-terbongkar-dua-saudari-terkejut-siapa-pelakunya"  
+ [3] "https://news.detik.com/berita/d-8469706/prabowo-sapa-pramono-di-may-day-bowonya-sama-partainya-lain-nggak-apa-apa"        
+ [4] "https://news.detik.com/berita/d-8469706/prabowo-sapa-pramono-di-may-day-bowonya-sama-partainya-lain-nggak-apa-apa"        
+ [5] "https://news.detik.com/berita/d-8469738/kado-prabowo-di-may-day-ratifikasi-konvensi-ilo-188-dan-perpres-driver-online"    
+ [6] "https://news.detik.com/berita/d-8469738/kado-prabowo-di-may-day-ratifikasi-konvensi-ilo-188-dan-perpres-driver-online"    
+ [7] "https://news.detik.com/internasional/d-8469658/serangan-drone-ukraina-tewaskan-2-remaja-lagi-naik-motor-di-rusia"         
+ [8] "https://news.detik.com/internasional/d-8469658/serangan-drone-ukraina-tewaskan-2-remaja-lagi-naik-motor-di-rusia"         
+ [9] "https://news.detik.com/internasional/d-8467934/putin-dan-trump-teleponan-sampai-90-menit-bahas-perang-di-ukraina-dan-iran"
+[10] "https://news.detik.com/internasional/d-8467934/putin-dan-trump-teleponan-sampai-90-menit-bahas-perang-di-ukraina-dan-iran"
+[11] "https://news.detik.com/berita/d-8471416/viral-ulah-taksi-green-sm-lawan-arah-di-jakarta"                                  
+[12] "https://news.detik.com/berita/d-8471416/viral-ulah-taksi-green-sm-lawan-arah-di-jakarta"                                  
+[13] "https://news.detik.com/berita/d-8471407/viral-pria-nemplok-di-mobil-merah-di-jakbar-polisi-selidiki"                      
+[14] "https://news.detik.com/berita/d-8471407/viral-pria-nemplok-di-mobil-merah-di-jakbar-polisi-selidiki"                      
+[15] "https://news.detik.com/berita/d-8471404/bukan-sekadar-hafalan-lcc-empat-pilar-mpr-jadi-kompas-generasi-emas-2045"         
+[16] "https://news.detik.com/berita/d-8471404/bukan-sekadar-hafalan-lcc-empat-pilar-mpr-jadi-kompas-generasi-emas-2045"         
+[17] "https://news.detik.com/berita/d-8471396/3-rumah-di-gunungputri-bogor-rusak-diterjang-angin-kencang"                       
+[18] "https://news.detik.com/berita/d-8471396/3-rumah-di-gunungputri-bogor-rusak-diterjang-angin-kencang"                       
+[19] "https://news.detik.com/berita/d-8471365/waspada-hujan-lebat-beserta-petir-pada-2-8-mei-ini-daftar-wilayah-terdampak"      
+[20] "https://news.detik.com/berita/d-8471365/waspada-hujan-lebat-beserta-petir-pada-2-8-mei-ini-daftar-wilayah-terdampak"      </code></pre>
 </div>
 </div>
 <p>In summary, <code>rvest</code> empowers R practitioners to leverage the abundance of web-based information and convert it into actionable insights. By automating web scraping, <code>rvest</code> enhances efficiency, boosts productivity, and opens up new avenues for data-driven decision-making. Whether you’re a novice or a seasoned data scientist, <code>rvest</code> serves as a valuable asset for extracting knowledge from the web.</p>
