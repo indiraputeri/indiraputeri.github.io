@@ -6,7 +6,7 @@ author:
     url: https://indiraputeri.github.io/
     orcid: 0009-0009-6959-6723
     affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam and Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
-date: 02-05-2026
+date: 2 May 2026
 categories: [essai, math edu, learning] 
 citation: 
   url: https://indiraputeri.github.io/posts/2026-05-02-post/ 
