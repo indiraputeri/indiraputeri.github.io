@@ -6,7 +6,7 @@ author:
     url: https://indiraputeri.github.io/
     orcid: 0009-0009-6959-6723
     affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam and Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
-date: 29-03-2024
+date: 29 March 2024
 categories: [Statistics, Probability, R] 
 citation: 
   url: https://indiraputeri.github.io/posts/2024-03-29-post/ 
