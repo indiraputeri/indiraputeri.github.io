@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Indira Puteri">
+<meta name="dcterms.date" content="2026-02-05">
+<meta name="description" content="sebuah refleksi dan kritik konstruktif">
 
-<title>threeinks - Musings and Insights</title>
+<title>threeinks - Catatan Kecil dari Peserta Malas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +23,45 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +89,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,7 +120,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,7 +130,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">threeinks</span>
     </a>
   </div>
@@ -149,11 +141,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -162,21 +154,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-research-and-publications">    
         <li>
-    <a class="dropdown-item" href="./projects.html">
+    <a class="dropdown-item" href="../../projects.html">
  <span class="dropdown-text">Projects</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./publications.html">
+    <a class="dropdown-item" href="../../publications.html">
  <span class="dropdown-text">Publications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./talks.html">
+    <a class="dropdown-item" href="../../talks.html">
  <span class="dropdown-text">Talks &amp; Workshops</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./posts.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts.html"> 
 <span class="menu-text">Musings and Insights</span></a>
   </li>  
 </ul>
@@ -191,21 +183,59 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Probability">Probability <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="data">data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="essai">essai <span class="quarto-category-count">(1)</span></div><div class="category" data-category="learning">learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="math edu">math edu <span class="quarto-category-count">(1)</span></div><div class="category" data-category="rvest">rvest <span class="quarto-category-count">(1)</span></div><div class="category" data-category="web-scraping">web-scraping <span class="quarto-category-count">(1)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#prolog" id="toc-prolog" class="nav-link active" data-scroll-target="#prolog">Prolog</a></li>
+  <li><a href="#makan-bersama" id="toc-makan-bersama" class="nav-link" data-scroll-target="#makan-bersama">“Makan Bersama”</a></li>
+  <li><a href="#lalu-apa" id="toc-lalu-apa" class="nav-link" data-scroll-target="#lalu-apa">Lalu apa?</a></li>
+  <li><a href="#sumber-pustaka" id="toc-sumber-pustaka" class="nav-link" data-scroll-target="#sumber-pustaka">Sumber Pustaka</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Musings and Insights</h1>
+<h1 class="title">Catatan Kecil dari Peserta Malas</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">essai</div>
+    <div class="quarto-category">math edu</div>
+    <div class="quarto-category">learning</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    sebuah refleksi dan kritik konstruktif
+  </div>
 </div>
 
-
+<div class="quarto-title-meta-author column-page-left">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="https://indiraputeri.github.io/">Indira Puteri</a> <a href="https://orcid.org/0009-0009-6959-6723" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam and Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta column-page-left">
 
-    
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 5, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -215,122 +245,92 @@ window.Quarto = {
 </header>
 
 
+<section id="prolog" class="level2">
+<h2 class="anchored" data-anchor-id="prolog">Prolog</h2>
+<p>Pekan lalu, saya dan beberapa rekan lain ditugaskan kampus untuk memenuhi undangan mengikuti <em>workshop</em> bertema literasi numerasi. Kegiatan ini diadakan oleh suatu program kerjasama yang namanya cukup akrab di telinga saya, mungkin sejak kurang lebih 9 tahun lalu. Topiknya familiar, sempat saya geluti, meski sudah tidak lagi, selama 3 tahun terakhir. Karena itu, saat menerima penugasan yang tampaknya tidak bisa ditawar itu, saya sempat bimbang.</p>
+<p>“<em>Datang ngga ya</em>?” Separuh jadwalnya ada di akhir pekan. Agak malas.</p>
+<p>Lalu suami bilang: “<em>coba datang aja, kamu sudah ditugasin</em>.”</p>
+<p><em>Hmmm</em>, baiklah. Saya pun hadir, meski terlambat karena hal darurat.</p>
+<p>Malam sebelumnya saya luangkan waktu membaca <em>rundown</em> kegiatan. <em>It’s a full four days workshop</em>. Tampaknya akan mengupas beberapa topik utama dalam matematika sekolah dasar, dibungkus dalam tajuk pembelajaran mendalam. Pada surat undangan, Tidak ada info apapun tentang siapa penyajinya dan keluaran apa yang diharapkan. <em>It’s a bit weird</em>. Tapi ya sudahlah. Ekspektasi saya, karena audiens adalah akademisi/dosen dari LPTK, mungkin ini akan bersifat <em>sharing session</em>, diseminasi dan diskusi data, tukar ide, kolaboratif, dan semacamnya.</p>
+<p>Hari pertama, sebagai peserta yang terlambat, saya berusaha secepat mungkin menyamakan ritme. Ada framework, learning stage, gaya pedagogi, dan standar proses dalam pembelajaran matematika yang berusaha untuk dikenalkan. Ada pengawas sekolah, praktisi, dan juga akademisi yang menjadi pematerinya. Saya berusaha keras mengikuti alurnya: simulasi yang mengharuskan peserta menjadi guru dan murid, <em>ice breaking</em> dan <em>game</em> yang mungkin akan lucu untuk saya di 10-20 thn lalu tapi sangat canggung untuk masa kini, belum lagi pertanyaan-pertanyaan reflektif yang sepertinya bukan untuk kami.</p>
+</section>
+<section id="makan-bersama" class="level2">
+<h2 class="anchored" data-anchor-id="makan-bersama">“Makan Bersama”</h2>
+<p>Harus diakui, kurang dari setengah hari di ruangan itu, saya menjadi amat <em>stress</em>. Tidak ada ringkasan data yang disajikan, tidak ada riset yang didiskusikan, tidak ada pemaparan pencapaian, dan tidak ada sinkronisasi dan harmonisasi mata kuliah sesuai kebutuhan seperti yang telah dibahasakan pada undangan. Kami sibuk mendengarkan, bersimulasi, dan bergelut di ruang diskusi yang rasanya lebih seperti perang istilah dan adu <em>knowledge</em> antar peserta. Hampir tidak ada diskusi mendasar untuk mencari tahu: <em>Apa fakta atau tantangan yang kita punya, apa yang sudah dilakukan, apa yang belum, mengapa, dan untuk apa kita dikumpulkan disini?</em>. Dalam situasi itu, seolah-olah kami semua harus “menelan” konsep yang sama, tanpa benar-benar diberi ruang untuk mencernanya.</p>
+<p>Kegelisahan saya mencapai puncaknya saat tiba-tiba pemateri bertanya:</p>
+<p>“<em>Jadi gimana Bapak/Ibu, sekarang Bapak/Ibu sepakat ya kalau matematika itu penting untuk dipelajari?!</em>”</p>
+<p>Tunggu. Gimana?</p>
+<p>Apakah kita semua terlihat seperti peserta <em>Master Chef</em>?</p>
+<p>Entah peserta lain, tapi bagi saya, ada sesuatu yang kurang pas. Sebagai seorang peragu, saya pun bolak-balik mendiagnosa: benarkah ini intuisi, atau hanya sekadar ego pribadi saya? Proses bolak-balik memeriksa sambil merenung itu berlangsung lumayan lama. Sambil terus berusaha menikmati kegiatan dan terpaksa menyahuti yel-yel pemateri:</p>
+<p>“<em>mantap dua kali!</em>” “<em>Hmm mantap, hmm mantap!!!</em>.”</p>
+<p>Absurd.</p>
+<p>Singkatnya, selama hari pertama itu, paling sedikit ada 3 konsep yang dapat ditangkap:</p>
+<ol type="1">
+<li><strong>Konkret-Gambar-Abstrak (KGA)</strong> sebagai tahapan pengenalan konsep matematika</li>
+<li><strong>Contoh-Bersama-Mandiri (CBM)</strong> sebagai kerangka pedagogi untuk mengajarkan matematika</li>
+<li><strong>Elemen proses</strong> dalam pembelajaran matematika, yang terdiri dari 5 komponen: pemecahan masalah, penalaran dan pembuktian, komunikasi, koneksi, serta representasi.</li>
+</ol>
+<p>Ketiganya merupakan adaptasi dari riset-riset terdahulu. Misalnya KGA telah diperkenalkan lebih dulu sebagai pendekatan Concrete-Representational-Abstract (CRA) oleh <span class="citation" data-cites="witzel2005using">Witzel (<a href="#ref-witzel2005using" role="doc-biblioref">2005</a>)</span>;<span class="citation" data-cites="flores2010using">Flores (<a href="#ref-flores2010using" role="doc-biblioref">2010</a>)</span>;<span class="citation" data-cites="bouck2018concrete">Bouck, Satsangi, and Park (<a href="#ref-bouck2018concrete" role="doc-biblioref">2018</a>)</span>; bahkan diperluas pada bentuk konkret virtual oleh <span class="citation" data-cites="bouck2019virtual">Bouck and Sprick (<a href="#ref-bouck2019virtual" role="doc-biblioref">2019</a>)</span>.</p>
+<p><em>Framework</em> CBM juga merupakan adaptasi dari metode mengajar <em>I do, we do, you do</em> yang <a href="https://www.structural-learning.com/post/i-do-we-do-you-do">salah satunya dapat diakses di tautan ini</a>. metode ini diinisiasi dari ide <em>gradual release of responsibility</em> <span class="citation" data-cites="fisher2013gradual">(<a href="#ref-fisher2013gradual" role="doc-biblioref">Fisher and Frey 2013</a>)</span>.</p>
+<p>Sedangkan elemen proses, setelah ditelusuri, tampaknya merujuk pada <em>Process Standard</em> NCTM <a href="https://www.nctm.org/Standards-and-Positions/Principles-and-Standards/Process/">(lihat di sini)</a>. Pada dasarnya prinsip/standar ini menetapkan setidaknya 5 poin penting yang harus ada pada setiap pembelajaran matematika.</p>
+<p>Begitulah, <em>long story short</em>, saya pun absen selama 2 hari, dan kembali hadir di hari terakhir. Ya, sebuah contoh yang buruk dan tidak patut ditiru memang.</p>
+<p>Maka di pagi hari keempat itu, saya pun bertanya pada kawan sebelah,</p>
+<p>“<em>Mbak, dua hari kemarin, ngapain aja?</em>”</p>
+<p>“<em>Ya gitu-gitu aja Mbak <span class="math inline">\(\dots\)</span>, sama kayak hari pertama. Simulasi, diskusi, refleksi, yel-yel</em>”, ujarnya.</p>
+<p>Saya menarik nafas, menghembuskannya sedikit keras. <em>Ok, here we go again <span class="math inline">\(\dots\)</span></em>, saya berkata pada diri sendiri.</p>
+<p>Saya membunuh kebosanan yang mulai akut dengan membuka situs resmi mereka. Barangkali ada hal menarik yang bisa dieksplorasi. Secara eksplisit, tampaknya mereka sudah melakukan banyak hal. Wilayah geraknya saja mencakup tiga ranah yang menurut saya sangat luas: <strong>Literasi, Numerasi, dan Karakter</strong>. Ada beberapa cerita dan berita, ada halaman yang didedikasikan untuk laporan kegiatan. Saya mencoba menelisik khusus di bagian numerasi. hal menariknya adalah, mereka telah melaksanakan uji coba modul/bahan ajar matematika SD pada (seingat saya) topik bilangan. Berdasarkan berita itu, uji coba telah dilakukan sebanyak dua kali di tahun berbeda. Setelah itu, berita dan kegiatan terkait numerasi seolah terputus.</p>
+<p>Menarik.</p>
+</section>
+<section id="lalu-apa" class="level2">
+<h2 class="anchored" data-anchor-id="lalu-apa">Lalu apa?</h2>
+<p>Entah mengapa, saya merasa ‘gambaran utuh’ dari kegiatan ini belum dapat terbaca dengan baik. Ada cerita yang terpotong. Entah apa dan bagaimana.</p>
+<p>Menurut saya, dalam melihat hal ini, penting untuk menempatkan peran guru dan dosen sebagai dua ranah yang saling melengkapi. Guru berhadapan langsung dengan dinamika kelas dan praktik pembelajaran sehari-hari. Sementara itu, dosen berperan dalam menyiapkan calon guru, mengkaji praktik tersebut, dan menghubungkannya dengan kerangka teori serta hasil penelitian. Perbedaannya bukanlah pada tingkat, tetapi pada fokus dan ruang kerja.</p>
+<p>Dari sudut pandang ini, bukankah kegiatan yang ditujukan untuk dosen seharusnya tidak berhenti pada level praktik kelas (simulasi) dan refleksi?, tetapi juga diupayakan menjangkau bagaimana praktik tersebut dianalisis, diadaptasi, dan diintegrasikan dalam pendidikan calon guru. Terlebih fakta tentang telah adanya uji coba sebelumnya, mengapa kegiatan ini tidak berangkat dari sana? Bagaimana hasil uji coba, apa kekurangan dan kelebihannya, apa yang bisa dilakukan terkait hal itu?.</p>
+<p>Tiga konsep yang dikenalkan di hari pertama pun tampak seperti potongan-potongan <em>puzzle</em> yang sebenarnya diambil dari berbagai sumber, diadaptasi, tanpa mengacu pada sumber utamanya secara <em>fair</em>, sebagai standar minimal ‘adab’ ilmiah/akademik.</p>
+<p>Hal lain yang juga perlu dicermati adalah kejelasan peran narasumber. Kehadiran praktisi dan pengawas sekolah tentu membawa perspektif yang penting. Namun, tanpa pengaitan yang eksplisit dengan konteks pendidikan tinggi, kontribusi tersebut berisiko tidak sepenuhnya terhubung dengan kebutuhan peserta.</p>
+<p>Gongnya, saya hanya bisa geleng-geleng kepala saat di akhir kegiatan, di 30 menit terakhir, peserta mendadak diminta menyusun rencana tindak lanjut (RTL) per institusi, sebuah bagian yang sama sekali tidak muncul dalam <em>rundown</em> awal. Tanpa proses pengantar yang cukup, bagian ini terasa muncul secara tiba-tiba. Setidaknya, saya merasa seolah-olah mereka mengontrol dan mengarahkan pada keluaran tertentu tanpa landasan diskusi yang memadai sebelumnya.</p>
+<p>saya pun bertanya secara terbuka di forum:</p>
+<p>“<em>Jika kami diminta untuk menyusun RTL ini, dan teman-teman di program ini menganggap RTL ini sangat penting, saya ingin tahu, kira-kira dimana posisi program ini?</em>”</p>
+<p>Jawaban mereka, bagi saya terasa normatif.</p>
+<p>Jika dilihat sebagai sebuah intervensi, kegiatan ini sebenarnya memiliki tujuan yang strategis: menjangkau dosen untuk memberikan dampak yang lebih luas pada pendidikan calon guru, dan pada akhirnya pada pembelajaran di sekolah. Namun, efektivitas intervensi semacam ini sangat bergantung pada kesesuaian antara desain kegiatan dan profil pesertanya. Ketika pendekatan yang digunakan belum sepenuhnya selaras, maka peluang tercapainya dampak yang diharapkan juga menjadi terbatas.</p>
+<p>Secara keseluruhan, kegiatan ini sebenarnya memiliki potensi yang baik. Niatnya (mungkin) lumayan jelas, cakupannya luas, dan isu yang diangkat sangat relevan. Namun, mungkin justru karena cakupannya yang terlampau luas, muncul pertanyaan lain: <em>apakah keluasan tersebut sudah diimbangi dengan kedalaman yang cukup?</em>.</p>
+<p>Mungkin di sinilah ruang refleksi itu berada. Bukan pada apakah kegiatan ini penting atau tidak, tetapi pada bagaimana ia dapat dirancang agar lebih tepat sasaran, sehingga tidak hanya menyampaikan konsep, tetapi juga membangun jembatan yang jelas antara praktik di sekolah dan pendidikan calon guru di kampus.</p>
+<p>Selamat hari Pendidikan Nasional, Kisanak.</p>
+</section>
+<section id="sumber-pustaka" class="level2">
 
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="data,R,rvest,web-scraping" data-listing-date-sort="1707062400000" data-listing-file-modified-sort="1777690613321" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="640">
-<a href="./posts_files/2024-03-29-post-rvest/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Web data scraping with <code>rvest</code>
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('data'); return false;">
-data
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Sumber Pustaka</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-bouck2018concrete" class="csl-entry" role="listitem">
+Bouck, Emily C, Rajiv Satsangi, and Jiyoon Park. 2018. <span>“The Concrete–Representational–Abstract Approach for Students with Learning Disabilities: An Evidence-Based Practice Synthesis.”</span> <em>Remedial and Special Education</em> 39 (4): 211–28.
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
+<div id="ref-bouck2019virtual" class="csl-entry" role="listitem">
+Bouck, Emily C, and Jessica Sprick. 2019. <span>“The Virtual-Representational-Abstract Framework to Support Students with Disabilities in Mathematics.”</span> <em>Intervention in School and Clinic</em> 54 (3): 173–80.
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('rvest'); return false;">
-rvest
+<div id="ref-fisher2013gradual" class="csl-entry" role="listitem">
+Fisher, Douglas, and NANCY Frey. 2013. <span>“Gradual Release of Responsibility Instructional Framework.”</span> <em>IRA e-Ssentials</em>, 1–8.
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('web-scraping'); return false;">
-web-scraping
+<div id="ref-flores2010using" class="csl-entry" role="listitem">
+Flores, Margaret M. 2010. <span>“Using the Concrete-Representational-Abstract Sequence to Teach Subtraction with Regrouping to Students at Risk for Failure.”</span> <em>Remedial and Special Education</em> 31 (3): 195–207.
 </div>
+<div id="ref-witzel2005using" class="csl-entry" role="listitem">
+Witzel, Bradley S. 2005. <span>“Using CRA to Teach Algebra to Students with Math Difficulties in Inclusive Settings.”</span> <em>Learning Disabilities: A Contemporary Journal</em> 3 (2): 49–60.
 </div>
-<div class="card-text listing-description">
-Learn how to extract valuable data from the web with ease and efficiency
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Indira Puteri
-</div>
-<div class="listing-date">
-Feb 5, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="essai,math edu,learning" data-listing-date-sort="1770220800000" data-listing-file-modified-sort="1777690973055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1197">
-<a href="./posts_files/2026-05-02-post-math/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Catatan Kecil dari Peserta Malas
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('essai'); return false;">
-essai
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('math edu'); return false;">
-math edu
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('learning'); return false;">
-learning
-</div>
-</div>
-<div class="card-text listing-description">
-sebuah refleksi dan kritik konstruktif
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Indira Puteri
-</div>
-<div class="listing-date">
-Feb 5, 2026
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Statistics,Probability,R" data-listing-date-sort="1777737600000" data-listing-file-modified-sort="1734318617803" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="744">
-<a href="./posts_files/2024-03-29-post-paradox/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts_files/2024-03-29-post-paradox/index_files/figure-html/unnamed-chunk-1-1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Birthday Paradox
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Statistics'); return false;">
-Statistics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Probability'); return false;">
-Probability
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-</div>
-<div class="card-text listing-description">
-a fascinating statistical phenomenon that defies intuition
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Indira Puteri
-</div>
-<div class="listing-date">
-May 3, 2026
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{puteri2026,
+  author = {Puteri, Indira},
+  title = {Catatan {Kecil} Dari {Peserta} {Malas}},
+  date = {2026-02-05},
+  url = {https://indiraputeri.github.io/posts/2026-05-02-post/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-puteri2026" class="csl-entry quarto-appendix-citeas" role="listitem">
+Puteri, Indira. 2026. <span>“Catatan Kecil Dari Peserta Malas.”</span>
+February 5, 2026. <a href="https://indiraputeri.github.io/posts/2026-05-02-post/">https://indiraputeri.github.io/posts/2026-05-02-post/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

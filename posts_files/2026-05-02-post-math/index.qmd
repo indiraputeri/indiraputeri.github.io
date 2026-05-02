@@ -1,0 +1,106 @@
+---
+title: "Catatan Kecil dari Peserta Malas"
+description: "sebuah refleksi dan kritik konstruktif"
+author:
+  - name: Indira Puteri
+    url: https://indiraputeri.github.io/
+    orcid: 0009-0009-6959-6723
+    affiliation: Student at Mathematical Science program, Faculty of Science, Universiti Brunei Darussalam and Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
+date: 02-05-2026
+categories: [essai, math edu, learning] 
+citation: 
+  url: https://indiraputeri.github.io/posts/2026-05-02-post/ 
+draft: false 
+bibliography: ../refs_cra.bib
+---
+
+## Prolog
+
+Pekan lalu, saya dan beberapa rekan lain ditugaskan kampus untuk memenuhi undangan mengikuti *workshop* bertema literasi numerasi. Kegiatan ini diadakan oleh suatu program kerjasama yang namanya cukup akrab di telinga saya, mungkin sejak kurang lebih 9 tahun lalu. Topiknya familiar, sempat saya geluti, meski sudah tidak lagi, selama 3 tahun terakhir. Karena itu, saat menerima penugasan yang tampaknya tidak bisa ditawar itu, saya sempat bimbang. 
+
+"*Datang ngga ya*?" Separuh jadwalnya ada di akhir pekan. Agak malas.
+
+Lalu suami bilang: "*coba datang aja, kamu sudah ditugasin*."
+
+*Hmmm*, baiklah. Saya pun hadir, meski terlambat karena hal darurat.
+
+Malam sebelumnya saya luangkan waktu membaca *rundown* kegiatan. *It's a full four days workshop*. Tampaknya akan mengupas beberapa topik utama dalam matematika sekolah dasar, dibungkus dalam tajuk pembelajaran mendalam. Pada surat undangan,  Tidak ada info apapun tentang siapa penyajinya dan keluaran apa yang diharapkan. *It's a bit weird*. Tapi ya sudahlah. Ekspektasi saya, karena audiens adalah akademisi/dosen dari LPTK, mungkin ini akan bersifat *sharing session*, diseminasi dan diskusi data, tukar ide, kolaboratif, dan semacamnya.
+
+Hari pertama, sebagai peserta yang terlambat, saya berusaha secepat mungkin menyamakan ritme. Ada framework, learning stage, gaya pedagogi, dan standar proses dalam pembelajaran matematika yang berusaha untuk dikenalkan. Ada pengawas sekolah, praktisi, dan juga akademisi yang menjadi pematerinya. Saya berusaha keras mengikuti alurnya: simulasi yang mengharuskan peserta menjadi guru dan murid, *ice breaking* dan *game* yang mungkin akan lucu untuk saya di 10-20 thn lalu tapi sangat canggung untuk masa kini, belum lagi pertanyaan-pertanyaan reflektif yang sepertinya bukan untuk kami.
+
+## "Makan Bersama"
+
+Harus diakui, kurang dari setengah hari di ruangan itu, saya menjadi amat *stress*. Tidak ada ringkasan data yang disajikan, tidak ada riset yang didiskusikan, tidak ada pemaparan pencapaian, dan tidak ada sinkronisasi dan harmonisasi mata kuliah sesuai kebutuhan seperti yang telah dibahasakan pada undangan. Kami sibuk mendengarkan, bersimulasi, dan bergelut di ruang diskusi yang rasanya lebih seperti perang istilah dan adu *knowledge* antar peserta. Hampir tidak ada diskusi mendasar untuk mencari tahu: *Apa fakta atau tantangan yang kita punya, apa yang sudah dilakukan, apa yang belum, mengapa, dan untuk apa kita dikumpulkan disini?*. Dalam situasi itu, seolah-olah kami semua harus “menelan” konsep yang sama, tanpa benar-benar diberi ruang untuk mencernanya.
+
+Kegelisahan saya mencapai puncaknya saat tiba-tiba pemateri bertanya: 
+
+"*Jadi gimana Bapak/Ibu, sekarang Bapak/Ibu sepakat ya kalau matematika itu penting untuk dipelajari?!*"
+
+Tunggu. Gimana?
+
+Apakah kita semua terlihat seperti peserta *Master Chef*?
+
+Entah peserta lain, tapi bagi saya, ada sesuatu yang kurang pas. Sebagai seorang peragu, saya pun bolak-balik mendiagnosa: benarkah ini intuisi, atau hanya sekadar ego pribadi saya? Proses bolak-balik memeriksa sambil merenung itu berlangsung lumayan lama. Sambil terus berusaha menikmati kegiatan dan terpaksa menyahuti yel-yel pemateri:
+
+"*mantap dua kali!*" 
+"*Hmm mantap, hmm mantap!!!*."
+
+Absurd.
+
+Singkatnya, selama hari pertama itu, paling sedikit ada 3 konsep yang dapat ditangkap:
+
+1. **Konkret-Gambar-Abstrak (KGA)** sebagai tahapan pengenalan konsep matematika
+2. **Contoh-Bersama-Mandiri (CBM)** sebagai kerangka pedagogi untuk mengajarkan matematika
+3. **Elemen proses** dalam pembelajaran matematika, yang terdiri dari 5 komponen: pemecahan masalah, penalaran dan pembuktian, komunikasi, koneksi, serta representasi.
+
+Ketiganya merupakan adaptasi dari riset-riset terdahulu.
+Misalnya KGA telah diperkenalkan lebih dulu sebagai pendekatan Concrete-Representational-Abstract (CRA) oleh @witzel2005using;@flores2010using;@bouck2018concrete; bahkan diperluas pada bentuk konkret virtual oleh @bouck2019virtual.
+
+*Framework* CBM juga merupakan adaptasi dari metode mengajar *I do, we do, you do* yang [salah satunya dapat diakses di tautan ini](https://www.structural-learning.com/post/i-do-we-do-you-do). metode ini diinisiasi dari ide *gradual release of responsibility* [@fisher2013gradual]. 
+
+Sedangkan elemen proses, setelah ditelusuri, tampaknya merujuk pada *Process Standard* NCTM [(lihat di sini)](https://www.nctm.org/Standards-and-Positions/Principles-and-Standards/Process/).
+Pada dasarnya prinsip/standar ini menetapkan setidaknya 5 poin penting yang harus ada pada setiap pembelajaran matematika.
+
+Begitulah, *long story short*,  saya pun absen selama 2 hari, dan kembali hadir di hari terakhir. Ya, sebuah contoh yang buruk dan tidak patut ditiru memang.
+
+Maka di pagi hari keempat itu, saya pun bertanya pada kawan sebelah,
+
+"*Mbak, dua hari kemarin, ngapain aja?*"
+
+"*Ya gitu-gitu aja Mbak $\dots$, sama kayak hari pertama. Simulasi, diskusi, refleksi, yel-yel*", ujarnya.
+
+Saya menarik nafas, menghembuskannya sedikit keras. *Ok, here we go again $\dots$*, saya berkata pada diri sendiri. 
+
+Saya membunuh kebosanan yang mulai akut dengan membuka situs resmi mereka. Barangkali ada hal menarik yang bisa dieksplorasi. Secara eksplisit, tampaknya mereka sudah melakukan banyak hal. Wilayah geraknya saja mencakup tiga ranah yang menurut saya sangat luas: **Literasi, Numerasi, dan Karakter**. Ada beberapa cerita dan berita, ada halaman yang didedikasikan untuk laporan kegiatan. Saya mencoba menelisik khusus di bagian numerasi. hal menariknya adalah, mereka telah melaksanakan uji coba modul/bahan ajar matematika SD pada (seingat saya) topik bilangan. Berdasarkan berita itu, uji coba telah dilakukan sebanyak dua kali di tahun berbeda. Setelah itu, berita dan kegiatan terkait numerasi seolah terputus.
+
+Menarik.
+
+## Lalu apa?
+
+Entah mengapa, saya merasa 'gambaran utuh' dari kegiatan ini belum dapat terbaca dengan baik. Ada cerita yang terpotong. Entah apa dan bagaimana.
+
+Menurut saya, dalam melihat hal ini, penting untuk menempatkan peran guru dan dosen sebagai dua ranah yang saling melengkapi. Guru berhadapan langsung dengan dinamika kelas dan praktik pembelajaran sehari-hari. Sementara itu, dosen berperan dalam menyiapkan calon guru, mengkaji praktik tersebut, dan menghubungkannya dengan kerangka teori serta hasil penelitian. Perbedaannya bukanlah pada tingkat, tetapi pada fokus dan ruang kerja.
+
+Dari sudut pandang ini, bukankah kegiatan yang ditujukan untuk dosen seharusnya tidak berhenti pada level praktik kelas (simulasi) dan refleksi?, tetapi juga diupayakan menjangkau bagaimana praktik tersebut dianalisis, diadaptasi, dan diintegrasikan dalam pendidikan calon guru. Terlebih fakta tentang telah adanya uji coba sebelumnya, mengapa kegiatan ini tidak berangkat dari sana? Bagaimana hasil uji coba, apa kekurangan dan kelebihannya, apa yang bisa dilakukan terkait hal itu?.
+
+Tiga konsep yang dikenalkan di hari pertama pun tampak seperti potongan-potongan *puzzle* yang sebenarnya diambil dari berbagai sumber, diadaptasi, tanpa mengacu pada sumber utamanya secara *fair*, sebagai standar minimal 'adab' ilmiah/akademik. 
+
+Hal lain yang juga perlu dicermati adalah kejelasan peran narasumber. Kehadiran praktisi dan pengawas sekolah tentu membawa perspektif yang penting. Namun, tanpa pengaitan yang eksplisit dengan konteks pendidikan tinggi, kontribusi tersebut berisiko tidak sepenuhnya terhubung dengan kebutuhan peserta.
+
+Gongnya, saya hanya bisa geleng-geleng kepala saat di akhir kegiatan, di 30 menit terakhir, peserta mendadak diminta menyusun rencana tindak lanjut (RTL) per institusi, sebuah bagian yang sama sekali tidak muncul dalam *rundown* awal. Tanpa proses pengantar yang cukup, bagian ini terasa muncul secara tiba-tiba. Setidaknya, saya merasa seolah-olah mereka mengontrol dan mengarahkan pada keluaran tertentu tanpa landasan diskusi yang memadai sebelumnya.
+
+saya pun bertanya secara terbuka di forum:
+
+"*Jika kami diminta untuk menyusun RTL ini, dan teman-teman di program ini menganggap RTL ini sangat penting, saya ingin tahu, kira-kira dimana posisi program ini?*"
+
+Jawaban mereka, bagi saya terasa normatif.
+
+Jika dilihat sebagai sebuah intervensi, kegiatan ini sebenarnya memiliki tujuan yang strategis: menjangkau dosen untuk memberikan dampak yang lebih luas pada pendidikan calon guru, dan pada akhirnya pada pembelajaran di sekolah. Namun, efektivitas intervensi semacam ini sangat bergantung pada kesesuaian antara desain kegiatan dan profil pesertanya. Ketika pendekatan yang digunakan belum sepenuhnya selaras, maka peluang tercapainya dampak yang diharapkan juga menjadi terbatas.
+
+Secara keseluruhan, kegiatan ini sebenarnya memiliki potensi yang baik. Niatnya (mungkin) lumayan jelas, cakupannya luas, dan isu yang diangkat sangat relevan. Namun, mungkin justru karena cakupannya yang terlampau luas, muncul pertanyaan lain: *apakah keluasan tersebut sudah diimbangi dengan kedalaman yang cukup?*.
+
+Mungkin di sinilah ruang refleksi itu berada. Bukan pada apakah kegiatan ini penting atau tidak, tetapi pada bagaimana ia dapat dirancang agar lebih tepat sasaran, sehingga tidak hanya menyampaikan konsep, tetapi juga membangun jembatan yang jelas antara praktik di sekolah dan pendidikan calon guru di kampus.
+
+Selamat hari Pendidikan Nasional, Kisanak. 
+
+## Sumber Pustaka
