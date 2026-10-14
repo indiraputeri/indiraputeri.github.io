@@ -1,0 +1,312 @@
+---
+title: "Ketika AI Bisa Memberi Jawaban, Apa Bukti Bahwa Siswa Belajar?"
+description: "sebuah refleksi dan kritik konstruktif"
+author:
+  - name: Indira Puteri
+    url: https://indiraputeri.github.io/
+    orcid: 0009-0009-6959-6723
+    affiliation: Ph.D in Mathematics (UBD), Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
+date: 2 May 2026
+categories: [essai, math edu, learning] 
+citation: 
+  url: https://indiraputeri.github.io/posts/2026-05-02-post/ 
+draft: false 
+bibliography: refs_cra.bib
+---
+
+# Kita Tahu Nilainya, tetapi Apakah Kita Tahu Cara Mereka Belajar?
+
+PISA kembali memberikan gambaran penting tentang pendidikan Indonesia. Data menunjukkan adanya sisi yang tampak positif dalam pengalaman belajar siswa: banyak siswa menyatakan memiliki rasa ingin tahu, bersedia berusaha ketika menghadapi kesulitan, dan meminta bantuan guru ketika membutuhkannya. Pada saat yang sama, capaian kompetensi akademik, khususnya matematika, masih menjadi persoalan.
+
+Di tengah kondisi tersebut, artificial intelligence (AI) semakin hadir dalam kehidupan belajar siswa. Sebagian siswa bahkan telah menggunakan chatbot AI untuk membantu kegiatan belajar.
+
+Situasi ini kemudian mendorong pertanyaan tentang bagaimana guru dan sistem pendidikan perlu merespons AI.
+
+Pertanyaan tersebut penting. Namun, mungkin ada pertanyaan yang lebih mendasar yang perlu kita jawab terlebih dahulu:
+
+> **Jika siswa memiliki kemauan untuk belajar, tetapi kompetensinya belum berkembang sebagaimana yang diharapkan, sebenarnya apa yang terjadi selama proses belajar mereka?**
+
+Pertanyaan ini membawa kita pada sesuatu yang sering kali kurang mendapat perhatian dalam diskusi pendidikan: **learning evidence data**.
+
+## Kita memiliki banyak data tentang siswa, tetapi belum tentu memiliki data tentang belajar
+
+Sistem pendidikan menghasilkan data dalam jumlah besar. Kita memiliki nilai ujian, nilai rapor, hasil asesmen nasional, kehadiran, data demografi, data sekolah, hingga hasil survei mengenai motivasi dan pengalaman belajar siswa.
+
+Namun, sebagian besar data tersebut memberi tahu kita tentang **siswa** atau **hasil belajar**, bukan secara langsung tentang **proses belajar**.
+
+Ada perbedaan penting di antara keduanya.
+
+Mengetahui bahwa seorang siswa memperoleh nilai 60 memberi tahu kita bahwa ada sesuatu yang belum dikuasai. Tetapi angka tersebut belum menjelaskan apakah masalahnya terletak pada pemahaman konsep, kemampuan membaca soal, penalaran, prosedur, representasi, atau kemampuan menerapkan pengetahuan pada situasi baru.
+
+Demikian pula, mengetahui bahwa seorang siswa mengatakan "saya senang belajar matematika" tidak berarti kita sudah mengetahui bahwa ia benar-benar memahami matematika.
+
+Karena itu, kita perlu membedakan setidaknya tiga hal:
+
+**willingness to learn**,
+**learning process**, dan
+**learning outcome**.
+
+Siswa dapat memiliki keinginan belajar yang tinggi, tetapi proses belajarnya belum efektif. Sebaliknya, siswa dapat memperoleh jawaban benar tanpa benar-benar memahami konsep yang mendasarinya.
+
+Di sinilah **learning evidence** menjadi penting.
+
+## Learning evidence bukan sekadar nilai
+
+Learning evidence adalah informasi yang membantu kita melihat bukti bahwa proses belajar benar-benar terjadi.
+
+Dalam pembelajaran matematika, misalnya, evidence tidak hanya berupa jawaban akhir. Kita dapat melihat:
+
+* bagaimana siswa memahami suatu masalah;
+* representasi yang mereka gunakan;
+* langkah penyelesaian yang dipilih;
+* kesalahan yang berulang;
+* alasan di balik suatu jawaban;
+* bagaimana siswa memperbaiki kesalahan setelah memperoleh umpan balik;
+* apakah siswa mampu menjelaskan kembali konsep dengan caranya sendiri; dan
+* apakah pengetahuan tersebut dapat digunakan dalam situasi yang berbeda.
+
+Dengan demikian, pertanyaan kita berubah.
+
+Bukan hanya:
+
+> "Berapa nilai siswa?"
+
+tetapi:
+
+> "Bukti apa yang menunjukkan bahwa siswa memahami?"
+
+Dan bukan hanya:
+
+> "Siapa yang memperoleh nilai rendah?"
+
+tetapi:
+
+> "Bagian mana dari proses berpikir siswa yang menunjukkan adanya kesulitan?"
+
+Perubahan pertanyaan ini sangat penting karena menentukan jenis data yang perlu kita kumpulkan.
+
+## IRT: membaca kemampuan di balik respons siswa
+
+Salah satu contoh bagaimana data dapat digunakan untuk memperoleh evidence yang lebih bermakna adalah **Item Response Theory (IRT)**.
+
+Dalam asesmen konvensional, perhatian sering diberikan pada skor total. Misalnya, seorang siswa menjawab 60 persen soal dengan benar dan memperoleh skor tertentu.
+
+IRT memungkinkan kita melihat persoalan dengan cara yang lebih kaya. Respons siswa terhadap setiap butir dapat digunakan untuk mengestimasi kemampuan laten dan karakteristik butir.
+
+Dengan pendekatan ini, kita dapat mulai bertanya:
+
+> Pada tingkat kemampuan seperti apa siswa mulai mengalami kesulitan?
+
+> Kompetensi atau tingkat kompleksitas seperti apa yang belum berhasil mereka kuasai?
+
+> Apakah dua siswa dengan skor total yang sama memiliki pola penguasaan yang sama?
+
+Pertanyaan-pertanyaan tersebut membawa kita lebih dekat kepada diagnosis pembelajaran.
+
+Ini penting dalam membaca data seperti PISA. Skor agregat sangat berguna untuk menggambarkan kondisi populasi, tetapi skor tersebut tidak dengan sendirinya menjelaskan seluruh proses yang menghasilkan skor tersebut.
+
+Kita perlu bergerak dari **measurement of outcome** menuju **evidence for learning diagnosis**.
+
+## Tetapi kemampuan siswa tidak berdiri sendiri
+
+Ada persoalan lain.
+
+Siswa belajar dalam konteks tertentu. Mereka berada di sekolah, kelas, keluarga, komunitas, dan wilayah yang memiliki kondisi berbeda.
+
+Karena itu, learning evidence tidak selalu cukup dibaca sebagai karakteristik individual.
+
+Misalnya, jika beberapa sekolah yang berdekatan menunjukkan pola capaian yang serupa, kita mungkin perlu mempertanyakan apakah terdapat faktor kontekstual yang juga berperan.
+
+Di sinilah **spatial model** dapat memberikan perspektif tambahan.
+
+Dalam analisis spasial, kita tidak hanya bertanya apakah suatu sekolah atau wilayah memiliki capaian rendah, tetapi juga apakah capaian tersebut memiliki **pola geografis tertentu**.
+
+Apakah wilayah dengan capaian rendah cenderung berdekatan?
+
+Apakah terdapat konsentrasi spasial?
+
+Apakah perbedaan tersebut tetap terlihat setelah karakteristik siswa dan sekolah diperhitungkan?
+
+Pertanyaan seperti ini penting karena learning gap mungkin tidak tersebar secara acak.
+
+Model spasial seperti SAR atau CAR dapat digunakan untuk merepresentasikan ketergantungan antarlokasi. Dalam konteks pendidikan, pendekatan tersebut dapat membantu kita memahami bahwa siswa yang berada dalam wilayah yang berdekatan mungkin menghadapi konteks pembelajaran yang saling berkaitan.
+
+Dengan demikian, data pendidikan dapat dibaca pada beberapa tingkatan:
+
+$$
+\text{siswa}
+\rightarrow
+\text{kelas/sekolah}
+\rightarrow
+\text{wilayah}.
+$$
+
+Ini mengubah cara kita memahami learning gap. Kita tidak lagi hanya mencari "siswa mana yang tertinggal", tetapi juga mencoba memahami **pola dan konteks tempat ketertinggalan tersebut muncul**.
+
+## Learning analytics mengisi ruang di antara input dan outcome
+
+Namun, IRT dan spatial model masih belum menjawab satu pertanyaan penting:
+
+> **Apa yang terjadi selama siswa belajar?**
+
+Di sinilah **learning analytics** menjadi penting.
+
+Jika asesmen memberikan snapshot tentang kemampuan dan spatial analysis membantu memahami konteks, learning analytics dapat memanfaatkan jejak aktivitas belajar untuk melihat proses yang berlangsung.
+
+Misalnya:
+
+* urutan aktivitas siswa;
+* waktu yang digunakan untuk menyelesaikan tugas;
+* pola revisi jawaban;
+* respons terhadap feedback;
+* jenis kesalahan yang muncul;
+* interaksi dengan materi;
+* penggunaan sumber belajar;
+* pola pengerjaan sebelum dan sesudah bantuan diberikan.
+
+Data seperti ini dapat memberikan **learning evidence** yang lebih dekat dengan proses belajar.
+
+Dengan kata lain, kita mulai memiliki tiga perspektif yang saling melengkapi:
+
+| Pertanyaan                                | Evidence                   | Pendekatan         |
+| ----------------------------------------- | -------------------------- | ------------------ |
+| Apa yang dikuasai siswa?                  | Respons terhadap item      | IRT                |
+| Bagaimana siswa belajar?                  | Jejak aktivitas dan proses | Learning analytics |
+| Di mana dan dalam konteks apa gap muncul? | Data sekolah/wilayah       | Spatial model      |
+
+Ketiganya tidak harus dipertentangkan. Justru kekuatannya muncul ketika digunakan bersama.
+
+## Di sinilah peran guru menjadi lebih bermakna
+
+Dalam diskusi tentang AI, kita sering mendengar bahwa peran guru akan berubah.
+
+Menurut saya, persoalannya bukan sekadar apakah guru akan digantikan atau dibantu oleh AI.
+
+Pertanyaan yang lebih penting adalah:
+
+> **Evidence seperti apa yang tersedia bagi guru ketika mereka membuat keputusan pembelajaran?**
+
+Professional judgement guru tetap sangat penting. Tetapi professional judgement membutuhkan sesuatu untuk dinilai.
+
+Guru perlu mengetahui bukan hanya bahwa seorang siswa "belum mencapai kompetensi", tetapi juga **mengapa**, **pada bagian mana**, dan **dalam kondisi seperti apa** siswa mengalami kesulitan.
+
+Di sinilah learning evidence menjadi penghubung antara data dan keputusan pedagogis.
+
+Secara sederhana, ekosistemnya dapat dibayangkan sebagai:
+
+```text
+Aktivitas Belajar
+       ↓
+Learning Evidence
+       ↓
+Analisis & Interpretasi
+       ↓
+Professional Judgement Guru
+       ↓
+Intervensi Pembelajaran
+       ↓
+Aktivitas Belajar Berikutnya
+       ↓
+Learning Evidence Baru
+```
+
+Ini bukan proses satu arah.
+
+Intervensi menghasilkan data baru. Data baru menghasilkan evidence baru. Evidence tersebut kemudian dapat digunakan untuk memperbaiki keputusan pembelajaran berikutnya.
+
+Dengan demikian, data bukan sekadar digunakan untuk **menilai siswa**, tetapi untuk **memahami dan memperbaiki pembelajaran**.
+
+## Lalu, di mana posisi AI?
+
+Justru setelah kerangka tersebut dibangun, pembicaraan mengenai AI menjadi lebih masuk akal.
+
+AI sudah menjadi bagian dari ekosistem belajar. Karena itu, kita tidak dapat berpura-pura bahwa pembelajaran harus dibahas seolah-olah AI tidak ada.
+
+Tetapi kehadiran AI tidak otomatis berarti bahwa AI merupakan solusi terhadap learning gap.
+
+Ada perbedaan besar antara:
+
+> **AI membantu siswa menyelesaikan tugas**
+
+dan
+
+> **AI membantu siswa belajar.**
+
+Seorang siswa dapat meminta AI menyelesaikan soal matematika dan memperoleh jawaban yang benar. Namun, jawaban benar tersebut belum menjadi evidence bahwa siswa memahami konsep.
+
+Sebaliknya, AI dapat digunakan dalam aktivitas yang menghasilkan evidence lebih kaya.
+
+Misalnya, siswa diberikan solusi yang dihasilkan AI dan diminta untuk:
+
+* menemukan kesalahan;
+* menjelaskan mengapa langkah tertentu tidak tepat;
+* membandingkan dua strategi penyelesaian;
+* memperbaiki solusi;
+* memberikan justifikasi;
+* atau memverifikasi apakah kesimpulan AI masuk akal.
+
+Dalam situasi tersebut, AI tidak hanya menjadi mesin pemberi jawaban. Ia menjadi bagian dari lingkungan belajar yang memungkinkan kita mengamati **bagaimana siswa berpikir dan mengevaluasi informasi**.
+
+Hal ini menjadi semakin penting ketika AI membuat produksi jawaban menjadi semakin mudah.
+
+Jika jawaban akhir semakin mudah diperoleh, maka **evidence tentang proses berpikir** justru menjadi semakin berharga.
+
+## Kita perlu mengubah cara memandang data pendidikan
+
+Mungkin salah satu persoalan pendidikan kita bukan kekurangan data.
+
+Kita justru menghasilkan sangat banyak data.
+
+Persoalannya adalah apakah data tersebut dapat digunakan untuk menjawab pertanyaan pembelajaran yang tepat.
+
+Kita dapat memiliki ribuan nilai ujian tanpa mengetahui miskonsepsi yang dominan.
+
+Kita dapat memiliki data kehadiran tanpa mengetahui apa yang dilakukan siswa ketika berada di kelas.
+
+Kita dapat memiliki data penggunaan AI tanpa mengetahui apakah penggunaan tersebut menghasilkan pemahaman.
+
+Kita dapat mengetahui bahwa suatu wilayah memiliki capaian rendah tanpa memahami apakah masalah tersebut berkaitan dengan karakteristik siswa, sekolah, lingkungan, atau kombinasi berbagai faktor.
+
+Karena itu, tantangannya bukan sekadar **big data**, melainkan **meaningful learning evidence**.
+
+Kita membutuhkan data yang dapat menghubungkan:
+
+$$
+\text{student}
+\rightarrow
+\text{learning process}
+\rightarrow
+\text{competence}
+\rightarrow
+\text{context}.
+$$
+
+Dan semakin kompleks teknologi pendidikan yang kita gunakan, semakin penting hubungan tersebut.
+
+## Bukan AI yang harus menjadi pusat perhatian
+
+PISA memberi kita sinyal penting tentang kondisi pendidikan. Data tersebut dapat menunjukkan adanya kesenjangan antara berbagai indikator pengalaman belajar dan capaian kompetensi.
+
+Namun, data outcome seharusnya menjadi awal pertanyaan, bukan akhir diagnosis.
+
+Jika siswa mengatakan bahwa mereka ingin belajar, tetapi kompetensinya belum berkembang, kita perlu mencari evidence tentang apa yang terjadi dalam proses belajar.
+
+Jika kemampuan berbeda antarindividu, kita perlu memahami struktur kompetensinya.
+
+Jika pola tersebut berbeda antarwilayah, kita perlu memahami konteks spasialnya.
+
+Jika teknologi baru seperti AI semakin banyak digunakan, kita perlu mengetahui apakah penggunaannya menghasilkan proses belajar yang lebih baik atau hanya menghasilkan jawaban dengan cara yang lebih cepat.
+
+Barulah setelah itu kita dapat berbicara secara lebih bermakna tentang apa yang perlu dilakukan guru, sekolah, sistem pendidikan, maupun teknologi.
+
+Karena pada akhirnya, persoalan terpenting bukan apakah pendidikan kita menggunakan AI atau tidak.
+
+Persoalannya adalah:
+
+> **Apakah kita memiliki cukup evidence untuk mengetahui bahwa siswa benar-benar belajar?**
+
+Jika jawabannya belum, mungkin pekerjaan kita bukan pertama-tama mencari teknologi yang lebih canggih.
+
+Kita perlu terlebih dahulu membangun kemampuan untuk **mengamati, mengukur, memahami, dan menggunakan evidence tentang proses belajar**.
+
+Sebab semakin mudah teknologi menghasilkan jawaban, semakin penting kemampuan kita untuk membuktikan bahwa **belajar benar-benar terjadi**.

@@ -18,6 +18,8 @@ website:
       - about.qmd
       - sidebar:research
       - posts.qmd
+      # - cv.qmd
+      #   text: CV
       
   sidebar:
       - id: research

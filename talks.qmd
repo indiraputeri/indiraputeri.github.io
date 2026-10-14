@@ -9,3 +9,5 @@ R Coding Session for FYP Students, June 2023. Handling spatial data and a brief 
 [5th International Conference on Statistics, Math, Teaching, and Research (ICSMTR)](http://icsmtr2023.conf.unm.ac.id/), Oct 2023. Investigating Spatial Patterns in Indonesian Property Prices: A Two Level Model with Leroux CAR Prior Structure
 
 [**Sharing session**](https://indiraputeri.github.io/schintv_webinar.html#/title-slide), 21 Dec 2024. Preparing your Ph.D application and academic interviews, Uptimatic Events ft. UBD Ph.D students from Indonesia.
+
+[**FORSTAT ICON 2026**](https://forstaticon.unram.ac.id/), 8-9 Apr 2026. A Simulation Framework for Evaluating Spatial Regression Models of Hierarchical Areal Data.

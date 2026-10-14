@@ -1,0 +1,254 @@
+---
+title: ""
+format:
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    linestretch: 1.2
+    header-includes:
+      - \usepackage{enumitem}
+      - \usepackage{hyperref}
+      - \usepackage{parskip}
+      - \setlist[itemize]{itemsep=0.5pt, topsep=0pt,
+          parsep=2pt, partopsep=0pt,leftmargin=*}
+      - \usepackage[most]{tcolorbox}
+      - \tcbset{
+          colback=gray!5,
+          colframe=gray!40,
+          boxrule=0.3pt,
+          arc=2pt,
+          left=6pt,
+          right=6pt,
+          top=6pt,
+          bottom=6pt
+       }
+execute:
+  echo: false
+---
+
+\begin{center}
+{\LARGE \textbf{Indira Puteri Kinasih}}\\[4pt]
+Researcher \& Lecturer \\ 
+Assistant Professor in Statistics (Lektor IIIb) \\[6pt]
+
+\href{https://indiraputeri.github.io}{Website} \quad
+\href{https://scholar.google.com/citations?user=jESSIkUAAAAJ&hl=en}{Google Scholar} \quad
+\href{https://www.researchgate.net/profile/Indira-Kinasih/research}{ResearchGate} \quad
+\href{https://www.linkedin.com/in/indira-puteri-13083692/}{LinkedIn} \quad
+\href{https://orcid.org/0009-0009-6959-6723}{ORCID} \\[6pt]
+
+\texttt{indiraputeri@uinmataram.ac.id} \\ 
+NIDN: 2016128503\\
+NUPTK: 0548763664230213
+\end{center}
+\vspace{0.5em}
+---
+
+## **Research Interests**
+\begin{tcolorbox}
+Spatial statistics modelling; Bayesian methods; Conditionally Autoregressive Models (CAR); Missing data imputation; Statistics simulation studies Property Price Modelling; Statistics and data literation in school and higher education
+\end{tcolorbox}
+
+
+## **Education**
+
+**Ph.D. in Statistics**  
+[Universiti Brunei Darussalam](https://ubd.edu.bn/), Year 2022 -- 2026 \
+Dissertation: *An improved Bayesian approach for CAR model of house prices using spatial factor analysis framework*  
+
+**M.Sc. in Mathematics (*Indonesia: M.Si.*)**  
+[Institut Teknologi Bandung](https://itb.ac.id/), Bandung Indonesia, 2012 \
+Thesis: *Parameter Estimation of the Bivariate Weibull Distribution Using a Genetic Algorithm*
+
+**B.Sc. in Mathematics (*Indonesia: S.Si.*)**  
+[Institut Teknologi Sepuluh Nopember](https://www.its.ac.id/), Surabaya, Indonesia, 2009 \
+Final year project: *Bayesian Vector Autoregressive (BVAR) Method Approach for East Java Consumption Model*
+
+---
+
+## **Academic Appointments**
+
+**Lecturer**  
+[Universitas Islam Negeri (UIN) Mataram](https://uinmataram.ac.id/), 2019 -- present  
+- Teach undergraduate in statistics, computations, and school mathematics  
+- Supervised student final year projects  
+
+[IKIP Mataram (*now: UNDIKMA*)](https://undikma.ac.id/), 2012 -- 2018  
+- Teach undergraduate courses in statistics and data analysis \
+- Lead mathematics laboratory and workshop \
+- Supervised student final year projects
+
+---
+
+## **Publications**
+
+**Kinasih, I.P.**, Jamil, H. & Leong, E. [Conditionally Autoregressive Models for House Price Data: Insights from a Comparative Simulation Study.](https://rdcu.be/es5un) *J Stat Theory Appl* (2025). https://doi.org/10.1007/s44199-025-00122-1
+
+Wiriasto, G. W., Rizaldy, A., Wiguna, P. A., & **Kinasih, I. P.** (2025). Drip Infusion Monitoring and Data Logging System Based on YOLOv5. JITK (Jurnal Ilmu Pengetahuan dan Teknologi Komputer), 11(1), 171-179. [doi.org/10.33480/jitk.v11i1.6818](https://doi.org/10.33480/jitk.v11i1.6818)
+
+Masjudin, M., Kurniawan, A., Yuntawati, Y., & **Kinasih, I. P.** (2024). Development of Mathematics Learning Tools with Project-Based Learning for The Enhancement of Students' Social Skills and Cognitive Learning Outcomes. Media Pendidikan Matematika, 12(1), 37-46. [doi.org/10.33394/mpm.v12i1.10126](https://doi.org/10.33394/mpm.v12i1.10126)
+
+Mustagfirin, M. L., Wiriasto, G. W., Suksmadana, I. M. B., & **Kinasih, I. P.** (2022). [Android-Based Short Message Service Filtering using Long Short-Term Memory Classification Model.](https://journals.ums.ac.id/index.php/khif/article/view/17995) *Khazanah Informatika: Jurnal Ilmu Komputer dan Informatika*, *8*(2).
+
+**Kinasih, I. P.**, & Hardiani, N. (2020). [Role playing and the changing of teacher understanding to middle school mathematics lesson planning within elpsa framework](https://ejournal.unsri.ac.id/index.php/jpm/article/view/6647). *Jurnal Pendidikan Matematika*, *14*(2), 183-198.
+
+Patahuddin, S. M., **Puteri, I.**, Lowrie, T., Logan, T., & Rika, B. (2018). [Capturing student mathematical engagement through differently enacted classroom practices: applying a modification of Watson's analytical tool](https://www.tandfonline.com/doi/abs/10.1080/0020739x.2017.1377300). International Journal of Mathematical Education in Science and Technology, 49(3), 384-400.
+
+**Kinasih, I. P.**, Wiriasto, G. W., Kanata, B., & Zubaidah, T. 2014. [Lesser Sunda Islands Earthquake Inter-Occurrence Times Distribution Modelling. International Journal of Technology 3(3):242-250. DOI: 10.14716/ ijtech.v5i3.610](https://ijtech.eng.ui.ac.id/article/view/1310)  
+
+---
+
+## **Research Projects**
+
+**Zonasi Intervensi Kebijakan UMKM Kota Mataram: Pemetaan Geospasial untuk Akselerasi Digitalisasi dan Sertifikasi Halal**  
+*Applied Research Grant (DUDI Scheme)*  
+Role: Principal Investigator  
+Year: 2026  
+
+\begin{tcolorbox}
+\begin{itemize}
+\item Developed a geospatial framework to identify priority zones for MSME policy intervention  
+\item Integrated spatial data (business locations, infrastructure, and accessibility) to support digitalization and halal certification strategies  
+\item Produced policy-relevant maps and analytical outputs for local government stakeholders
+\end{itemize}
+\end{tcolorbox}
+
+**Promoting Mathematics Engagement and Learning Opportunities for Disadvantaged Communities in West Nusa Tenggara, Indonesia**  
+*Government Partnerships for Development ([GPFD](https://serc.edu.au/government-partnerships-for-development-gpfd/)) Project*  
+Role: Core Team Coordinator  
+Year: 2015–2018  
+
+\begin{tcolorbox}
+\begin{itemize}
+\item Contributed to the development of middle school mathematics learning modules  
+\item Coordinated teacher professional development activities across participating schools  
+\item Supported community-based initiatives to improve mathematics engagement and access 
+\end{itemize}
+\end{tcolorbox}
+
+---
+
+## **Lecturing Experiences**
+
+\begin{tcolorbox}
+\textbf{Lecturer — Perbankan Syariah Study Programme, UIN Mataram} \\
+2019--2020  
+
+\textit{Courses:}
+\begin{itemize}
+\item Basic Statistics  
+\item Research Methods  
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Lecturer — Tadris Matematika Study Programme, UIN Mataram} \\
+2020--2026  
+
+\textit{Courses:}
+\begin{itemize}
+\item Numerical Methods (\textit{Metode Numerik})
+\item Basic Statistics  
+\item Mathematical Statistics  
+\item Complex Analysis (\textit{Fungsi Peubah Kompleks})
+\item Probability Theory (\textit{Teori Peluang})  
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\textbf{Lecturer — Madrasah Ibtidaiyah Teacher Training (PGMI), UIN Mataram} \\
+2026--Present  
+
+\textit{Courses:}
+\begin{itemize}
+\item Primary School Mathematics Learning (\textit{Pembelajaran Matematika MI/SD})  
+\end{itemize}
+\end{tcolorbox}
+
+---
+
+## **Conference \& Talks**
+
+
+[**FORSTAT ICON 2026**](https://forstaticon.unram.ac.id/), 8-9 Apr 2026. A Simulation Framework for Evaluating Spatial Regression Models of Hierarchical Areal Data.
+
+[**Sharing session**](https://indiraputeri.github.io/schintv_webinar.html#/title-slide), 21 Dec 2024. Preparing your Ph.D application and academic interviews, Uptimatic Events ft. UBD Ph.D students from Indonesia.
+
+[5th International Conference on Statistics, Math, Teaching, and Research (ICSMTR)](http://icsmtr2023.conf.unm.ac.id/), Oct 2023. Investigating Spatial Patterns in Indonesian Property Prices: A Two Level Model with Leroux CAR Prior Structure
+
+R Coding Session for FYP Students of UBD Mathematics study programme, June 2023. Handling spatial data and a brief introduction into webscrapping with `rvest`.
+
+[**1st HKUST SIAM Student Chapter Annual Meeting**](https://www.math.hkust.edu.hk/intranet/file/?c=seminar_abstract&f=20230602151348_1st_HKUST_SIAM_annual_meeting.pdf), June 2023. Exploring the Spatial Relationships of House Prices in Indonesia: A Statistical Modelling Approach
+
+<!-- **ELPSA Conference, IKIP Mataram**   -->
+<!-- 2017   -->
+<!-- Oral Presentation & Committee Member   -->
+
+<!-- **2nd International Conference on Mathematics, Science, Technology, Education and Their Applications (ICMSTEA)**   -->
+<!-- 2016, Makassar, Indonesia   -->
+<!-- Oral Presentation   -->
+
+<!-- **Asian Mathematical Conference (AMC)**   -->
+<!-- 2016, Bali, Indonesia   -->
+<!-- Poster Presentation   -->
+
+<!-- **Seminar Nasional PKPSM, IKIP Mataram**   -->
+<!-- 2016   -->
+<!-- *Assessment of Higher Order Thinking Skills*   -->
+<!-- Oral Presentation   -->
+
+<!-- **International Conference on Mathematics and Science Education**   -->
+<!-- 2015, Mataram   -->
+<!-- Poster Presentation   -->
+
+<!-- **1st International Conference on Applied Electromagnetic Technology**   -->
+<!-- 2014, Mataram   -->
+<!-- Oral Presentation & Session Moderator   -->
+
+<!-- **EECCIS (Electrical, Power, Electronics, Communication, Control, and Informatics Seminar)**   -->
+<!-- 2014, Malang, Indonesia   -->
+<!-- Oral Presentation -->
+
+---
+
+
+## **Book**
+
+**Kinasih, Indira Puteri** (2021). Buku Referensi. [Distribusi Weibull: Konsep Dasar & Aplikasinya. Sanabil](https://repository.uinmataram.ac.id/738/), Mataram. ISBN 987-623-317-244-0. HKI ID: \texttt{EC00202183005}
+
+## **Skills**
+
+\begin{tcolorbox}
+\textbf{Programming:} R Statistics \\[4pt]
+\textbf{Scientific Writing \& Reproducible Research:} Quarto, R Markdown, LaTeX
+\end{tcolorbox}
+
+---
+
+## **Recognition**
+
+\begin{tcolorbox}
+\begin{itemize}
+\item Reviewer, \textit{Statistics in Transition}, May 2026  
+\item Best Presenter at FORSTAT ICON, April 2026
+\item Reviewer, \textit{Journal of Statistics: Theory and Applications}, November 2025
+\item Reviewer, \textit{Barekeng: Jurnal Ilmu Matematika dan Terapan}, 2023-2024
+\item Best Presenter at ICSMTR, October 2023 
+\end{itemize}
+\end{tcolorbox}
+
+---
+
+## **Community Services**
+
+\begin{tcolorbox}
+\begin{itemize}
+\item Dewan Editor Jurnal Beta, 2026
+\item Mitra Bestari Jurnal Elmidad, 2026
+\item Pemateri pada workshop online Nasional: GeoGebra dalam Pembelajaran Matematika untuk guru matematika di komunitas Perempuan Pendidik Numerasi 2022
+\item Fasilitator dalam kegiatan STEM-Camp Guru Matematika yang diselenggarakan oleh SEAMEO QITEP 2021
+\item Mentoring/tutorial persiapan tugas akhir pada aspek metode numerik di Lab. Komputer dan Jaringan di Universitas Mataram, 2020
+\item Sosialisasi awal implementasi kurikulum K13 pada pembelajaran matematika di jenjang sekolah dasar di MI Darussalaam Gonjak Praya, 2020.
+\end{itemize}
+\end{tcolorbox}
