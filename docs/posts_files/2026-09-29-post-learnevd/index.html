@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Indira Puteri">
-<meta name="dcterms.date" content="2026-05-02">
-<meta name="description" content="sebuah refleksi dan kritik konstruktif">
+<meta name="dcterms.date" content="2026-09-05">
+<meta name="description" content="Refleksi tentang pentingnya learning evidence untuk memahami proses belajar dan menilai peran AI dalam pendidikan.">
 
 <title>Ketika AI Bisa Memberi Jawaban, Apa Bukti Bahwa Siswa Belajar? – threeinks</title>
 <style>
@@ -77,35 +77,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -174,18 +145,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#kita-tahu-nilainya-tetapi-apakah-kita-tahu-cara-mereka-belajar" id="toc-kita-tahu-nilainya-tetapi-apakah-kita-tahu-cara-mereka-belajar" class="nav-link active" data-scroll-target="#kita-tahu-nilainya-tetapi-apakah-kita-tahu-cara-mereka-belajar">Kita Tahu Nilainya, tetapi Apakah Kita Tahu Cara Mereka Belajar?</a>
-  <ul class="collapse">
-  <li><a href="#kita-memiliki-banyak-data-tentang-siswa-tetapi-belum-tentu-memiliki-data-tentang-belajar" id="toc-kita-memiliki-banyak-data-tentang-siswa-tetapi-belum-tentu-memiliki-data-tentang-belajar" class="nav-link" data-scroll-target="#kita-memiliki-banyak-data-tentang-siswa-tetapi-belum-tentu-memiliki-data-tentang-belajar">Kita memiliki banyak data tentang siswa, tetapi belum tentu memiliki data tentang belajar</a></li>
+  <li><a href="#kita-memiliki-banyak-data-tetapi-belum-tentu-memahami-proses-belajar" id="toc-kita-memiliki-banyak-data-tetapi-belum-tentu-memahami-proses-belajar" class="nav-link active" data-scroll-target="#kita-memiliki-banyak-data-tetapi-belum-tentu-memahami-proses-belajar">Kita memiliki banyak data, tetapi belum tentu memahami proses belajar</a></li>
   <li><a href="#learning-evidence-bukan-sekadar-nilai" id="toc-learning-evidence-bukan-sekadar-nilai" class="nav-link" data-scroll-target="#learning-evidence-bukan-sekadar-nilai">Learning evidence bukan sekadar nilai</a></li>
-  <li><a href="#irt-membaca-kemampuan-di-balik-respons-siswa" id="toc-irt-membaca-kemampuan-di-balik-respons-siswa" class="nav-link" data-scroll-target="#irt-membaca-kemampuan-di-balik-respons-siswa">IRT: membaca kemampuan di balik respons siswa</a></li>
-  <li><a href="#tetapi-kemampuan-siswa-tidak-berdiri-sendiri" id="toc-tetapi-kemampuan-siswa-tidak-berdiri-sendiri" class="nav-link" data-scroll-target="#tetapi-kemampuan-siswa-tidak-berdiri-sendiri">Tetapi kemampuan siswa tidak berdiri sendiri</a></li>
-  <li><a href="#learning-analytics-mengisi-ruang-di-antara-input-dan-outcome" id="toc-learning-analytics-mengisi-ruang-di-antara-input-dan-outcome" class="nav-link" data-scroll-target="#learning-analytics-mengisi-ruang-di-antara-input-dan-outcome">Learning analytics mengisi ruang di antara input dan outcome</a></li>
-  <li><a href="#di-sinilah-peran-guru-menjadi-lebih-bermakna" id="toc-di-sinilah-peran-guru-menjadi-lebih-bermakna" class="nav-link" data-scroll-target="#di-sinilah-peran-guru-menjadi-lebih-bermakna">Di sinilah peran guru menjadi lebih bermakna</a></li>
-  <li><a href="#lalu-di-mana-posisi-ai" id="toc-lalu-di-mana-posisi-ai" class="nav-link" data-scroll-target="#lalu-di-mana-posisi-ai">Lalu, di mana posisi AI?</a></li>
-  <li><a href="#kita-perlu-mengubah-cara-memandang-data-pendidikan" id="toc-kita-perlu-mengubah-cara-memandang-data-pendidikan" class="nav-link" data-scroll-target="#kita-perlu-mengubah-cara-memandang-data-pendidikan">Kita perlu mengubah cara memandang data pendidikan</a></li>
-  <li><a href="#bukan-ai-yang-harus-menjadi-pusat-perhatian" id="toc-bukan-ai-yang-harus-menjadi-pusat-perhatian" class="nav-link" data-scroll-target="#bukan-ai-yang-harus-menjadi-pusat-perhatian">Bukan AI yang harus menjadi pusat perhatian</a></li>
-  </ul></li>
+  <li><a href="#data-baru-berguna-ketika-membantu-kita-menentukan-tindakan" id="toc-data-baru-berguna-ketika-membantu-kita-menentukan-tindakan" class="nav-link" data-scroll-target="#data-baru-berguna-ketika-membantu-kita-menentukan-tindakan">Data baru berguna ketika membantu kita menentukan tindakan</a></li>
+  <li><a href="#peran-guru-dan-pentingnya-learning-evidence" id="toc-peran-guru-dan-pentingnya-learning-evidence" class="nav-link" data-scroll-target="#peran-guru-dan-pentingnya-learning-evidence">Peran guru dan pentingnya learning evidence</a></li>
+  <li><a href="#ketika-ai-bisa-memberi-jawaban-apa-yang-sebenarnya-kita-nilai" id="toc-ketika-ai-bisa-memberi-jawaban-apa-yang-sebenarnya-kita-nilai" class="nav-link" data-scroll-target="#ketika-ai-bisa-memberi-jawaban-apa-yang-sebenarnya-kita-nilai">Ketika AI bisa memberi jawaban, apa yang sebenarnya kita nilai?</a></li>
+  <li><a href="#kita-perlu-mengukur-apa-yang-benar-benar-ingin-kita-kembangkan" id="toc-kita-perlu-mengukur-apa-yang-benar-benar-ingin-kita-kembangkan" class="nav-link" data-scroll-target="#kita-perlu-mengukur-apa-yang-benar-benar-ingin-kita-kembangkan">Kita perlu mengukur apa yang benar-benar ingin kita kembangkan</a></li>
+  <li><a href="#persoalannya-bukan-sekadar-kekurangan-data" id="toc-persoalannya-bukan-sekadar-kekurangan-data" class="nav-link" data-scroll-target="#persoalannya-bukan-sekadar-kekurangan-data">Persoalannya bukan sekadar kekurangan data</a></li>
   </ul>
 </nav>
     </div>
@@ -196,15 +162,16 @@ window.Quarto = {
 <div class="quarto-title">
 <h1 class="title">Ketika AI Bisa Memberi Jawaban, Apa Bukti Bahwa Siswa Belajar?</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">essai</div>
+    <div class="quarto-category">AI</div>
     <div class="quarto-category">math edu</div>
-    <div class="quarto-category">learning</div>
+    <div class="quarto-category">data</div>
+    <div class="quarto-category">learning evidence</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    sebuah refleksi dan kritik konstruktif
+    Refleksi tentang pentingnya learning evidence untuk memahami proses belajar dan menilai peran AI dalam pendidikan.
   </div>
 </div>
 
@@ -217,7 +184,7 @@ window.Quarto = {
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
-            Ph.D in Mathematics (UBD), Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
+            Ph.D.&nbsp;in Mathematics (UBD), Statistics Lecturer at Universitas Islam Negeri Mataram, Indonesia
           </p>
       </div>
   </div>
@@ -228,7 +195,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 2, 2026</p>
+      <p class="date">September 5, 2026</p>
     </div>
   </div>
   
@@ -240,269 +207,96 @@ window.Quarto = {
 </header>
 
 
-<section id="kita-tahu-nilainya-tetapi-apakah-kita-tahu-cara-mereka-belajar" class="level1">
-<h1>Kita Tahu Nilainya, tetapi Apakah Kita Tahu Cara Mereka Belajar?</h1>
-<p>PISA kembali memberikan gambaran penting tentang pendidikan Indonesia. Data menunjukkan adanya sisi yang tampak positif dalam pengalaman belajar siswa: banyak siswa menyatakan memiliki rasa ingin tahu, bersedia berusaha ketika menghadapi kesulitan, dan meminta bantuan guru ketika membutuhkannya. Pada saat yang sama, capaian kompetensi akademik, khususnya matematika, masih menjadi persoalan.</p>
-<p>Di tengah kondisi tersebut, artificial intelligence (AI) semakin hadir dalam kehidupan belajar siswa. Sebagian siswa bahkan telah menggunakan chatbot AI untuk membantu kegiatan belajar.</p>
-<p>Situasi ini kemudian mendorong pertanyaan tentang bagaimana guru dan sistem pendidikan perlu merespons AI.</p>
-<p>Pertanyaan tersebut penting. Namun, mungkin ada pertanyaan yang lebih mendasar yang perlu kita jawab terlebih dahulu:</p>
-<blockquote class="blockquote">
-<p><strong>Jika siswa memiliki kemauan untuk belajar, tetapi kompetensinya belum berkembang sebagaimana yang diharapkan, sebenarnya apa yang terjadi selama proses belajar mereka?</strong></p>
-</blockquote>
-<p>Pertanyaan ini membawa kita pada sesuatu yang sering kali kurang mendapat perhatian dalam diskusi pendidikan: <strong>learning evidence data</strong>.</p>
-<section id="kita-memiliki-banyak-data-tentang-siswa-tetapi-belum-tentu-memiliki-data-tentang-belajar" class="level2">
-<h2 class="anchored" data-anchor-id="kita-memiliki-banyak-data-tentang-siswa-tetapi-belum-tentu-memiliki-data-tentang-belajar">Kita memiliki banyak data tentang siswa, tetapi belum tentu memiliki data tentang belajar</h2>
-<p>Sistem pendidikan menghasilkan data dalam jumlah besar. Kita memiliki nilai ujian, nilai rapor, hasil asesmen nasional, kehadiran, data demografi, data sekolah, hingga hasil survei mengenai motivasi dan pengalaman belajar siswa.</p>
-<p>Namun, sebagian besar data tersebut memberi tahu kita tentang <strong>siswa</strong> atau <strong>hasil belajar</strong>, bukan secara langsung tentang <strong>proses belajar</strong>.</p>
-<p>Ada perbedaan penting di antara keduanya.</p>
-<p>Mengetahui bahwa seorang siswa memperoleh nilai 60 memberi tahu kita bahwa ada sesuatu yang belum dikuasai. Tetapi angka tersebut belum menjelaskan apakah masalahnya terletak pada pemahaman konsep, kemampuan membaca soal, penalaran, prosedur, representasi, atau kemampuan menerapkan pengetahuan pada situasi baru.</p>
-<p>Demikian pula, mengetahui bahwa seorang siswa mengatakan “saya senang belajar matematika” tidak berarti kita sudah mengetahui bahwa ia benar-benar memahami matematika.</p>
-<p>Karena itu, kita perlu membedakan setidaknya tiga hal:</p>
-<p><strong>willingness to learn</strong>, <strong>learning process</strong>, dan <strong>learning outcome</strong>.</p>
-<p>Siswa dapat memiliki keinginan belajar yang tinggi, tetapi proses belajarnya belum efektif. Sebaliknya, siswa dapat memperoleh jawaban benar tanpa benar-benar memahami konsep yang mendasarinya.</p>
-<p>Di sinilah <strong>learning evidence</strong> menjadi penting.</p>
+<p><img src="learningevidence.png" class="img-fluid"></p>
+<p>PISA 2025 memberikan gambaran yang menarik tentang pendidikan Indonesia. Menurut <a href="https://www.oecd.org/en/publications/pisa-2025-results-volume-i-country-notes_2d4ff9ea-en/indonesia_9c880f8a-en.html">catatan negara OECD untuk Indonesia</a>, 80% siswa menyatakan penasaran terhadap berbagai hal, 74% mengaku berusaha lebih keras ketika menghadapi pekerjaan yang sulit, dan 90% menyatakan meminta bantuan guru ketika membutuhkannya. Namun, hanya 17% siswa Indonesia mencapai sekurang-kurangnya Level 2 dalam matematika.</p>
+<p>Angka-angka tersebut menggambarkan aspek yang berbeda dari pengalaman belajar dan capaian siswa. Kita tidak dapat langsung menyimpulkan bahwa siswa yang memiliki rasa ingin tahu atau bersedia berusaha pasti akan mencapai kompetensi yang baik. Namun, temuan tersebut memberi alasan untuk mengajukan pertanyaan lebih lanjut: <strong>apa yang terjadi selama proses belajar sehingga sikap positif terhadap pembelajaran belum selalu tercermin dalam capaian kompetensi?</strong></p>
+<p>Pertanyaan ini menjadi semakin relevan ketika AI mulai digunakan secara luas dalam kegiatan belajar. OECD melaporkan bahwa 53% siswa Indonesia menggunakan chatbot AI untuk membantu belajar setidaknya sekali seminggu.</p>
+<p>Diskusi tentang bagaimana guru dan sistem pendidikan merespons AI tentu penting. Namun, saya merasa ada persoalan yang perlu mendapat perhatian lebih mendasar. Sebelum membahas bagaimana teknologi dapat membantu pembelajaran, kita perlu memahami apa yang sebenarnya terjadi ketika siswa belajar.</p>
+<p>Di sinilah pentingnya <em>learning evidence</em>.</p>
+<section id="kita-memiliki-banyak-data-tetapi-belum-tentu-memahami-proses-belajar" class="level2">
+<h2 class="anchored" data-anchor-id="kita-memiliki-banyak-data-tetapi-belum-tentu-memahami-proses-belajar">Kita memiliki banyak data, tetapi belum tentu memahami proses belajar</h2>
+<p>Sistem pendidikan menghasilkan banyak data: nilai ujian, nilai rapor, hasil asesmen, kehadiran, data sekolah, hingga survei tentang motivasi dan pengalaman belajar siswa. Data tersebut penting untuk menggambarkan kondisi pendidikan. Namun, apakah data yang tersedia sudah cukup untuk menjelaskan bagaimana siswa belajar?</p>
+<p>Mengetahui bahwa seorang siswa memperoleh nilai rendah memberi kita informasi tentang hasil asesmennya. Akan tetapi, nilai tersebut belum tentu menjelaskan letak kesulitannya. Apakah siswa belum memahami konsep? Apakah ia kesulitan memilih strategi penyelesaian? Apakah ia dapat mengikuti prosedur, tetapi belum memahami alasan di baliknya? Ataukah ia memahami materi dalam contoh yang familiar, tetapi kesulitan menerapkannya pada persoalan yang berbeda?</p>
+<p>Persoalan serupa muncul ketika kita mengetahui bahwa siswa memiliki motivasi belajar yang baik. Motivasi merupakan hal penting, tetapi tidak dengan sendirinya menunjukkan bahwa pembelajaran berlangsung secara efektif.</p>
+<p>Menurut saya, di sinilah kita perlu membedakan antara data tentang siswa, data tentang hasil belajar, dan bukti yang membantu kita memahami proses belajar.</p>
+<p><strong>Kita mungkin mengetahui hasil yang dicapai siswa, tetapi belum tentu mengetahui bagaimana hasil tersebut terbentuk.</strong></p>
+<p>Perbedaan ini penting karena menentukan apakah informasi yang kita miliki benar-benar dapat digunakan untuk memperbaiki pembelajaran.</p>
 </section>
 <section id="learning-evidence-bukan-sekadar-nilai" class="level2">
 <h2 class="anchored" data-anchor-id="learning-evidence-bukan-sekadar-nilai">Learning evidence bukan sekadar nilai</h2>
-<p>Learning evidence adalah informasi yang membantu kita melihat bukti bahwa proses belajar benar-benar terjadi.</p>
-<p>Dalam pembelajaran matematika, misalnya, evidence tidak hanya berupa jawaban akhir. Kita dapat melihat:</p>
-<ul>
-<li>bagaimana siswa memahami suatu masalah;</li>
-<li>representasi yang mereka gunakan;</li>
-<li>langkah penyelesaian yang dipilih;</li>
-<li>kesalahan yang berulang;</li>
-<li>alasan di balik suatu jawaban;</li>
-<li>bagaimana siswa memperbaiki kesalahan setelah memperoleh umpan balik;</li>
-<li>apakah siswa mampu menjelaskan kembali konsep dengan caranya sendiri; dan</li>
-<li>apakah pengetahuan tersebut dapat digunakan dalam situasi yang berbeda.</li>
-</ul>
-<p>Dengan demikian, pertanyaan kita berubah.</p>
-<p>Bukan hanya:</p>
-<blockquote class="blockquote">
-<p>“Berapa nilai siswa?”</p>
-</blockquote>
-<p>tetapi:</p>
-<blockquote class="blockquote">
-<p>“Bukti apa yang menunjukkan bahwa siswa memahami?”</p>
-</blockquote>
-<p>Dan bukan hanya:</p>
-<blockquote class="blockquote">
-<p>“Siapa yang memperoleh nilai rendah?”</p>
-</blockquote>
-<p>tetapi:</p>
-<blockquote class="blockquote">
-<p>“Bagian mana dari proses berpikir siswa yang menunjukkan adanya kesulitan?”</p>
-</blockquote>
-<p>Perubahan pertanyaan ini sangat penting karena menentukan jenis data yang perlu kita kumpulkan.</p>
+<p><em>Learning evidence</em> dapat dipahami sebagai bukti yang membantu kita mengetahui apa yang telah dipahami siswa, bagaimana mereka berpikir, kesulitan apa yang dihadapi, dan bagaimana pemahaman mereka berkembang.</p>
+<p>Dalam pembelajaran matematika, misalnya, bukti belajar tidak cukup berupa jawaban akhir. Kita juga perlu memperhatikan cara siswa memahami masalah, memilih strategi, menggunakan representasi, menjelaskan alasan, dan memeriksa kembali hasil pekerjaannya.</p>
+<p>Dua siswa dapat memperoleh jawaban yang sama, tetapi melalui proses berpikir yang berbeda. Seorang siswa mungkin memahami konsep yang digunakan, sementara siswa lain sekadar mengikuti contoh atau mengingat prosedur. Jika kita hanya melihat jawaban akhir, perbedaan tersebut sulit diketahui.</p>
+<p>Bukti yang lebih informatif dapat diperoleh ketika siswa diminta menjelaskan alasan di balik jawabannya, menunjukkan langkah penyelesaian, membandingkan strategi, atau memperbaiki kesalahan setelah menerima umpan balik.</p>
+<p>Bukti belajar juga tidak harus selalu berbentuk data digital. Hasil pekerjaan siswa, pertanyaan yang mereka ajukan, catatan observasi guru, diskusi kelas, dan refleksi siswa dapat memberikan informasi yang relevan.</p>
+<p>Yang penting bukan seberapa canggih alat yang digunakan, melainkan apakah bukti yang dikumpulkan membantu menjawab pertanyaan tentang pembelajaran.</p>
+<p>Karena itu, pertanyaan guru seharusnya tidak berhenti pada <em>“Berapa nilai siswa?”</em>, tetapi juga mencakup <em>“Apa yang dapat saya simpulkan tentang pemahaman siswa dari pekerjaan mereka?”</em></p>
 </section>
-<section id="irt-membaca-kemampuan-di-balik-respons-siswa" class="level2">
-<h2 class="anchored" data-anchor-id="irt-membaca-kemampuan-di-balik-respons-siswa">IRT: membaca kemampuan di balik respons siswa</h2>
-<p>Salah satu contoh bagaimana data dapat digunakan untuk memperoleh evidence yang lebih bermakna adalah <strong>Item Response Theory (IRT)</strong>.</p>
-<p>Dalam asesmen konvensional, perhatian sering diberikan pada skor total. Misalnya, seorang siswa menjawab 60 persen soal dengan benar dan memperoleh skor tertentu.</p>
-<p>IRT memungkinkan kita melihat persoalan dengan cara yang lebih kaya. Respons siswa terhadap setiap butir dapat digunakan untuk mengestimasi kemampuan laten dan karakteristik butir.</p>
-<p>Dengan pendekatan ini, kita dapat mulai bertanya:</p>
-<blockquote class="blockquote">
-<p>Pada tingkat kemampuan seperti apa siswa mulai mengalami kesulitan?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Kompetensi atau tingkat kompleksitas seperti apa yang belum berhasil mereka kuasai?</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>Apakah dua siswa dengan skor total yang sama memiliki pola penguasaan yang sama?</p>
-</blockquote>
-<p>Pertanyaan-pertanyaan tersebut membawa kita lebih dekat kepada diagnosis pembelajaran.</p>
-<p>Ini penting dalam membaca data seperti PISA. Skor agregat sangat berguna untuk menggambarkan kondisi populasi, tetapi skor tersebut tidak dengan sendirinya menjelaskan seluruh proses yang menghasilkan skor tersebut.</p>
-<p>Kita perlu bergerak dari <strong>measurement of outcome</strong> menuju <strong>evidence for learning diagnosis</strong>.</p>
+<section id="data-baru-berguna-ketika-membantu-kita-menentukan-tindakan" class="level2">
+<h2 class="anchored" data-anchor-id="data-baru-berguna-ketika-membantu-kita-menentukan-tindakan">Data baru berguna ketika membantu kita menentukan tindakan</h2>
+<p>Memiliki data saja tidak cukup. Data perlu ditafsirkan dan dihubungkan dengan keputusan pembelajaran.</p>
+<p>Misalnya, seorang guru menemukan bahwa banyak siswa salah menjawab soal pecahan. Temuan ini merupakan informasi awal, tetapi belum cukup untuk menentukan tindak lanjut.</p>
+<p>Guru perlu memeriksa pekerjaan siswa untuk mengetahui pola kesalahannya. Apakah siswa belum memahami makna pecahan? Apakah mereka keliru ketika menjumlahkan pecahan dengan penyebut berbeda? Apakah mereka memahami prosedur, tetapi kesulitan menjelaskan mengapa prosedur tersebut digunakan?</p>
+<p>Setiap pola kesalahan dapat menunjukkan kebutuhan belajar yang berbeda. Jika persoalannya adalah pemahaman konsep, menambah latihan prosedural saja belum tentu membantu. Sebaliknya, jika siswa sudah memahami konsep tetapi belum terampil melakukan perhitungan, bentuk bantuan yang diperlukan mungkin berbeda.</p>
+<p>Contoh sederhana ini menunjukkan bahwa data perlu diikuti dengan interpretasi. Hasil asesmen tidak seharusnya hanya digunakan untuk mengelompokkan siswa berdasarkan nilai, tetapi juga untuk memahami kebutuhan belajar mereka.</p>
+<p>Prosesnya dapat berlangsung secara berulang: guru mengumpulkan bukti, mengidentifikasi pola, menafsirkan kesulitan, menentukan tindak lanjut, kemudian memeriksa apakah tindak lanjut tersebut menghasilkan perubahan.</p>
+<p>Dengan demikian, data tidak hanya berfungsi untuk menilai siswa. Data juga menjadi dasar untuk mengevaluasi apakah strategi pembelajaran yang digunakan sudah sesuai dengan kebutuhan mereka.</p>
 </section>
-<section id="tetapi-kemampuan-siswa-tidak-berdiri-sendiri" class="level2">
-<h2 class="anchored" data-anchor-id="tetapi-kemampuan-siswa-tidak-berdiri-sendiri">Tetapi kemampuan siswa tidak berdiri sendiri</h2>
-<p>Ada persoalan lain.</p>
-<p>Siswa belajar dalam konteks tertentu. Mereka berada di sekolah, kelas, keluarga, komunitas, dan wilayah yang memiliki kondisi berbeda.</p>
-<p>Karena itu, learning evidence tidak selalu cukup dibaca sebagai karakteristik individual.</p>
-<p>Misalnya, jika beberapa sekolah yang berdekatan menunjukkan pola capaian yang serupa, kita mungkin perlu mempertanyakan apakah terdapat faktor kontekstual yang juga berperan.</p>
-<p>Di sinilah <strong>spatial model</strong> dapat memberikan perspektif tambahan.</p>
-<p>Dalam analisis spasial, kita tidak hanya bertanya apakah suatu sekolah atau wilayah memiliki capaian rendah, tetapi juga apakah capaian tersebut memiliki <strong>pola geografis tertentu</strong>.</p>
-<p>Apakah wilayah dengan capaian rendah cenderung berdekatan?</p>
-<p>Apakah terdapat konsentrasi spasial?</p>
-<p>Apakah perbedaan tersebut tetap terlihat setelah karakteristik siswa dan sekolah diperhitungkan?</p>
-<p>Pertanyaan seperti ini penting karena learning gap mungkin tidak tersebar secara acak.</p>
-<p>Model spasial seperti SAR atau CAR dapat digunakan untuk merepresentasikan ketergantungan antarlokasi. Dalam konteks pendidikan, pendekatan tersebut dapat membantu kita memahami bahwa siswa yang berada dalam wilayah yang berdekatan mungkin menghadapi konteks pembelajaran yang saling berkaitan.</p>
-<p>Dengan demikian, data pendidikan dapat dibaca pada beberapa tingkatan:</p>
-<p><span class="math display">\[
-\text{siswa}
-\rightarrow
-\text{kelas/sekolah}
-\rightarrow
-\text{wilayah}.
-\]</span></p>
-<p>Ini mengubah cara kita memahami learning gap. Kita tidak lagi hanya mencari “siswa mana yang tertinggal”, tetapi juga mencoba memahami <strong>pola dan konteks tempat ketertinggalan tersebut muncul</strong>.</p>
+<section id="peran-guru-dan-pentingnya-learning-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="peran-guru-dan-pentingnya-learning-evidence">Peran guru dan pentingnya learning evidence</h2>
+<p>Dalam diskusi tentang AI, pentingnya <em>professional judgement</em> guru sering ditekankan. Saya sependapat bahwa pertimbangan profesional guru tetap sangat penting. Namun, pertimbangan tersebut akan lebih kuat jika didukung oleh bukti yang relevan.</p>
+<p>Guru mungkin melihat bahwa sebagian besar siswa dapat mengikuti contoh yang diberikan di kelas. Akan tetapi, ketika diminta menyelesaikan soal secara mandiri atau menjelaskan alasan di balik jawabannya, sebagian siswa ternyata masih mengalami kesulitan.</p>
+<p>Sebaliknya, siswa yang jarang berbicara di kelas belum tentu tidak memahami materi. Pekerjaan tertulis atau penjelasan individual mungkin menunjukkan hal yang berbeda.</p>
+<p>Artinya, apa yang tampak selama pembelajaran belum tentu memberikan gambaran lengkap tentang pemahaman siswa.</p>
+<p>Learning evidence membantu guru memeriksa kembali penilaiannya, mengenali kesulitan yang mungkin tidak terlihat, dan menentukan tindak lanjut yang lebih sesuai. Bukti tersebut tidak menggantikan pengalaman atau pertimbangan profesional guru. Justru, bukti dapat membantu guru menggunakan pengalaman dan pertimbangannya secara lebih terarah.</p>
+<p>Hal ini juga berarti bahwa pengumpulan data tidak perlu menjadi pekerjaan administratif tambahan yang terpisah dari kegiatan mengajar. Bukti belajar dapat diperoleh melalui aktivitas yang memang sudah menjadi bagian dari pembelajaran, asalkan aktivitas tersebut dirancang untuk memberikan informasi yang berguna.</p>
 </section>
-<section id="learning-analytics-mengisi-ruang-di-antara-input-dan-outcome" class="level2">
-<h2 class="anchored" data-anchor-id="learning-analytics-mengisi-ruang-di-antara-input-dan-outcome">Learning analytics mengisi ruang di antara input dan outcome</h2>
-<p>Namun, IRT dan spatial model masih belum menjawab satu pertanyaan penting:</p>
-<blockquote class="blockquote">
-<p><strong>Apa yang terjadi selama siswa belajar?</strong></p>
-</blockquote>
-<p>Di sinilah <strong>learning analytics</strong> menjadi penting.</p>
-<p>Jika asesmen memberikan snapshot tentang kemampuan dan spatial analysis membantu memahami konteks, learning analytics dapat memanfaatkan jejak aktivitas belajar untuk melihat proses yang berlangsung.</p>
-<p>Misalnya:</p>
-<ul>
-<li>urutan aktivitas siswa;</li>
-<li>waktu yang digunakan untuk menyelesaikan tugas;</li>
-<li>pola revisi jawaban;</li>
-<li>respons terhadap feedback;</li>
-<li>jenis kesalahan yang muncul;</li>
-<li>interaksi dengan materi;</li>
-<li>penggunaan sumber belajar;</li>
-<li>pola pengerjaan sebelum dan sesudah bantuan diberikan.</li>
-</ul>
-<p>Data seperti ini dapat memberikan <strong>learning evidence</strong> yang lebih dekat dengan proses belajar.</p>
-<p>Dengan kata lain, kita mulai memiliki tiga perspektif yang saling melengkapi:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 48%">
-<col style="width: 30%">
-<col style="width: 21%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Pertanyaan</th>
-<th>Evidence</th>
-<th>Pendekatan</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Apa yang dikuasai siswa?</td>
-<td>Respons terhadap item</td>
-<td>IRT</td>
-</tr>
-<tr class="even">
-<td>Bagaimana siswa belajar?</td>
-<td>Jejak aktivitas dan proses</td>
-<td>Learning analytics</td>
-</tr>
-<tr class="odd">
-<td>Di mana dan dalam konteks apa gap muncul?</td>
-<td>Data sekolah/wilayah</td>
-<td>Spatial model</td>
-</tr>
-</tbody>
-</table>
-<p>Ketiganya tidak harus dipertentangkan. Justru kekuatannya muncul ketika digunakan bersama.</p>
+<section id="ketika-ai-bisa-memberi-jawaban-apa-yang-sebenarnya-kita-nilai" class="level2">
+<h2 class="anchored" data-anchor-id="ketika-ai-bisa-memberi-jawaban-apa-yang-sebenarnya-kita-nilai">Ketika AI bisa memberi jawaban, apa yang sebenarnya kita nilai?</h2>
+<p>Kehadiran AI membuat kebutuhan akan learning evidence semakin penting.</p>
+<p>Menurut OECD, 53% siswa Indonesia menggunakan chatbot AI untuk membantu belajar setidaknya sekali seminggu. Angka ini menunjukkan bahwa AI sudah menjadi bagian dari pengalaman belajar banyak siswa. Namun, frekuensi penggunaan tersebut tidak menjelaskan apakah siswa memperoleh pemahaman yang lebih baik melalui penggunaannya.</p>
+<p>Ada perbedaan antara AI membantu siswa menyelesaikan tugas dan AI membantu siswa belajar.</p>
+<p>Seorang siswa dapat meminta AI menyelesaikan soal matematika dan memperoleh jawaban yang benar. Namun, jawaban tersebut belum cukup untuk menunjukkan bahwa siswa memahami konsep yang digunakan, mampu menjelaskan prosedurnya, atau dapat menyelesaikan persoalan serupa secara mandiri.</p>
+<p>Sebaliknya, AI dapat digunakan sebagai bagian dari aktivitas yang membantu guru memperoleh bukti tentang pemahaman siswa. Siswa, misalnya, dapat diminta memeriksa solusi yang dihasilkan AI, menemukan kesalahan, membandingkan strategi, atau menjelaskan mengapa suatu langkah penyelesaian dapat diterima atau perlu diperbaiki.</p>
+<p>Aktivitas seperti ini memberi kesempatan kepada siswa untuk menunjukkan proses berpikirnya. Guru pun memiliki informasi yang lebih kaya untuk menilai pemahaman mereka.</p>
+<p>Tentu saja, penggunaan AI dalam aktivitas tersebut tidak otomatis menjamin terjadinya pembelajaran. Kita tetap perlu memeriksa apakah siswa benar-benar memahami konsep dan mampu menggunakan pengetahuan tersebut pada persoalan lain.</p>
+<p>Karena itu, pertanyaan tentang AI tidak cukup berhenti pada apakah siswa menggunakannya atau apakah tugas mereka menjadi lebih baik. Kita juga perlu bertanya: <strong>bukti apa yang menunjukkan bahwa penggunaan AI membantu siswa belajar?</strong></p>
 </section>
-<section id="di-sinilah-peran-guru-menjadi-lebih-bermakna" class="level2">
-<h2 class="anchored" data-anchor-id="di-sinilah-peran-guru-menjadi-lebih-bermakna">Di sinilah peran guru menjadi lebih bermakna</h2>
-<p>Dalam diskusi tentang AI, kita sering mendengar bahwa peran guru akan berubah.</p>
-<p>Menurut saya, persoalannya bukan sekadar apakah guru akan digantikan atau dibantu oleh AI.</p>
-<p>Pertanyaan yang lebih penting adalah:</p>
-<blockquote class="blockquote">
-<p><strong>Evidence seperti apa yang tersedia bagi guru ketika mereka membuat keputusan pembelajaran?</strong></p>
-</blockquote>
-<p>Professional judgement guru tetap sangat penting. Tetapi professional judgement membutuhkan sesuatu untuk dinilai.</p>
-<p>Guru perlu mengetahui bukan hanya bahwa seorang siswa “belum mencapai kompetensi”, tetapi juga <strong>mengapa</strong>, <strong>pada bagian mana</strong>, dan <strong>dalam kondisi seperti apa</strong> siswa mengalami kesulitan.</p>
-<p>Di sinilah learning evidence menjadi penghubung antara data dan keputusan pedagogis.</p>
-<p>Secara sederhana, ekosistemnya dapat dibayangkan sebagai:</p>
-<pre class="text"><code>Aktivitas Belajar
-       ↓
-Learning Evidence
-       ↓
-Analisis &amp; Interpretasi
-       ↓
-Professional Judgement Guru
-       ↓
-Intervensi Pembelajaran
-       ↓
-Aktivitas Belajar Berikutnya
-       ↓
-Learning Evidence Baru</code></pre>
-<p>Ini bukan proses satu arah.</p>
-<p>Intervensi menghasilkan data baru. Data baru menghasilkan evidence baru. Evidence tersebut kemudian dapat digunakan untuk memperbaiki keputusan pembelajaran berikutnya.</p>
-<p>Dengan demikian, data bukan sekadar digunakan untuk <strong>menilai siswa</strong>, tetapi untuk <strong>memahami dan memperbaiki pembelajaran</strong>.</p>
+<section id="kita-perlu-mengukur-apa-yang-benar-benar-ingin-kita-kembangkan" class="level2">
+<h2 class="anchored" data-anchor-id="kita-perlu-mengukur-apa-yang-benar-benar-ingin-kita-kembangkan">Kita perlu mengukur apa yang benar-benar ingin kita kembangkan</h2>
+<p>Jika jawaban akhir semakin mudah diperoleh dengan bantuan AI, maka penilaian yang hanya berfokus pada jawaban akhir berisiko memberikan gambaran yang tidak lengkap tentang kemampuan siswa.</p>
+<p>Dalam matematika, misalnya, kita tidak hanya ingin siswa memperoleh jawaban yang benar. Kita juga ingin mereka memahami konsep, bernalar, memilih strategi, menjelaskan alasan, dan memeriksa apakah hasil yang diperoleh masuk akal.</p>
+<p>Jika kemampuan-kemampuan tersebut merupakan tujuan pembelajaran, maka asesmen dan aktivitas belajar perlu memberikan kesempatan kepada siswa untuk menunjukkan bukti penguasaannya.</p>
+<p>Hal ini bukan berarti setiap tugas harus dibuat rumit atau seluruh proses berpikir siswa harus direkam secara digital. Guru dapat memulai dengan pertanyaan yang meminta alasan, tugas yang memungkinkan beberapa strategi penyelesaian, atau kesempatan bagi siswa untuk memperbaiki jawaban setelah memperoleh umpan balik.</p>
+<p>Yang perlu dipastikan adalah adanya kesesuaian antara tujuan pembelajaran, bukti yang dikumpulkan, dan keputusan yang diambil berdasarkan bukti tersebut.</p>
+<p>Hal yang sama berlaku ketika kita mengevaluasi penggunaan AI. Jika tujuan kita adalah meningkatkan pemahaman, maka keberhasilan tidak cukup dinilai dari kecepatan menyelesaikan tugas atau kualitas jawaban yang diserahkan. Kita perlu memeriksa apakah pemahaman siswa berkembang dan apakah mereka mampu menerapkan pengetahuan tersebut secara lebih mandiri.</p>
 </section>
-<section id="lalu-di-mana-posisi-ai" class="level2">
-<h2 class="anchored" data-anchor-id="lalu-di-mana-posisi-ai">Lalu, di mana posisi AI?</h2>
-<p>Justru setelah kerangka tersebut dibangun, pembicaraan mengenai AI menjadi lebih masuk akal.</p>
-<p>AI sudah menjadi bagian dari ekosistem belajar. Karena itu, kita tidak dapat berpura-pura bahwa pembelajaran harus dibahas seolah-olah AI tidak ada.</p>
-<p>Tetapi kehadiran AI tidak otomatis berarti bahwa AI merupakan solusi terhadap learning gap.</p>
-<p>Ada perbedaan besar antara:</p>
-<blockquote class="blockquote">
-<p><strong>AI membantu siswa menyelesaikan tugas</strong></p>
-</blockquote>
-<p>dan</p>
-<blockquote class="blockquote">
-<p><strong>AI membantu siswa belajar.</strong></p>
-</blockquote>
-<p>Seorang siswa dapat meminta AI menyelesaikan soal matematika dan memperoleh jawaban yang benar. Namun, jawaban benar tersebut belum menjadi evidence bahwa siswa memahami konsep.</p>
-<p>Sebaliknya, AI dapat digunakan dalam aktivitas yang menghasilkan evidence lebih kaya.</p>
-<p>Misalnya, siswa diberikan solusi yang dihasilkan AI dan diminta untuk:</p>
-<ul>
-<li>menemukan kesalahan;</li>
-<li>menjelaskan mengapa langkah tertentu tidak tepat;</li>
-<li>membandingkan dua strategi penyelesaian;</li>
-<li>memperbaiki solusi;</li>
-<li>memberikan justifikasi;</li>
-<li>atau memverifikasi apakah kesimpulan AI masuk akal.</li>
-</ul>
-<p>Dalam situasi tersebut, AI tidak hanya menjadi mesin pemberi jawaban. Ia menjadi bagian dari lingkungan belajar yang memungkinkan kita mengamati <strong>bagaimana siswa berpikir dan mengevaluasi informasi</strong>.</p>
-<p>Hal ini menjadi semakin penting ketika AI membuat produksi jawaban menjadi semakin mudah.</p>
-<p>Jika jawaban akhir semakin mudah diperoleh, maka <strong>evidence tentang proses berpikir</strong> justru menjadi semakin berharga.</p>
-</section>
-<section id="kita-perlu-mengubah-cara-memandang-data-pendidikan" class="level2">
-<h2 class="anchored" data-anchor-id="kita-perlu-mengubah-cara-memandang-data-pendidikan">Kita perlu mengubah cara memandang data pendidikan</h2>
-<p>Mungkin salah satu persoalan pendidikan kita bukan kekurangan data.</p>
-<p>Kita justru menghasilkan sangat banyak data.</p>
-<p>Persoalannya adalah apakah data tersebut dapat digunakan untuk menjawab pertanyaan pembelajaran yang tepat.</p>
-<p>Kita dapat memiliki ribuan nilai ujian tanpa mengetahui miskonsepsi yang dominan.</p>
-<p>Kita dapat memiliki data kehadiran tanpa mengetahui apa yang dilakukan siswa ketika berada di kelas.</p>
-<p>Kita dapat memiliki data penggunaan AI tanpa mengetahui apakah penggunaan tersebut menghasilkan pemahaman.</p>
-<p>Kita dapat mengetahui bahwa suatu wilayah memiliki capaian rendah tanpa memahami apakah masalah tersebut berkaitan dengan karakteristik siswa, sekolah, lingkungan, atau kombinasi berbagai faktor.</p>
-<p>Karena itu, tantangannya bukan sekadar <strong>big data</strong>, melainkan <strong>meaningful learning evidence</strong>.</p>
-<p>Kita membutuhkan data yang dapat menghubungkan:</p>
-<p><span class="math display">\[
-\text{student}
-\rightarrow
-\text{learning process}
-\rightarrow
-\text{competence}
-\rightarrow
-\text{context}.
-\]</span></p>
-<p>Dan semakin kompleks teknologi pendidikan yang kita gunakan, semakin penting hubungan tersebut.</p>
-</section>
-<section id="bukan-ai-yang-harus-menjadi-pusat-perhatian" class="level2">
-<h2 class="anchored" data-anchor-id="bukan-ai-yang-harus-menjadi-pusat-perhatian">Bukan AI yang harus menjadi pusat perhatian</h2>
-<p>PISA memberi kita sinyal penting tentang kondisi pendidikan. Data tersebut dapat menunjukkan adanya kesenjangan antara berbagai indikator pengalaman belajar dan capaian kompetensi.</p>
-<p>Namun, data outcome seharusnya menjadi awal pertanyaan, bukan akhir diagnosis.</p>
-<p>Jika siswa mengatakan bahwa mereka ingin belajar, tetapi kompetensinya belum berkembang, kita perlu mencari evidence tentang apa yang terjadi dalam proses belajar.</p>
-<p>Jika kemampuan berbeda antarindividu, kita perlu memahami struktur kompetensinya.</p>
-<p>Jika pola tersebut berbeda antarwilayah, kita perlu memahami konteks spasialnya.</p>
-<p>Jika teknologi baru seperti AI semakin banyak digunakan, kita perlu mengetahui apakah penggunaannya menghasilkan proses belajar yang lebih baik atau hanya menghasilkan jawaban dengan cara yang lebih cepat.</p>
-<p>Barulah setelah itu kita dapat berbicara secara lebih bermakna tentang apa yang perlu dilakukan guru, sekolah, sistem pendidikan, maupun teknologi.</p>
-<p>Karena pada akhirnya, persoalan terpenting bukan apakah pendidikan kita menggunakan AI atau tidak.</p>
-<p>Persoalannya adalah:</p>
-<blockquote class="blockquote">
-<p><strong>Apakah kita memiliki cukup evidence untuk mengetahui bahwa siswa benar-benar belajar?</strong></p>
-</blockquote>
-<p>Jika jawabannya belum, mungkin pekerjaan kita bukan pertama-tama mencari teknologi yang lebih canggih.</p>
-<p>Kita perlu terlebih dahulu membangun kemampuan untuk <strong>mengamati, mengukur, memahami, dan menggunakan evidence tentang proses belajar</strong>.</p>
-<p>Sebab semakin mudah teknologi menghasilkan jawaban, semakin penting kemampuan kita untuk membuktikan bahwa <strong>belajar benar-benar terjadi</strong>.</p>
+<section id="persoalannya-bukan-sekadar-kekurangan-data" class="level2">
+<h2 class="anchored" data-anchor-id="persoalannya-bukan-sekadar-kekurangan-data">Persoalannya bukan sekadar kekurangan data</h2>
+<p>PISA memberi kita informasi penting tentang capaian dan pengalaman belajar siswa. Namun, hasil asesmen berskala besar tidak dengan sendirinya menjelaskan seluruh proses yang menghasilkan capaian tersebut.</p>
+<p>Demikian pula, semakin banyaknya data pendidikan tidak otomatis membuat kita semakin memahami pembelajaran. Kita dapat memiliki banyak nilai ujian tanpa mengetahui kesulitan yang mendasarinya. Kita dapat mengetahui seberapa sering siswa menggunakan AI tanpa mengetahui apakah penggunaan tersebut membantu mereka memahami materi.</p>
+<p>Karena itu, persoalannya bukan semata-mata bagaimana menghasilkan lebih banyak data, melainkan bagaimana memperoleh dan menggunakan <em>learning evidence</em> yang bermakna.</p>
+<p>Bukti tersebut tidak harus selalu berbentuk data dalam jumlah besar. Beberapa contoh pekerjaan siswa, pertanyaan diagnostik yang dirancang dengan baik, atau catatan tentang kesalahan yang berulang dapat menjadi titik awal. Namun, kita perlu menafsirkan bukti secara hati-hati. Satu jawaban salah tidak selalu menunjukkan miskonsepsi yang menetap, sebagaimana satu jawaban benar tidak selalu membuktikan pemahaman yang mendalam.</p>
+<p>Kita perlu mempertimbangkan berbagai bukti sesuai dengan pertanyaan yang ingin dijawab dan menggunakannya untuk menentukan langkah pembelajaran berikutnya.</p>
+<p>Pada akhirnya, PISA seharusnya tidak hanya mendorong kita untuk mempertanyakan mengapa capaian siswa masih menjadi tantangan. Temuan tersebut juga dapat menjadi alasan untuk memeriksa apakah kita sudah memiliki bukti yang cukup tentang apa yang terjadi selama proses belajar.</p>
+<p>AI membuat pertanyaan ini semakin relevan. Ketika teknologi dapat menghasilkan jawaban dengan semakin mudah, kita perlu semakin cermat membedakan hasil pekerjaan dari hasil belajar.</p>
+<p><strong>Pertanyaan pentingnya bukan hanya apakah siswa menggunakan AI atau apakah guru mampu mengintegrasikannya, tetapi apakah kita memiliki bukti yang cukup untuk mengetahui bahwa siswa benar-benar belajar.</strong></p>
+<p>Sebab, semakin mudah teknologi menghasilkan jawaban, semakin penting bagi kita untuk memahami apa yang ada di balik jawaban tersebut.</p>
 
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{puteri2026,
   author = {Puteri, Indira},
   title = {Ketika {AI} {Bisa} {Memberi} {Jawaban,} {Apa} {Bukti} {Bahwa}
     {Siswa} {Belajar?}},
-  date = {2026-05-02},
-  url = {https://indiraputeri.github.io/posts/2026-05-02-post/},
+  date = {2026-09-05},
+  url = {https://indiraputeri.github.io/posts/2026-09-05-post/},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-puteri2026" class="csl-entry quarto-appendix-citeas" role="listitem">
 Puteri, Indira. 2026. <span>“Ketika AI Bisa Memberi Jawaban, Apa Bukti
-Bahwa Siswa Belajar?”</span> May 2. <a href="https://indiraputeri.github.io/posts/2026-05-02-post/">https://indiraputeri.github.io/posts/2026-05-02-post/</a>.
+Bahwa Siswa Belajar?”</span> September 5. <a href="https://indiraputeri.github.io/posts/2026-09-05-post/">https://indiraputeri.github.io/posts/2026-09-05-post/</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
