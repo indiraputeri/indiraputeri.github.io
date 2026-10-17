@@ -1,6 +1,6 @@
 ---
 title: "Ketika AI Bisa Memberi Jawaban, Apa Bukti Bahwa Siswa Belajar?"
-description: "Refleksi tentang pentingnya learning evidence untuk memahami proses belajar dan menilai peran AI dalam pendidikan."
+description: "Refleksi pentingnya learning evidence untuk memahami proses belajar diantara kemasifan penggunaan AI di kalangan peserta didik."
 author:
   - name: Indira Puteri
     url: https://indiraputeri.github.io/
